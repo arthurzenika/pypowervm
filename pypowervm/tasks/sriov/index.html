@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Sriov - pypowervm documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Sriov</a>
+</li>
+            
+<li>
+    <a href="../storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../slot_map/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../storage/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#sriov" class="nav-link">Sriov</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#find_pport" class="nav-link">find_pport</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#find_pports_for_portlabel" class="nav-link">find_pports_for_portlabel</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#get_lpar_vnics" class="nav-link">get_lpar_vnics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#safe_update_pports" class="nav-link">safe_update_pports</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#set_vnic_back_devs" class="nav-link">set_vnic_back_devs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="sriov">Sriov</h1>
+<p><a href="../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../#pypowervm">Pypowervm</a> /
+<a href="../#tasks">Tasks</a> /
+Sriov</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../pypowervm/tasks/sriov.py">pypowervm.tasks.sriov</a> module.</p>
+</blockquote>
+<h4 id="attributes">Attributes</h4>
+<ul>
+<li>
+<p><code>PPORT_MOD_LOCK</code> - Take read_lock on operations that create/delete VFs (including VNIC).  This
+  is a read_lock so we don't serialize all VF creation globally.
+  Take write_lock on operations that modify properties of physical ports and
+  rely on knowing the usage counts thereon (e.g. changing port labels).: <code>lock.ReaderWriterLock()</code></p>
+</li>
+<li>
+<p><a href="#sriov">Sriov</a></p>
+</li>
+<li><a href="#find_pport">find_pport</a></li>
+<li><a href="#find_pports_for_portlabel">find_pports_for_portlabel</a></li>
+<li><a href="#get_lpar_vnics">get_lpar_vnics</a></li>
+<li><a href="#safe_update_pports">safe_update_pports</a></li>
+<li><a href="#set_vnic_back_devs">set_vnic_back_devs</a></li>
+</ul>
+<h2 id="find_pport">find_pport</h2>
+<p><a href="../../../pypowervm/tasks/sriov.py#L568">Show source in sriov.py:568</a></p>
+<p>Find an SR-IOV physical port based on its location code.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>sys_w</code> - pypowervm.wrappers.managed_system.System wrapper of the host.</li>
+<li><code>physloc</code> - Physical location code string (per SRIOV*PPort.loc_code) of
+                the SR-IOV physical port to find.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>SRIOVEthPPort or SRIOVConvPPort wrapper with the specified
+         location code, or None if no such port exists in sys_w.</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">def find_pport(sys_w, physloc):
+    ...
+</code></pre>
+<h2 id="find_pports_for_portlabel">find_pports_for_portlabel</h2>
+<p><a href="../../../pypowervm/tasks/sriov.py#L547">Show source in sriov.py:547</a></p>
+<p>Find SR-IOV physical ports based on the port label.</p>
+<h4 id="arguments_1">Arguments</h4>
+<ul>
+<li><code>portlabel</code> - portlabel of the SR-IOV physical ports to find.</li>
+<li><code>adapter</code> - The pypowervm adapter API interface.</li>
+<li><code>msys</code> - pypowervm.wrappers.managed_system.System wrapper.If not
+             specified, it will be retrieved from the server.</li>
+</ul>
+<h4 id="returns_1">Returns</h4>
+<p>List of SRIOVEthPPort or SRIOVConvPPort wrappers for the specified
+         port label, or the empty list if no such port exists.</p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">def find_pports_for_portlabel(portlabel, adapter, msys=None):
+    ...
+</code></pre>
+<h2 id="get_lpar_vnics">get_lpar_vnics</h2>
+<p><a href="../../../pypowervm/tasks/sriov.py#L392">Show source in sriov.py:392</a></p>
+<p>Return a dict mapping LPAR wrappers to their VNIC feeds.</p>
+<h4 id="arguments_2">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The pypowervm.adapter.Adapter for REST API communication.</li>
+</ul>
+<h4 id="returns_2">Returns</h4>
+<p>A dict of the form { LPAR: [VNIC, ...] }, where the keys are
+         pypowervm.wrappers.logical_partition.LPAR and the values are lists
+         of the pypowervm.wrappers.iocard.VNIC they own.</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">def get_lpar_vnics(adapter):
+    ...
+</code></pre>
+<h2 id="safe_update_pports">safe_update_pports</h2>
+<p><a href="../../../pypowervm/tasks/sriov.py#L463">Show source in sriov.py:463</a></p>
+<p>Retrying entry transaction for safe updates to SR-IOV physical ports.</p>
+<p>Usage:
+    def changes(sys_w):
+        for sriov in sys_w.asio_config.sriov_adapters:
+            ...
+            sriov.phys_ports[n].pport.label = some_new_label
+            ...
+            update_needed = True
+            ...
+        return update_needed</p>
+<p>sys_w = safe_update_pports(System.getter(adap), changes, force=maybe)</p>
+<p>The consumer passes a callback method which makes changes to the labels of
+the physical ports of the ManagedSystem's SR-IOV adapters.</p>
+<p>If the callback returns a False value (indicating that no update is
+necessary), safe_update_pports immediately returns the sys_w.</p>
+<p>If the callback returns a True value, safe_update_pports first checks
+whether any of the changed ports are in use by vNICs (see "Why vNICs?"
+below).</p>
+<p>If the force option is not True, and any uses were found, this method
+raises an exception whose text includes details about the found usages.
+Otherwise, the found usages are logged as warnings.</p>
+<p>Assuming no exception is raised, safe_update_pports attempts to update the
+sys_w wrapper with the REST server.  (The caller does <em>not</em> do the update.)
+If an etag mismatch is encountered, safe_update_pports refreshes the sys_w
+wrapper and retries, according to the semantics of entry_transaction.</p>
+<p>Why vNICs?
+Care must be taken when changing port labels on the fly because those
+labels are used by LPM to ensure that the LPAR on the target system gets
+equivalent connectivity.  Direct-attached VFs - either those belonging to
+VIOSes (e.g. for SEA) or to LPARs - mean the partition is not migratable,
+so the labels can be changed with impunity.  And the only way a VF is
+migratable is if it belongs to a vNIC on a migratable LPAR.</p>
+<h4 id="arguments_3">Arguments</h4>
+<ul>
+<li><code>sys_w</code> - pypowervm.wrappers.managed_system.System wrapper or getter
+              thereof.</li>
+<li><code>callback_func</code> - Method executing the actual changes on the sys_w.
+                      The method must accept sys_w (a System wrapper) as
+                      its only argument.  Its return value will be
+                      interpreted as a boolean to determine whether to
+                      perform the update() (True) or not (False).</li>
+<li><code>force</code> - If False (the default) and any of the updated physical ports
+              are found to be in use by vNICs, the method will raise.  If
+              True, warnings are logged for each such usage, but the method
+              will succeed.</li>
+</ul>
+<h4 id="returns_3">Returns</h4>
+<p>The (possibly-updated) sys_w.</p>
+<h4 id="raises">Raises</h4>
+<ul>
+<li><code>CantUpdatePPortsInUse</code> -  If any of the relabeled physical ports are in
+                              use by vNICs <em>and</em> the force option is False.</li>
+</ul>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">@tx.entry_transaction
+def safe_update_pports(sys_w, callback_func, force=False):
+    ...
+</code></pre>
+<h2 id="set_vnic_back_devs">set_vnic_back_devs</h2>
+<p><a href="../../../pypowervm/tasks/sriov.py#L52">Show source in sriov.py:52</a></p>
+<p>Set a vNIC's backing devices over given SRIOV physical ports and VIOSes.</p>
+<p>Assign the backing devices to a iocard.VNIC wrapper using an anti-affinity
+algorithm.  That is, the method attempts to distribute the backing devices
+across as diverse a range of physical SRIOV adapters and VIOSes as
+possible, using the least-saturated ports first.  For example, given:</p>
+<p>vios1, vios2</p>
+<p>SRIOVAdapter1
+    PPortA (50% allocated)
+    PPortB (20%)
+    PPortC (45%)
+SRIOVAdapter2
+    PPortD (10%)
+    PPortE (2%)
+    PPortF (11%)</p>
+<p>set_vnic_back_devs(vnic, [PPortA, PPortB, PPortC, PPortD, PPortE, PPortF],
+                   [vios1, vios2], redundancy=4)</p>
+<p>...we will create backing devices like:</p>
+<p>[(vios1, PPortE), (vios2, PPortB), (vios1, PPortD), (vios2, PPortC)]</p>
+<p>As part of the algorithm, we will use sriov_adaps to filter out physical
+ports which are already saturated.  This could err either way due to
+out-of-band changes:
+- We may end up excluding a port which has had some capacity freed up since
+  sriov_adaps was retrieved; or
+- We may attempt to include a port which has become saturated since
+  sriov_adaps was retrieved, resulting in an error from the REST server.</p>
+<p>This method acts on the vNIC-related capabilities on the system and VIOSes:
+- If the system is not vNIC capable, the method will fail.
+- If none of the active VIOSes are vNIC capable, the method will fail.
+- If redundancy &gt; 1,
+    - the system must be vNIC failover capable, and
+    - at least one active VIOS must be vNIC failover capable.
+- If any VIOSes are vNIC failover capable, failover-incapable VIOSes will
+  be ignored.</p>
+<h4 id="arguments_4">Arguments</h4>
+<ul>
+<li><code>vnic_w</code> - iocard.VNIC wrapper, as created via VNIC.bld().  If
+               vnic_w.back_devs is nonempty, it is cleared and replaced.
+               This parameter is modified by the method (there is no return
+               value).  If this method raises an exception, vnic_w is
+               guaranteed to be unchanged.</li>
+<li><code>pports</code> - List of physical location code strings (corresponding to the
+               loc_code @property of iocard.SRIOV*PPort) for all SRIOV
+               physical ports to be considered as backing devices for the
+               vNIC.  This does not mean that all of these ports will be
+               used.</li>
+<li><code>sys_w</code> - Pre-fetched pypowervm.wrappers.managed_system.System wrapper.
+              If not specified, it will be fetched from the server.</li>
+<li><code>vioses</code> - List of VIOS wrappers to consider for distribution of vNIC
+               servers.  Not all listed VIOSes will necessarily be used.
+               If not specified, the feed of all active (including RMC)
+               VIOSes will be fetched from the server.  If specified, the
+               list will be filtered to include only active (including RMC)
+               VIOSes (according to the wrappers - the server is not re-
+               checked).  The list is also filtered to remove VIOSes which
+               are not vNIC capable; and, if min_redundancy &gt; 1, to remove
+               VIOSes which are not vNIC failover capable.</li>
+<li><code>redundancy</code> - Number of backing devices to assign.  If the method
+                   can't allocate this many VFs after filtering the pports
+                   list, InsufficientSRIOVCapacity will be raised.  Note
+                   that at most one VF is created on each physical port.</li>
+<li><code>capacity</code> - (float) Minimum capacity to assign to each backing device.
+                 Must be between 0.0 and 1.0, and must be a multiple of the
+                 min_granularity of <em>all</em> of the pports.  (Capacity may be
+                 assigned to each individual backing device after the fact
+                 to achieve more control; but in that case, the consumer is
+                 responsible for validating sufficient available capacity.)</li>
+<li><code>max_capacity</code> - (float) Maximum capacity to assign to each backing
+                     device. Must be greater or equal to capacity and
+                     less than 1.0.</li>
+<li><code>redundant_pports</code> - List of physical location code strings
+                         (corresponding to the loc_code @property of
+                         iocard.SRIOV*PPort) for all SRIOV redundant
+                         physical ports to be considered as backing
+                         devices for the vNIC. This does not mean that
+                         all of these ports will be used.</li>
+<li><code>check_port_status</code> - If True, only ports with link-up status will be
+                          considered for allocation.  If False (the
+                          default), link-down ports may be used.</li>
+</ul>
+<h4 id="raises_1">Raises</h4>
+<ul>
+<li><code>NoRunningSharedSriovAdapters</code> -  If no SR-IOV adapters in Sriov mode
+                                     and Running state can be found.</li>
+<li><code>NotEnoughActiveVioses</code> -  If no active (including RMC) VIOSes can be
+                              found.</li>
+<li><code>InsufficientSRIOVCapacity</code> -  If the method was not able to allocate
+                                  enough VFs to satisfy the specified
+                                  redundancy.</li>
+<li><code>SystemNotVNICCapable</code> -  If the managed system is not vNIC capable.</li>
+<li><code>NoVNICCapableVIOSes</code> -  If there are no vNIC-capable VIOSes.</li>
+<li><code>VNICFailoverNotSupportedSys</code> -  If redundancy &gt; 1, and the system is
+                                    not vNIC failover capable.</li>
+<li><code>VNICFailoverNotSupportedVIOS</code> -  If redundancy &gt; 1, and there are no
+                                     vNIC failover-capable VIOSes.</li>
+</ul>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">def set_vnic_back_devs(
+    vnic_w,
+    pports,
+    sys_w=None,
+    vioses=None,
+    redundancy=1,
+    capacity=None,
+    max_capacity=None,
+    check_port_status=False,
+    redundant_pports=None,
+):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

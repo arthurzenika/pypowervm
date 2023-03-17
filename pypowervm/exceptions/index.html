@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Exceptions - pypowervm documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../entities/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../i18n/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#exceptions" class="nav-link">Exceptions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#abstractmsgfmterror" class="nav-link">AbstractMsgFmtError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#adapternotfound" class="nav-link">AdapterNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#atomerror" class="nav-link">AtomError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#authfileaccesserror" class="nav-link">AuthFileAccessError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#authfilereaderror" class="nav-link">AuthFileReadError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cachenotsupportedexception" class="nav-link">CacheNotSupportedException</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cantupdatepportsinuse" class="nav-link">CantUpdatePPortsInUse</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#connectionerror" class="nav-link">ConnectionError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#consolenotlocal" class="nav-link">ConsoleNotLocal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#duplicatelunameerror" class="nav-link">DuplicateLUNameError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#error" class="nav-link">Error</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#feedtaskemptyfeed" class="nav-link">FeedTaskEmptyFeed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#founddevmultipletimes" class="nav-link">FoundDevMultipleTimes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#httperror" class="nav-link">HttpError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#httpnotfound" class="nav-link">HttpNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#httpunauth" class="nav-link">HttpUnauth</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ibmiloadsourcenotfound" class="nav-link">IBMiLoadSourceNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#iscsidiscoveryfailed" class="nav-link">ISCSIDiscoveryFailed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#iscsilogoutfailed" class="nav-link">ISCSILogoutFailed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#iscsiremovefailed" class="nav-link">ISCSIRemoveFailed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#insufficientsriovcapacity" class="nav-link">InsufficientSRIOVCapacity</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidenumvalue" class="nav-link">InvalidEnumValue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidhostforrebuild" class="nav-link">InvalidHostForRebuild</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidhostforrebuildfabricsnotfound" class="nav-link">InvalidHostForRebuildFabricsNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidhostforrebuildinvalidiotype" class="nav-link">InvalidHostForRebuildInvalidIOType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidhostforrebuildnoviosforudid" class="nav-link">InvalidHostForRebuildNoVIOSForUDID</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidhostforrebuildnotenoughvios" class="nav-link">InvalidHostForRebuildNotEnoughVIOS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidhostforrebuildslotmismatch" class="nav-link">InvalidHostForRebuildSlotMismatch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidibmipanelfunctionoperation" class="nav-link">InvalidIBMiPanelFunctionOperation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#invalidvirtualnetworkdevicetype" class="nav-link">InvalidVirtualNetworkDeviceType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#jobrequestfailed" class="nav-link">JobRequestFailed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#jobrequesttimedout" class="nav-link">JobRequestTimedOut</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lparnotfound" class="nav-link">LPARNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#managementpartitionnotfoundexception" class="nav-link">ManagementPartitionNotFoundException</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#migrationfailed" class="nav-link">MigrationFailed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#multipleexceptionsinfeedtask" class="nav-link">MultipleExceptionsInFeedTask</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nodefaulttierfoundonssp" class="nav-link">NoDefaultTierFoundOnSSP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomediarepovolumegroupfound" class="nav-link">NoMediaRepoVolumeGroupFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#norunningsharedsriovadapters" class="nav-link">NoRunningSharedSriovAdapters</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#novniccapablevioses" class="nav-link">NoVNICCapableVIOSes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notenoughactivevioses" class="nav-link">NotEnoughActiveVioses</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notfound" class="nav-link">NotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#osshutdownnormc" class="nav-link">OSShutdownNoRMC</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#orphanvlanfoundonprovision" class="nav-link">OrphanVLANFoundOnProvision</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#panelfunctionrequirespartition" class="nav-link">PanelFunctionRequiresPartition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#partitionisnotibmi" class="nav-link">PartitionIsNotIBMi</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pvidofnetworkbridgeerror" class="nav-link">PvidOfNetworkBridgeError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sslerror" class="nav-link">SSLError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#singlemappingnotfoundremaperror" class="nav-link">SingleMappingNotFoundRemapError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#storagemapexistsremaperror" class="nav-link">StorageMapExistsRemapError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#systemnotvniccapable" class="nav-link">SystemNotVNICCapable</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thispartitionnotfoundexception" class="nav-link">ThisPartitionNotFoundException</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#timeouterror" class="nav-link">TimeoutError</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#unabletobuildpg83encodingmissingparent" class="nav-link">UnableToBuildPG83EncodingMissingParent</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#unabletoderivephysicalportfornpiv" class="nav-link">UnableToDerivePhysicalPortForNPIV</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#unabletofindfcportmap" class="nav-link">UnableToFindFCPortMap</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vgnotfound" class="nav-link">VGNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#viosnotfound" class="nav-link">VIOSNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vmpowerofffailure" class="nav-link">VMPowerOffFailure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vmpowerofftimeout" class="nav-link">VMPowerOffTimeout</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vmpoweronfailure" class="nav-link">VMPowerOnFailure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vmpowerontimeout" class="nav-link">VMPowerOnTimeout</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vncbasedterminalfailedtoopen" class="nav-link">VNCBasedTerminalFailedToOpen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vnicfailovernotsupportedsys" class="nav-link">VNICFailoverNotSupportedSys</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vnicfailovernotsupportedvios" class="nav-link">VNICFailoverNotSupportedVIOS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#viosnotavailable" class="nav-link">ViosNotAvailable</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vstornotfound" class="nav-link">VstorNotFound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wrappertasknosubtasks" class="nav-link">WrapperTaskNoSubtasks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="exceptions">Exceptions</h1>
+<p><a href="../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../#pypowervm">Pypowervm</a> /
+Exceptions</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../pypowervm/exceptions.py">pypowervm.exceptions</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#exceptions">Exceptions</a></li>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+<li><a href="#adapternotfound">AdapterNotFound</a></li>
+<li><a href="#atomerror">AtomError</a></li>
+<li><a href="#authfileaccesserror">AuthFileAccessError</a></li>
+<li><a href="#authfilereaderror">AuthFileReadError</a></li>
+<li><a href="#cachenotsupportedexception">CacheNotSupportedException</a></li>
+<li><a href="#cantupdatepportsinuse">CantUpdatePPortsInUse</a></li>
+<li><a href="#connectionerror">ConnectionError</a></li>
+<li><a href="#consolenotlocal">ConsoleNotLocal</a></li>
+<li><a href="#duplicatelunameerror">DuplicateLUNameError</a></li>
+<li><a href="#error">Error</a></li>
+<li><a href="#feedtaskemptyfeed">FeedTaskEmptyFeed</a></li>
+<li><a href="#founddevmultipletimes">FoundDevMultipleTimes</a></li>
+<li><a href="#httperror">HttpError</a></li>
+<li><a href="#httpnotfound">HttpNotFound</a></li>
+<li><a href="#httpunauth">HttpUnauth</a></li>
+<li><a href="#ibmiloadsourcenotfound">IBMiLoadSourceNotFound</a></li>
+<li><a href="#iscsidiscoveryfailed">ISCSIDiscoveryFailed</a></li>
+<li><a href="#iscsilogoutfailed">ISCSILogoutFailed</a></li>
+<li><a href="#iscsiremovefailed">ISCSIRemoveFailed</a></li>
+<li><a href="#insufficientsriovcapacity">InsufficientSRIOVCapacity</a></li>
+<li><a href="#invalidenumvalue">InvalidEnumValue</a></li>
+<li><a href="#invalidhostforrebuild">InvalidHostForRebuild</a></li>
+<li><a href="#invalidhostforrebuildfabricsnotfound">InvalidHostForRebuildFabricsNotFound</a></li>
+<li><a href="#invalidhostforrebuildinvalidiotype">InvalidHostForRebuildInvalidIOType</a></li>
+<li><a href="#invalidhostforrebuildnoviosforudid">InvalidHostForRebuildNoVIOSForUDID</a></li>
+<li><a href="#invalidhostforrebuildnotenoughvios">InvalidHostForRebuildNotEnoughVIOS</a></li>
+<li><a href="#invalidhostforrebuildslotmismatch">InvalidHostForRebuildSlotMismatch</a></li>
+<li><a href="#invalidibmipanelfunctionoperation">InvalidIBMiPanelFunctionOperation</a></li>
+<li><a href="#invalidvirtualnetworkdevicetype">InvalidVirtualNetworkDeviceType</a></li>
+<li><a href="#jobrequestfailed">JobRequestFailed</a></li>
+<li><a href="#jobrequesttimedout">JobRequestTimedOut</a></li>
+<li><a href="#lparnotfound">LPARNotFound</a></li>
+<li><a href="#managementpartitionnotfoundexception">ManagementPartitionNotFoundException</a></li>
+<li><a href="#migrationfailed">MigrationFailed</a></li>
+<li><a href="#multipleexceptionsinfeedtask">MultipleExceptionsInFeedTask</a></li>
+<li><a href="#nodefaulttierfoundonssp">NoDefaultTierFoundOnSSP</a></li>
+<li><a href="#nomediarepovolumegroupfound">NoMediaRepoVolumeGroupFound</a></li>
+<li><a href="#norunningsharedsriovadapters">NoRunningSharedSriovAdapters</a></li>
+<li><a href="#novniccapablevioses">NoVNICCapableVIOSes</a></li>
+<li><a href="#notenoughactivevioses">NotEnoughActiveVioses</a></li>
+<li><a href="#notfound">NotFound</a></li>
+<li><a href="#osshutdownnormc">OSShutdownNoRMC</a></li>
+<li><a href="#orphanvlanfoundonprovision">OrphanVLANFoundOnProvision</a></li>
+<li><a href="#panelfunctionrequirespartition">PanelFunctionRequiresPartition</a></li>
+<li><a href="#partitionisnotibmi">PartitionIsNotIBMi</a></li>
+<li><a href="#pvidofnetworkbridgeerror">PvidOfNetworkBridgeError</a></li>
+<li><a href="#sslerror">SSLError</a></li>
+<li><a href="#singlemappingnotfoundremaperror">SingleMappingNotFoundRemapError</a></li>
+<li><a href="#storagemapexistsremaperror">StorageMapExistsRemapError</a></li>
+<li><a href="#systemnotvniccapable">SystemNotVNICCapable</a></li>
+<li><a href="#thispartitionnotfoundexception">ThisPartitionNotFoundException</a></li>
+<li><a href="#timeouterror">TimeoutError</a></li>
+<li><a href="#unabletobuildpg83encodingmissingparent">UnableToBuildPG83EncodingMissingParent</a></li>
+<li><a href="#unabletoderivephysicalportfornpiv">UnableToDerivePhysicalPortForNPIV</a></li>
+<li><a href="#unabletofindfcportmap">UnableToFindFCPortMap</a></li>
+<li><a href="#vgnotfound">VGNotFound</a></li>
+<li><a href="#viosnotfound">VIOSNotFound</a></li>
+<li><a href="#vmpowerofffailure">VMPowerOffFailure</a></li>
+<li><a href="#vmpowerofftimeout">VMPowerOffTimeout</a></li>
+<li><a href="#vmpoweronfailure">VMPowerOnFailure</a></li>
+<li><a href="#vmpowerontimeout">VMPowerOnTimeout</a></li>
+<li><a href="#vncbasedterminalfailedtoopen">VNCBasedTerminalFailedToOpen</a></li>
+<li><a href="#vnicfailovernotsupportedsys">VNICFailoverNotSupportedSys</a></li>
+<li><a href="#vnicfailovernotsupportedvios">VNICFailoverNotSupportedVIOS</a></li>
+<li><a href="#viosnotavailable">ViosNotAvailable</a></li>
+<li><a href="#vstornotfound">VstorNotFound</a></li>
+<li><a href="#wrappertasknosubtasks">WrapperTaskNoSubtasks</a></li>
+</ul>
+<h2 id="abstractmsgfmterror">AbstractMsgFmtError</h2>
+<p><a href="../../pypowervm/exceptions.py#L115">Show source in exceptions.py:115</a></p>
+<p>Used to raise an exception with a formattable/parameterized message.</p>
+<p>The subclass must set the msg_fmt class variable.  The consumer should
+instantiate the subclass with **kwargs appropriate to its msg_fmt.</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class AbstractMsgFmtError(Error):
+    def __init__(self, response=None, **kwa):
+        ...
+</code></pre>
+<h4 id="see-also">See also</h4>
+<ul>
+<li><a href="#error">Error</a></li>
+</ul>
+<h2 id="adapternotfound">AdapterNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L140">Show source in exceptions.py:140</a></p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">class AdapterNotFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_1">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="atomerror">AtomError</h2>
+<p><a href="../../pypowervm/exceptions.py#L106">Show source in exceptions.py:106</a></p>
+<p>Atom Error on PowerVM API Adapter method invocation.</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">class AtomError(Error):
+    def __init__(self, msg, response):
+        ...
+</code></pre>
+<h4 id="see-also_2">See also</h4>
+<ul>
+<li><a href="#error">Error</a></li>
+</ul>
+<h2 id="authfileaccesserror">AuthFileAccessError</h2>
+<p><a href="../../pypowervm/exceptions.py#L221">Show source in exceptions.py:221</a></p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">class AuthFileAccessError(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_3">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="authfilereaderror">AuthFileReadError</h2>
+<p><a href="../../pypowervm/exceptions.py#L217">Show source in exceptions.py:217</a></p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">class AuthFileReadError(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_4">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="cachenotsupportedexception">CacheNotSupportedException</h2>
+<p><a href="../../pypowervm/exceptions.py#L392">Show source in exceptions.py:392</a></p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">class CacheNotSupportedException(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_5">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="cantupdatepportsinuse">CantUpdatePPortsInUse</h2>
+<p><a href="../../pypowervm/exceptions.py#L382">Show source in exceptions.py:382</a></p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">class CantUpdatePPortsInUse(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_6">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="connectionerror">ConnectionError</h2>
+<p><a href="../../pypowervm/exceptions.py#L38">Show source in exceptions.py:38</a></p>
+<p>Connection Error on PowerVM API Adapter method invocation.</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">class ConnectionError(Error):
+    ...
+</code></pre>
+<h4 id="see-also_7">See also</h4>
+<ul>
+<li><a href="#error">Error</a></li>
+</ul>
+<h2 id="consolenotlocal">ConsoleNotLocal</h2>
+<p><a href="../../pypowervm/exceptions.py#L202">Show source in exceptions.py:202</a></p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">class ConsoleNotLocal(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_8">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="duplicatelunameerror">DuplicateLUNameError</h2>
+<p><a href="../../pypowervm/exceptions.py#L190">Show source in exceptions.py:190</a></p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">class DuplicateLUNameError(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_9">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="error">Error</h2>
+<p><a href="../../pypowervm/exceptions.py#L28">Show source in exceptions.py:28</a></p>
+<p>Error on PowerVM API Adapter method invocation.</p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">class Error(Exception):
+    def __init__(self, msg, response=None):
+        ...
+</code></pre>
+<h2 id="feedtaskemptyfeed">FeedTaskEmptyFeed</h2>
+<p><a href="../../pypowervm/exceptions.py#L213">Show source in exceptions.py:213</a></p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">class FeedTaskEmptyFeed(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_10">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="founddevmultipletimes">FoundDevMultipleTimes</h2>
+<p><a href="../../pypowervm/exceptions.py#L254">Show source in exceptions.py:254</a></p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">class FoundDevMultipleTimes(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_11">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="httperror">HttpError</h2>
+<p><a href="../../pypowervm/exceptions.py#L50">Show source in exceptions.py:50</a></p>
+<p>HTTP Error on PowerVM API Adapter method invocation.</p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">class HttpError(Error):
+    def __init__(self, resp):
+        ...
+</code></pre>
+<h4 id="see-also_12">See also</h4>
+<ul>
+<li><a href="#error">Error</a></li>
+</ul>
+<h2 id="httpnotfound">HttpNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L96">Show source in exceptions.py:96</a></p>
+<p>HttpError subclass where response.status == c.HTTPStatus.NOT_FOUND.</p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">class HttpNotFound(HttpError):
+    ...
+</code></pre>
+<h4 id="see-also_13">See also</h4>
+<ul>
+<li><a href="#httperror">HttpError</a></li>
+</ul>
+<h2 id="httpunauth">HttpUnauth</h2>
+<p><a href="../../pypowervm/exceptions.py#L101">Show source in exceptions.py:101</a></p>
+<p>HttpError where response.status == c.HTTPStatus.UNAUTHORIZED.</p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">class HttpUnauth(HttpError):
+    ...
+</code></pre>
+<h4 id="see-also_14">See also</h4>
+<ul>
+<li><a href="#httperror">HttpError</a></li>
+</ul>
+<h2 id="ibmiloadsourcenotfound">IBMiLoadSourceNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L230">Show source in exceptions.py:230</a></p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">class IBMiLoadSourceNotFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_15">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="iscsidiscoveryfailed">ISCSIDiscoveryFailed</h2>
+<p><a href="../../pypowervm/exceptions.py#L422">Show source in exceptions.py:422</a></p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">class ISCSIDiscoveryFailed(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_16">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="iscsilogoutfailed">ISCSILogoutFailed</h2>
+<p><a href="../../pypowervm/exceptions.py#L427">Show source in exceptions.py:427</a></p>
+<p>Exception currently unused</p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">class ISCSILogoutFailed(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_17">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="iscsiremovefailed">ISCSIRemoveFailed</h2>
+<p><a href="../../pypowervm/exceptions.py#L433">Show source in exceptions.py:433</a></p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">class ISCSIRemoveFailed(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_18">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="insufficientsriovcapacity">InsufficientSRIOVCapacity</h2>
+<p><a href="../../pypowervm/exceptions.py#L353">Show source in exceptions.py:353</a></p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">class InsufficientSRIOVCapacity(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_19">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="invalidenumvalue">InvalidEnumValue</h2>
+<p><a href="../../pypowervm/exceptions.py#L396">Show source in exceptions.py:396</a></p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">class InvalidEnumValue(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_20">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="invalidhostforrebuild">InvalidHostForRebuild</h2>
+<p><a href="../../pypowervm/exceptions.py#L296">Show source in exceptions.py:296</a></p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">class InvalidHostForRebuild(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_21">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="invalidhostforrebuildfabricsnotfound">InvalidHostForRebuildFabricsNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L310">Show source in exceptions.py:310</a></p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">class InvalidHostForRebuildFabricsNotFound(InvalidHostForRebuild):
+    ...
+</code></pre>
+<h4 id="see-also_22">See also</h4>
+<ul>
+<li><a href="#invalidhostforrebuild">InvalidHostForRebuild</a></li>
+</ul>
+<h2 id="invalidhostforrebuildinvalidiotype">InvalidHostForRebuildInvalidIOType</h2>
+<p><a href="../../pypowervm/exceptions.py#L315">Show source in exceptions.py:315</a></p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">class InvalidHostForRebuildInvalidIOType(InvalidHostForRebuild):
+    ...
+</code></pre>
+<h4 id="see-also_23">See also</h4>
+<ul>
+<li><a href="#invalidhostforrebuild">InvalidHostForRebuild</a></li>
+</ul>
+<h2 id="invalidhostforrebuildnoviosforudid">InvalidHostForRebuildNoVIOSForUDID</h2>
+<p><a href="../../pypowervm/exceptions.py#L300">Show source in exceptions.py:300</a></p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">class InvalidHostForRebuildNoVIOSForUDID(InvalidHostForRebuild):
+    ...
+</code></pre>
+<h4 id="see-also_24">See also</h4>
+<ul>
+<li><a href="#invalidhostforrebuild">InvalidHostForRebuild</a></li>
+</ul>
+<h2 id="invalidhostforrebuildnotenoughvios">InvalidHostForRebuildNotEnoughVIOS</h2>
+<p><a href="../../pypowervm/exceptions.py#L305">Show source in exceptions.py:305</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">class InvalidHostForRebuildNotEnoughVIOS(InvalidHostForRebuild):
+    ...
+</code></pre>
+<h4 id="see-also_25">See also</h4>
+<ul>
+<li><a href="#invalidhostforrebuild">InvalidHostForRebuild</a></li>
+</ul>
+<h2 id="invalidhostforrebuildslotmismatch">InvalidHostForRebuildSlotMismatch</h2>
+<p><a href="../../pypowervm/exceptions.py#L320">Show source in exceptions.py:320</a></p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">class InvalidHostForRebuildSlotMismatch(InvalidHostForRebuild):
+    ...
+</code></pre>
+<h4 id="see-also_26">See also</h4>
+<ul>
+<li><a href="#invalidhostforrebuild">InvalidHostForRebuild</a></li>
+</ul>
+<h2 id="invalidibmipanelfunctionoperation">InvalidIBMiPanelFunctionOperation</h2>
+<p><a href="../../pypowervm/exceptions.py#L417">Show source in exceptions.py:417</a></p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">class InvalidIBMiPanelFunctionOperation(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_27">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="invalidvirtualnetworkdevicetype">InvalidVirtualNetworkDeviceType</h2>
+<p><a href="../../pypowervm/exceptions.py#L327">Show source in exceptions.py:327</a></p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">class InvalidVirtualNetworkDeviceType(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_28">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="jobrequestfailed">JobRequestFailed</h2>
+<p><a href="../../pypowervm/exceptions.py#L144">Show source in exceptions.py:144</a></p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">class JobRequestFailed(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_29">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="jobrequesttimedout">JobRequestTimedOut</h2>
+<p><a href="../../pypowervm/exceptions.py#L148">Show source in exceptions.py:148</a></p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">class JobRequestTimedOut(JobRequestFailed):
+    ...
+</code></pre>
+<h4 id="see-also_30">See also</h4>
+<ul>
+<li><a href="#jobrequestfailed">JobRequestFailed</a></li>
+</ul>
+<h2 id="lparnotfound">LPARNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L136">Show source in exceptions.py:136</a></p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">class LPARNotFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_31">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="managementpartitionnotfoundexception">ManagementPartitionNotFoundException</h2>
+<p><a href="../../pypowervm/exceptions.py#L278">Show source in exceptions.py:278</a></p>
+<p>Couldn't find exactly one management partition on the system.</p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">class ManagementPartitionNotFoundException(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_32">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="migrationfailed">MigrationFailed</h2>
+<p><a href="../../pypowervm/exceptions.py#L226">Show source in exceptions.py:226</a></p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">class MigrationFailed(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_33">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="multipleexceptionsinfeedtask">MultipleExceptionsInFeedTask</h2>
+<p><a href="../../pypowervm/exceptions.py#L259">Show source in exceptions.py:259</a></p>
+<p>Exception concatenating messages in WrappedFailure exceptions.</p>
+<p>Exception raised when a pypowervm.utils.transaction.FeedTask run raises a
+tasflow.exceptions.WrappedFailure containing more than one exception.  The
+message string is a concatenation of the message strings of the wrapped
+exceptions.</p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">class MultipleExceptionsInFeedTask(AbstractMsgFmtError):
+    def __init__(self, ft_name, wrapped_failure):
+        ...
+</code></pre>
+<h4 id="see-also_34">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="nodefaulttierfoundonssp">NoDefaultTierFoundOnSSP</h2>
+<p><a href="../../pypowervm/exceptions.py#L290">Show source in exceptions.py:290</a></p>
+<p>Looked for a default Tier on the SSP, but didn't find it.</p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">class NoDefaultTierFoundOnSSP(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_35">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="nomediarepovolumegroupfound">NoMediaRepoVolumeGroupFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L376">Show source in exceptions.py:376</a></p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">class NoMediaRepoVolumeGroupFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_36">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="norunningsharedsriovadapters">NoRunningSharedSriovAdapters</h2>
+<p><a href="../../pypowervm/exceptions.py#L345">Show source in exceptions.py:345</a></p>
+<h4 id="attributes">Attributes</h4>
+<ul>
+<li><code>msg_fmt</code> - sriov_loc_mode_state should be a string comprising one SRIOV adapter per
+  line, each line comprising the physical location code, the mode, and the
+  state, separated by ' | '.: <code>_('Could not find any SR-IOV adapters in Sriov mode and Running state.\nLocation | Mode | State\n%(sriov_loc_mode_state)s')</code></li>
+</ul>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">class NoRunningSharedSriovAdapters(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_37">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="novniccapablevioses">NoVNICCapableVIOSes</h2>
+<p><a href="../../pypowervm/exceptions.py#L362">Show source in exceptions.py:362</a></p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">class NoVNICCapableVIOSes(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_38">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="notenoughactivevioses">NotEnoughActiveVioses</h2>
+<p><a href="../../pypowervm/exceptions.py#L333">Show source in exceptions.py:333</a></p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">class NotEnoughActiveVioses(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_39">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="notfound">NotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L132">Show source in exceptions.py:132</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">class NotFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_40">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="osshutdownnormc">OSShutdownNoRMC</h2>
+<p><a href="../../pypowervm/exceptions.py#L153">Show source in exceptions.py:153</a></p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">class OSShutdownNoRMC(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_41">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="orphanvlanfoundonprovision">OrphanVLANFoundOnProvision</h2>
+<p><a href="../../pypowervm/exceptions.py#L181">Show source in exceptions.py:181</a></p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">class OrphanVLANFoundOnProvision(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_42">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="panelfunctionrequirespartition">PanelFunctionRequiresPartition</h2>
+<p><a href="../../pypowervm/exceptions.py#L413">Show source in exceptions.py:413</a></p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">class PanelFunctionRequiresPartition(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_43">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="partitionisnotibmi">PartitionIsNotIBMi</h2>
+<p><a href="../../pypowervm/exceptions.py#L409">Show source in exceptions.py:409</a></p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">class PartitionIsNotIBMi(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_44">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="pvidofnetworkbridgeerror">PvidOfNetworkBridgeError</h2>
+<p><a href="../../pypowervm/exceptions.py#L176">Show source in exceptions.py:176</a></p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">class PvidOfNetworkBridgeError(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_45">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="sslerror">SSLError</h2>
+<p><a href="../../pypowervm/exceptions.py#L42">Show source in exceptions.py:42</a></p>
+<p>SSL Error on PowerVM API Adapter method invocation.</p>
+<h4 id="signature_47">Signature</h4>
+<pre><code class="language-python">class SSLError(Error):
+    ...
+</code></pre>
+<h4 id="see-also_46">See also</h4>
+<ul>
+<li><a href="#error">Error</a></li>
+</ul>
+<h2 id="singlemappingnotfoundremaperror">SingleMappingNotFoundRemapError</h2>
+<p><a href="../../pypowervm/exceptions.py#L242">Show source in exceptions.py:242</a></p>
+<h4 id="signature_48">Signature</h4>
+<pre><code class="language-python">class SingleMappingNotFoundRemapError(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_47">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="storagemapexistsremaperror">StorageMapExistsRemapError</h2>
+<p><a href="../../pypowervm/exceptions.py#L248">Show source in exceptions.py:248</a></p>
+<h4 id="signature_49">Signature</h4>
+<pre><code class="language-python">class StorageMapExistsRemapError(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_48">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="systemnotvniccapable">SystemNotVNICCapable</h2>
+<p><a href="../../pypowervm/exceptions.py#L358">Show source in exceptions.py:358</a></p>
+<h4 id="signature_50">Signature</h4>
+<pre><code class="language-python">class SystemNotVNICCapable(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_49">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="thispartitionnotfoundexception">ThisPartitionNotFoundException</h2>
+<p><a href="../../pypowervm/exceptions.py#L284">Show source in exceptions.py:284</a></p>
+<p>Couldn't find exactly one partition with the local VM's short ID.</p>
+<h4 id="signature_51">Signature</h4>
+<pre><code class="language-python">class ThisPartitionNotFoundException(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_50">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="timeouterror">TimeoutError</h2>
+<p><a href="../../pypowervm/exceptions.py#L46">Show source in exceptions.py:46</a></p>
+<p>Timeout Error on PowerVM API Adapter method invocation.</p>
+<h4 id="signature_52">Signature</h4>
+<pre><code class="language-python">class TimeoutError(Error):
+    ...
+</code></pre>
+<h4 id="see-also_51">See also</h4>
+<ul>
+<li><a href="#error">Error</a></li>
+</ul>
+<h2 id="unabletobuildpg83encodingmissingparent">UnableToBuildPG83EncodingMissingParent</h2>
+<p><a href="../../pypowervm/exceptions.py#L234">Show source in exceptions.py:234</a></p>
+<h4 id="signature_53">Signature</h4>
+<pre><code class="language-python">class UnableToBuildPG83EncodingMissingParent(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_52">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="unabletoderivephysicalportfornpiv">UnableToDerivePhysicalPortForNPIV</h2>
+<p><a href="../../pypowervm/exceptions.py#L126">Show source in exceptions.py:126</a></p>
+<h4 id="signature_54">Signature</h4>
+<pre><code class="language-python">class UnableToDerivePhysicalPortForNPIV(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_53">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="unabletofindfcportmap">UnableToFindFCPortMap</h2>
+<p><a href="../../pypowervm/exceptions.py#L195">Show source in exceptions.py:195</a></p>
+<h4 id="signature_55">Signature</h4>
+<pre><code class="language-python">class UnableToFindFCPortMap(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_54">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="vgnotfound">VGNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L405">Show source in exceptions.py:405</a></p>
+<h4 id="signature_56">Signature</h4>
+<pre><code class="language-python">class VGNotFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_55">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="viosnotfound">VIOSNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L401">Show source in exceptions.py:401</a></p>
+<h4 id="signature_57">Signature</h4>
+<pre><code class="language-python">class VIOSNotFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_56">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="vmpowerofffailure">VMPowerOffFailure</h2>
+<p><a href="../../pypowervm/exceptions.py#L158">Show source in exceptions.py:158</a></p>
+<h4 id="signature_58">Signature</h4>
+<pre><code class="language-python">class VMPowerOffFailure(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_57">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="vmpowerofftimeout">VMPowerOffTimeout</h2>
+<p><a href="../../pypowervm/exceptions.py#L162">Show source in exceptions.py:162</a></p>
+<h4 id="signature_59">Signature</h4>
+<pre><code class="language-python">class VMPowerOffTimeout(VMPowerOffFailure):
+    ...
+</code></pre>
+<h4 id="see-also_58">See also</h4>
+<ul>
+<li><a href="#vmpowerofffailure">VMPowerOffFailure</a></li>
+</ul>
+<h2 id="vmpoweronfailure">VMPowerOnFailure</h2>
+<p><a href="../../pypowervm/exceptions.py#L167">Show source in exceptions.py:167</a></p>
+<h4 id="signature_60">Signature</h4>
+<pre><code class="language-python">class VMPowerOnFailure(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_59">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="vmpowerontimeout">VMPowerOnTimeout</h2>
+<p><a href="../../pypowervm/exceptions.py#L171">Show source in exceptions.py:171</a></p>
+<h4 id="signature_61">Signature</h4>
+<pre><code class="language-python">class VMPowerOnTimeout(VMPowerOnFailure):
+    ...
+</code></pre>
+<h4 id="see-also_60">See also</h4>
+<ul>
+<li><a href="#vmpoweronfailure">VMPowerOnFailure</a></li>
+</ul>
+<h2 id="vncbasedterminalfailedtoopen">VNCBasedTerminalFailedToOpen</h2>
+<p><a href="../../pypowervm/exceptions.py#L388">Show source in exceptions.py:388</a></p>
+<h4 id="signature_62">Signature</h4>
+<pre><code class="language-python">class VNCBasedTerminalFailedToOpen(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_61">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="vnicfailovernotsupportedsys">VNICFailoverNotSupportedSys</h2>
+<p><a href="../../pypowervm/exceptions.py#L366">Show source in exceptions.py:366</a></p>
+<h4 id="signature_63">Signature</h4>
+<pre><code class="language-python">class VNICFailoverNotSupportedSys(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_62">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="vnicfailovernotsupportedvios">VNICFailoverNotSupportedVIOS</h2>
+<p><a href="../../pypowervm/exceptions.py#L371">Show source in exceptions.py:371</a></p>
+<h4 id="signature_64">Signature</h4>
+<pre><code class="language-python">class VNICFailoverNotSupportedVIOS(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_63">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="viosnotavailable">ViosNotAvailable</h2>
+<p><a href="../../pypowervm/exceptions.py#L338">Show source in exceptions.py:338</a></p>
+<h4 id="signature_65">Signature</h4>
+<pre><code class="language-python">class ViosNotAvailable(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_64">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="vstornotfound">VstorNotFound</h2>
+<p><a href="../../pypowervm/exceptions.py#L438">Show source in exceptions.py:438</a></p>
+<h4 id="signature_66">Signature</h4>
+<pre><code class="language-python">class VstorNotFound(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_65">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul>
+<h2 id="wrappertasknosubtasks">WrapperTaskNoSubtasks</h2>
+<p><a href="../../pypowervm/exceptions.py#L209">Show source in exceptions.py:209</a></p>
+<h4 id="signature_67">Signature</h4>
+<pre><code class="language-python">class WrapperTaskNoSubtasks(AbstractMsgFmtError):
+    ...
+</code></pre>
+<h4 id="see-also_66">See also</h4>
+<ul>
+<li><a href="#abstractmsgfmterror">AbstractMsgFmtError</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

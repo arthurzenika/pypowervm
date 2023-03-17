@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Test Entry - pypowervm documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../test_enterprise_pool/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../test_event/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#test-entry" class="nav-link">Test Entry</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#subwrapper" class="nav-link">SubWrapper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testactionablelist" class="nav-link">TestActionableList</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testcreate" class="nav-link">TestCreate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testdelete" class="nav-link">TestDelete</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testelement" class="nav-link">TestElement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testelementlist" class="nav-link">TestElementList</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testelementwrapper" class="nav-link">TestElementWrapper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testentrywrapper" class="nav-link">TestEntryWrapper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testget" class="nav-link">TestGet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testgetters" class="nav-link">TestGetters</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testrefresh" class="nav-link">TestRefresh</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testsearch" class="nav-link">TestSearch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testsetuuidmixin" class="nav-link">TestSetUUIDMixin</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testupdate" class="nav-link">TestUpdate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testwrapper" class="nav-link">TestWrapper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testwrapperelemlist" class="nav-link">TestWrapperElemList</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="test-entry">Test Entry</h1>
+<p><a href="../../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../../#pypowervm">Pypowervm</a> /
+<a href="../../#tests">Tests</a> /
+<a href="../#wrappers">Wrappers</a> /
+Test Entry</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../../pypowervm/tests/wrappers/test_entry.py">pypowervm.tests.wrappers.test_entry</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#test-entry">Test Entry</a></li>
+<li><a href="#subwrapper">SubWrapper</a></li>
+<li><a href="#testactionablelist">TestActionableList</a><ul>
+<li><a href="#testactionablelist()test_append">TestActionableList().test_append</a></li>
+<li><a href="#testactionablelist()test_complex_path">TestActionableList().test_complex_path</a></li>
+<li><a href="#testactionablelist()test_extend">TestActionableList().test_extend</a></li>
+<li><a href="#testactionablelist()test_insert">TestActionableList().test_insert</a></li>
+<li><a href="#testactionablelist()test_pop">TestActionableList().test_pop</a></li>
+<li><a href="#testactionablelist()test_remove">TestActionableList().test_remove</a></li>
+</ul>
+</li>
+<li><a href="#testcreate">TestCreate</a><ul>
+<li><a href="#testcreate()setup">TestCreate().setUp</a></li>
+<li><a href="#testcreate()test_create_child">TestCreate().test_create_child</a></li>
+<li><a href="#testcreate()test_create_other_service">TestCreate().test_create_other_service</a></li>
+<li><a href="#testcreate()test_create_raises">TestCreate().test_create_raises</a></li>
+<li><a href="#testcreate()test_create_root">TestCreate().test_create_root</a></li>
+</ul>
+</li>
+<li><a href="#testdelete">TestDelete</a><ul>
+<li><a href="#testdelete()setup">TestDelete().setUp</a></li>
+<li><a href="#testdelete()test_delete">TestDelete().test_delete</a></li>
+</ul>
+</li>
+<li><a href="#testelement">TestElement</a><ul>
+<li><a href="#testelement()test_child_poaching">TestElement().test_child_poaching</a></li>
+<li><a href="#testelement()test_toxmlstring">TestElement().test_toxmlstring</a></li>
+</ul>
+</li>
+<li><a href="#testelementlist">TestElementList</a><ul>
+<li><a href="#testelementlist()setup">TestElementList().setUp</a></li>
+<li><a href="#testelementlist()test_everything">TestElementList().test_everything</a></li>
+</ul>
+</li>
+<li><a href="#testelementwrapper">TestElementWrapper</a><ul>
+<li><a href="#testelementwrapper()setup">TestElementWrapper().setUp</a></li>
+<li><a href="#testelementwrapper()test_element_clone">TestElementWrapper().test_element_clone</a></li>
+<li><a href="#testelementwrapper()test_elementwrapper_clone">TestElementWrapper().test_elementwrapper_clone</a></li>
+<li><a href="#testelementwrapper()test_entry_clone">TestElementWrapper().test_entry_clone</a></li>
+<li><a href="#testelementwrapper()test_entrywrapper_clone">TestElementWrapper().test_entrywrapper_clone</a></li>
+<li><a href="#testelementwrapper()test_equality">TestElementWrapper().test_equality</a></li>
+<li><a href="#testelementwrapper()test_feed_clone">TestElementWrapper().test_feed_clone</a></li>
+<li><a href="#testelementwrapper()test_fresh_element">TestElementWrapper().test_fresh_element</a></li>
+<li><a href="#testelementwrapper()test_href">TestElementWrapper().test_href</a></li>
+<li><a href="#testelementwrapper()test_inequality_by_subelem_change">TestElementWrapper().test_inequality_by_subelem_change</a></li>
+<li><a href="#testelementwrapper()test_response_clone">TestElementWrapper().test_response_clone</a></li>
+<li><a href="#testelementwrapper()test_unequal">TestElementWrapper().test_unequal</a></li>
+</ul>
+</li>
+<li><a href="#testentrywrapper">TestEntryWrapper</a><ul>
+<li><a href="#testentrywrapper()setup">TestEntryWrapper().setUp</a></li>
+<li><a href="#testentrywrapper()test_etag">TestEntryWrapper().test_etag</a></li>
+<li><a href="#testentrywrapper()test_load">TestEntryWrapper().test_load</a></li>
+<li><a href="#testentrywrapper()test_set_uuid">TestEntryWrapper().test_set_uuid</a></li>
+<li><a href="#testentrywrapper()test_toxmlstring">TestEntryWrapper().test_toxmlstring</a></li>
+</ul>
+</li>
+<li><a href="#testget">TestGet</a><ul>
+<li><a href="#testget()setup">TestGet().setUp</a></li>
+<li><a href="#testget()test_get_by_href">TestGet().test_get_by_href</a></li>
+<li><a href="#testget()test_get_child">TestGet().test_get_child</a></li>
+<li><a href="#testget()test_get_errors">TestGet().test_get_errors</a></li>
+<li><a href="#testget()test_get_root">TestGet().test_get_root</a></li>
+</ul>
+</li>
+<li><a href="#testgetters">TestGetters</a><ul>
+<li><a href="#testgetters()test_entry_wrapper_getter">TestGetters().test_entry_wrapper_getter</a></li>
+<li><a href="#testgetters()test_feed_getter">TestGetters().test_feed_getter</a></li>
+<li><a href="#testgetters()test_uuid_feed_getter">TestGetters().test_uuid_feed_getter</a></li>
+</ul>
+</li>
+<li><a href="#testrefresh">TestRefresh</a><ul>
+<li><a href="#testrefresh()setup">TestRefresh().setUp</a></li>
+<li><a href="#testrefresh()test_etag_match">TestRefresh().test_etag_match</a></li>
+<li><a href="#testrefresh()test_etag_no_match">TestRefresh().test_etag_no_match</a></li>
+<li><a href="#testrefresh()test_no_etag">TestRefresh().test_no_etag</a></li>
+<li><a href="#testrefresh()test_use_etag_false">TestRefresh().test_use_etag_false</a></li>
+</ul>
+</li>
+<li><a href="#testsearch">TestSearch</a><ul>
+<li><a href="#testsearch()setup">TestSearch().setUp</a></li>
+<li><a href="#testsearch()test_child_bad_args">TestSearch().test_child_bad_args</a></li>
+<li><a href="#testsearch()test_child_no_search_key">TestSearch().test_child_no_search_key</a></li>
+<li><a href="#testsearch()test_child_with_parent_spec">TestSearch().test_child_with_parent_spec</a></li>
+<li><a href="#testsearch()test_good">TestSearch().test_good</a></li>
+<li><a href="#testsearch()test_negate">TestSearch().test_negate</a></li>
+<li><a href="#testsearch()test_no_such_search_key">TestSearch().test_no_such_search_key</a></li>
+<li><a href="#testsearch()test_quote">TestSearch().test_quote</a></li>
+<li><a href="#testsearch()test_search_all_parents">TestSearch().test_search_all_parents</a></li>
+<li><a href="#testsearch()test_search_by_feed">TestSearch().test_search_by_feed</a></li>
+<li><a href="#testsearch()test_search_with_xag">TestSearch().test_search_with_xag</a></li>
+</ul>
+</li>
+<li><a href="#testsetuuidmixin">TestSetUUIDMixin</a><ul>
+<li><a href="#testsetuuidmixin()test_set_uuid">TestSetUUIDMixin().test_set_uuid</a></li>
+</ul>
+</li>
+<li><a href="#testupdate">TestUpdate</a><ul>
+<li><a href="#testupdate()setup">TestUpdate().setUp</a></li>
+<li><a href="#testupdate()test_force_update">TestUpdate().test_force_update</a></li>
+<li><a href="#testupdate()test_update">TestUpdate().test_update</a></li>
+<li><a href="#testupdate()test_update_with_get_xag">TestUpdate().test_update_with_get_xag</a></li>
+<li><a href="#testupdate()test_update_xag">TestUpdate().test_update_xag</a></li>
+</ul>
+</li>
+<li><a href="#testwrapper">TestWrapper</a><ul>
+<li><a href="#testwrapper()test_get_val_bool">TestWrapper().test_get_val_bool</a></li>
+<li><a href="#testwrapper()test_get_val_float">TestWrapper().test_get_val_float</a></li>
+<li><a href="#testwrapper()test_get_val_int">TestWrapper().test_get_val_int</a></li>
+<li><a href="#testwrapper()test_get_val_percent">TestWrapper().test_get_val_percent</a></li>
+<li><a href="#testwrapper()test_get_val_str">TestWrapper().test_get_val_str</a></li>
+</ul>
+</li>
+<li><a href="#testwrapperelemlist">TestWrapperElemList</a><ul>
+<li><a href="#testwrapperelemlist()setup">TestWrapperElemList().setUp</a></li>
+<li><a href="#testwrapperelemlist()test_append">TestWrapperElemList().test_append</a></li>
+<li><a href="#testwrapperelemlist()test_extend">TestWrapperElemList().test_extend</a></li>
+<li><a href="#testwrapperelemlist()test_get">TestWrapperElemList().test_get</a></li>
+<li><a href="#testwrapperelemlist()test_in">TestWrapperElemList().test_in</a></li>
+<li><a href="#testwrapperelemlist()test_index">TestWrapperElemList().test_index</a></li>
+<li><a href="#testwrapperelemlist()test_length">TestWrapperElemList().test_length</a></li>
+<li><a href="#testwrapperelemlist()test_repr">TestWrapperElemList().test_repr</a></li>
+<li><a href="#testwrapperelemlist()test_str">TestWrapperElemList().test_str</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="subwrapper">SubWrapper</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L58">Show source in test_entry.py:58</a></p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class SubWrapper(ewrap.Wrapper):
+    def __init__(self, **kwargs):
+        ...
+</code></pre>
+<h2 id="testactionablelist">TestActionableList</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L707">Show source in test_entry.py:707</a></p>
+<p>Tests for the Actionable List class.</p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">class TestActionableList(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testactionablelisttest_append">TestActionableList().test_append</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L720">Show source in test_entry.py:720</a></p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">def test_append(self):
+    ...
+</code></pre>
+<h3 id="testactionablelisttest_complex_path">TestActionableList().test_complex_path</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L760">Show source in test_entry.py:760</a></p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">def test_complex_path(self):
+    ...
+</code></pre>
+<h3 id="testactionablelisttest_extend">TestActionableList().test_extend</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L710">Show source in test_entry.py:710</a></p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">def test_extend(self):
+    ...
+</code></pre>
+<h3 id="testactionablelisttest_insert">TestActionableList().test_insert</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L740">Show source in test_entry.py:740</a></p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">def test_insert(self):
+    ...
+</code></pre>
+<h3 id="testactionablelisttest_pop">TestActionableList().test_pop</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L750">Show source in test_entry.py:750</a></p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">def test_pop(self):
+    ...
+</code></pre>
+<h3 id="testactionablelisttest_remove">TestActionableList().test_remove</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L730">Show source in test_entry.py:730</a></p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">def test_remove(self):
+    ...
+</code></pre>
+<h2 id="testcreate">TestCreate</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1261">Show source in test_entry.py:1261</a></p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">class TestCreate(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testcreatesetup">TestCreate().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1262">Show source in test_entry.py:1262</a></p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testcreatetest_create_child">TestCreate().test_create_child</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1278">Show source in test_entry.py:1278</a></p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">def test_create_child(self):
+    ...
+</code></pre>
+<h3 id="testcreatetest_create_other_service">TestCreate().test_create_other_service</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1301">Show source in test_entry.py:1301</a></p>
+<p>Ensure non-UOM service goes through.</p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">def test_create_other_service(self):
+    ...
+</code></pre>
+<h3 id="testcreatetest_create_raises">TestCreate().test_create_raises</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1314">Show source in test_entry.py:1314</a></p>
+<p>Verify invalid inputs raise exceptions.</p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">def test_create_raises(self):
+    ...
+</code></pre>
+<h3 id="testcreatetest_create_root">TestCreate().test_create_root</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1266">Show source in test_entry.py:1266</a></p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">def test_create_root(self):
+    ...
+</code></pre>
+<h2 id="testdelete">TestDelete</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1241">Show source in test_entry.py:1241</a></p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">class TestDelete(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testdeletesetup">TestDelete().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1242">Show source in test_entry.py:1242</a></p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testdeletetest_delete">TestDelete().test_delete</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1246">Show source in test_entry.py:1246</a></p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">def test_delete(self):
+    ...
+</code></pre>
+<h2 id="testelement">TestElement</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L77">Show source in test_entry.py:77</a></p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">class TestElement(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testelementtest_child_poaching">TestElement().test_child_poaching</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L81">Show source in test_entry.py:81</a></p>
+<p>Creating an element with children of another existing element.</p>
+<p>Ensure the existing element remains intact.</p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">def test_child_poaching(self):
+    ...
+</code></pre>
+<h3 id="testelementtest_toxmlstring">TestElement().test_toxmlstring</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L100">Show source in test_entry.py:100</a></p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;lxml.etree.tostring&quot;)
+def test_toxmlstring(self, mock_tostring):
+    ...
+</code></pre>
+<h2 id="testelementlist">TestElementList</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L117">Show source in test_entry.py:117</a></p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">class TestElementList(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testelementlistsetup">TestElementList().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L121">Show source in test_entry.py:121</a></p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testelementlisttest_everything">TestElementList().test_everything</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L146">Show source in test_entry.py:146</a></p>
+<p>Ensure ElementList behaves like a list where implemented.</p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">def test_everything(self):
+    ...
+</code></pre>
+<h2 id="testelementwrapper">TestElementWrapper</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L360">Show source in test_entry.py:360</a></p>
+<p>Tests for the ElementWrapper class.</p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">class TestElementWrapper(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testelementwrappersetup">TestElementWrapper().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L363">Show source in test_entry.py:363</a></p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_element_clone">TestElementWrapper().test_element_clone</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L507">Show source in test_entry.py:507</a></p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">def test_element_clone(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_elementwrapper_clone">TestElementWrapper().test_elementwrapper_clone</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L586">Show source in test_entry.py:586</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">def test_elementwrapper_clone(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_entry_clone">TestElementWrapper().test_entry_clone</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L533">Show source in test_entry.py:533</a></p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">def test_entry_clone(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_entrywrapper_clone">TestElementWrapper().test_entrywrapper_clone</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L575">Show source in test_entry.py:575</a></p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">def test_entrywrapper_clone(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_equality">TestElementWrapper().test_equality</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L371">Show source in test_entry.py:371</a></p>
+<p>Validates that two elements loaded from the same data is equal.</p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">def test_equality(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_feed_clone">TestElementWrapper().test_feed_clone</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L544">Show source in test_entry.py:544</a></p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">def test_feed_clone(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_fresh_element">TestElementWrapper().test_fresh_element</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L409">Show source in test_entry.py:409</a></p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">def test_fresh_element(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_href">TestElementWrapper().test_href</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L448">Show source in test_entry.py:448</a></p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">def test_href(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_inequality_by_subelem_change">TestElementWrapper().test_inequality_by_subelem_change</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L383">Show source in test_entry.py:383</a></p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">def test_inequality_by_subelem_change(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_response_clone">TestElementWrapper().test_response_clone</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L564">Show source in test_entry.py:564</a></p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">def test_response_clone(self):
+    ...
+</code></pre>
+<h3 id="testelementwrappertest_unequal">TestElementWrapper().test_unequal</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L391">Show source in test_entry.py:391</a></p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">def test_unequal(self):
+    ...
+</code></pre>
+<h2 id="testentrywrapper">TestEntryWrapper</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L264">Show source in test_entry.py:264</a></p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">class TestEntryWrapper(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testentrywrappersetup">TestEntryWrapper().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L266">Show source in test_entry.py:266</a></p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testentrywrappertest_etag">TestEntryWrapper().test_etag</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L270">Show source in test_entry.py:270</a></p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">def test_etag(self):
+    ...
+</code></pre>
+<h3 id="testentrywrappertest_load">TestEntryWrapper().test_load</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L297">Show source in test_entry.py:297</a></p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">def test_load(self):
+    ...
+</code></pre>
+<h3 id="testentrywrappertest_set_uuid">TestEntryWrapper().test_set_uuid</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L280">Show source in test_entry.py:280</a></p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">def test_set_uuid(self):
+    ...
+</code></pre>
+<h3 id="testentrywrappertest_toxmlstring">TestEntryWrapper().test_toxmlstring</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L341">Show source in test_entry.py:341</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;lxml.etree.tostring&quot;)
+def test_toxmlstring(self, mock_tostring):
+    ...
+</code></pre>
+<h2 id="testget">TestGet</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L796">Show source in test_entry.py:796</a></p>
+<p>Tests for EntryWrapper.get().</p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">class TestGet(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testgetsetup">TestGet().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L799">Show source in test_entry.py:799</a></p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testgettest_get_by_href">TestGet().test_get_by_href</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L879">Show source in test_entry.py:879</a></p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.wrap&quot;)
+def test_get_by_href(self, mock_wrap):
+    ...
+</code></pre>
+<h3 id="testgettest_get_child">TestGet().test_get_child</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L823">Show source in test_entry.py:823</a></p>
+<p>Various permutations of EntryWrapper.get on a CHILD object.</p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.network.CNA.wrap&quot;)
+def test_get_child(self, mock_wrap):
+    ...
+</code></pre>
+<h3 id="testgettest_get_errors">TestGet().test_get_errors</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L851">Show source in test_entry.py:851</a></p>
+<p>Error paths in EntryWrapper.get.</p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.wrap&quot;)
+def test_get_errors(self, mock_wrap):
+    ...
+</code></pre>
+<h3 id="testgettest_get_root">TestGet().test_get_root</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L803">Show source in test_entry.py:803</a></p>
+<p>Various permutations of EntryWrapper.get on a ROOT object.</p>
+<h4 id="signature_47">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.logical_partition.LPAR.wrap&quot;)
+def test_get_root(self, mock_wrap):
+    ...
+</code></pre>
+<h2 id="testgetters">TestGetters</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1405">Show source in test_entry.py:1405</a></p>
+<h4 id="signature_48">Signature</h4>
+<pre><code class="language-python">class TestGetters(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testgetterstest_entry_wrapper_getter">TestGetters().test_entry_wrapper_getter</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1409">Show source in test_entry.py:1409</a></p>
+<h4 id="signature_49">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.refresh&quot;)
+def test_entry_wrapper_getter(self, mock_refresh):
+    ...
+</code></pre>
+<h3 id="testgetterstest_feed_getter">TestGetters().test_feed_getter</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1492">Show source in test_entry.py:1492</a></p>
+<h4 id="signature_50">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.refresh&quot;)
+def test_feed_getter(self, mock_refresh):
+    ...
+</code></pre>
+<h3 id="testgetterstest_uuid_feed_getter">TestGetters().test_uuid_feed_getter</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1571">Show source in test_entry.py:1571</a></p>
+<p>Verify UUIDFeedGetter.</p>
+<h4 id="signature_51">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.refresh&quot;)
+def test_uuid_feed_getter(self, mock_refresh):
+    ...
+</code></pre>
+<h2 id="testrefresh">TestRefresh</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1084">Show source in test_entry.py:1084</a></p>
+<p>Tests for Adapter.refresh().</p>
+<h4 id="signature_52">Signature</h4>
+<pre><code class="language-python">class TestRefresh(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testrefreshsetup">TestRefresh().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1090">Show source in test_entry.py:1090</a></p>
+<h4 id="signature_53">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testrefreshtest_etag_match">TestRefresh().test_etag_match</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1130">Show source in test_entry.py:1130</a></p>
+<h4 id="signature_54">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read_by_href&quot;)
+def test_etag_match(self, mock_read):
+    ...
+</code></pre>
+<h3 id="testrefreshtest_etag_no_match">TestRefresh().test_etag_no_match</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1139">Show source in test_entry.py:1139</a></p>
+<h4 id="signature_55">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read_by_href&quot;)
+def test_etag_no_match(self, mock_read):
+    ...
+</code></pre>
+<h3 id="testrefreshtest_no_etag">TestRefresh().test_no_etag</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1122">Show source in test_entry.py:1122</a></p>
+<h4 id="signature_56">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read_by_href&quot;)
+def test_no_etag(self, mock_read):
+    ...
+</code></pre>
+<h3 id="testrefreshtest_use_etag_false">TestRefresh().test_use_etag_false</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1148">Show source in test_entry.py:1148</a></p>
+<h4 id="signature_57">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read_by_href&quot;)
+def test_use_etag_false(self, mock_read):
+    ...
+</code></pre>
+<h2 id="testsearch">TestSearch</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L887">Show source in test_entry.py:887</a></p>
+<p>Tests for EntryWrapper.search().</p>
+<h4 id="signature_58">Signature</h4>
+<pre><code class="language-python">class TestSearch(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testsearchsetup">TestSearch().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L890">Show source in test_entry.py:890</a></p>
+<h4 id="signature_59">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testsearchtest_child_bad_args">TestSearch().test_child_bad_args</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1016">Show source in test_entry.py:1016</a></p>
+<p>Specifying parent_uuid without parent_type is an error.</p>
+<h4 id="signature_60">Signature</h4>
+<pre><code class="language-python">def test_child_bad_args(self):
+    ...
+</code></pre>
+<h3 id="testsearchtest_child_no_search_key">TestSearch().test_child_no_search_key</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L999">Show source in test_entry.py:999</a></p>
+<p>CHILD search with or without a search key (uses GET-feed-loop).</p>
+<h4 id="signature_61">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read&quot;)
+def test_child_no_search_key(self, mock_read):
+    ...
+</code></pre>
+<h3 id="testsearchtest_child_with_parent_spec">TestSearch().test_child_with_parent_spec</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1070">Show source in test_entry.py:1070</a></p>
+<p>Test CHILD search using a parent instance.</p>
+<h4 id="signature_62">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read&quot;)
+def test_child_with_parent_spec(self, mock_read):
+    ...
+</code></pre>
+<h3 id="testsearchtest_good">TestSearch().test_good</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L903">Show source in test_entry.py:903</a></p>
+<h4 id="signature_63">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter._request&quot;)
+def test_good(self, mock_rq):
+    ...
+</code></pre>
+<h3 id="testsearchtest_negate">TestSearch().test_negate</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L925">Show source in test_entry.py:925</a></p>
+<h4 id="signature_64">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter._request&quot;)
+def test_negate(self, mock_rq):
+    ...
+</code></pre>
+<h3 id="testsearchtest_no_such_search_key">TestSearch().test_no_such_search_key</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L935">Show source in test_entry.py:935</a></p>
+<p>Ensure an invalid search key gives ValueError.</p>
+<h4 id="signature_65">Signature</h4>
+<pre><code class="language-python">def test_no_such_search_key(self):
+    ...
+</code></pre>
+<h3 id="testsearchtest_quote">TestSearch().test_quote</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L940">Show source in test_entry.py:940</a></p>
+<p>Ensure special chars in the search value are properly encoded.</p>
+<h4 id="signature_66">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter._request&quot;)
+def test_quote(self, mock_rq):
+    ...
+</code></pre>
+<h3 id="testsearchtest_search_all_parents">TestSearch().test_search_all_parents</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1021">Show source in test_entry.py:1021</a></p>
+<p>Anonymous ROOT for CHILD search.</p>
+<h4 id="signature_67">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read&quot;)
+def test_search_all_parents(self, mock_read):
+    ...
+</code></pre>
+<h3 id="testsearchtest_search_by_feed">TestSearch().test_search_by_feed</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L948">Show source in test_entry.py:948</a></p>
+<p>Test a search key that's not in search_keys.</p>
+<h4 id="signature_68">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read&quot;)
+def test_search_by_feed(self, mock_read):
+    ...
+</code></pre>
+<h3 id="testsearchtest_search_with_xag">TestSearch().test_search_with_xag</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L983">Show source in test_entry.py:983</a></p>
+<p>Test a search key that's in search_keys, but specifying xag.</p>
+<h4 id="signature_69">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.read&quot;)
+def test_search_with_xag(self, mock_read):
+    ...
+</code></pre>
+<h2 id="testsetuuidmixin">TestSetUUIDMixin</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1321">Show source in test_entry.py:1321</a></p>
+<p>Generic tests for WrapperSetUUIDMixin.</p>
+<h4 id="signature_70">Signature</h4>
+<pre><code class="language-python">class TestSetUUIDMixin(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testsetuuidmixintest_set_uuid">TestSetUUIDMixin().test_set_uuid</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1323">Show source in test_entry.py:1323</a></p>
+<p>Test mixins of Element (with/without Metadata) and Entry.</p>
+<h4 id="signature_71">Signature</h4>
+<pre><code class="language-python">def test_set_uuid(self):
+    ...
+</code></pre>
+<h2 id="testupdate">TestUpdate</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1158">Show source in test_entry.py:1158</a></p>
+<h4 id="signature_72">Signature</h4>
+<pre><code class="language-python">class TestUpdate(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testupdatesetup">TestUpdate().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1164">Show source in test_entry.py:1164</a></p>
+<h4 id="signature_73">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testupdatetest_force_update">TestUpdate().test_force_update</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1188">Show source in test_entry.py:1188</a></p>
+<h4 id="signature_74">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.update_by_path&quot;)
+def test_force_update(self, mock_ubp):
+    ...
+</code></pre>
+<h3 id="testupdatetest_update">TestUpdate().test_update</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1176">Show source in test_entry.py:1176</a></p>
+<h4 id="signature_75">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.update_by_path&quot;)
+def test_update(self, mock_ubp):
+    ...
+</code></pre>
+<h3 id="testupdatetest_update_with_get_xag">TestUpdate().test_update_with_get_xag</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1220">Show source in test_entry.py:1220</a></p>
+<h4 id="signature_76">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.update_by_path&quot;)
+@mock.patch(&quot;warnings.warn&quot;)
+def test_update_with_get_xag(self, mock_warn, mock_ubp):
+    ...
+</code></pre>
+<h3 id="testupdatetest_update_xag">TestUpdate().test_update_xag</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L1206">Show source in test_entry.py:1206</a></p>
+<h4 id="signature_77">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.update_by_path&quot;)
+@mock.patch(&quot;warnings.warn&quot;)
+def test_update_xag(self, mock_warn, mock_ubp):
+    ...
+</code></pre>
+<h2 id="testwrapper">TestWrapper</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L198">Show source in test_entry.py:198</a></p>
+<h4 id="signature_78">Signature</h4>
+<pre><code class="language-python">class TestWrapper(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testwrappertest_get_val_bool">TestWrapper().test_get_val_bool</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L245">Show source in test_entry.py:245</a></p>
+<h4 id="signature_79">Signature</h4>
+<pre><code class="language-python">def test_get_val_bool(self):
+    ...
+</code></pre>
+<h3 id="testwrappertest_get_val_float">TestWrapper().test_get_val_float</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L231">Show source in test_entry.py:231</a></p>
+<h4 id="signature_80">Signature</h4>
+<pre><code class="language-python">def test_get_val_float(self):
+    ...
+</code></pre>
+<h3 id="testwrappertest_get_val_int">TestWrapper().test_get_val_int</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L223">Show source in test_entry.py:223</a></p>
+<h4 id="signature_81">Signature</h4>
+<pre><code class="language-python">def test_get_val_int(self):
+    ...
+</code></pre>
+<h3 id="testwrappertest_get_val_percent">TestWrapper().test_get_val_percent</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L207">Show source in test_entry.py:207</a></p>
+<h4 id="signature_82">Signature</h4>
+<pre><code class="language-python">def test_get_val_percent(self):
+    ...
+</code></pre>
+<h3 id="testwrappertest_get_val_str">TestWrapper().test_get_val_str</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L199">Show source in test_entry.py:199</a></p>
+<h4 id="signature_83">Signature</h4>
+<pre><code class="language-python">def test_get_val_str(self):
+    ...
+</code></pre>
+<h2 id="testwrapperelemlist">TestWrapperElemList</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L593">Show source in test_entry.py:593</a></p>
+<p>Tests for the WrapperElemList class.</p>
+<h4 id="signature_84">Signature</h4>
+<pre><code class="language-python">class TestWrapperElemList(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlistsetup">TestWrapperElemList().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L596">Show source in test_entry.py:596</a></p>
+<h4 id="signature_85">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_append">TestWrapperElemList().test_append</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L617">Show source in test_entry.py:617</a></p>
+<h4 id="signature_86">Signature</h4>
+<pre><code class="language-python">def test_append(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_extend">TestWrapperElemList().test_extend</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L637">Show source in test_entry.py:637</a></p>
+<h4 id="signature_87">Signature</h4>
+<pre><code class="language-python">def test_extend(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_get">TestWrapperElemList().test_get</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L606">Show source in test_entry.py:606</a></p>
+<h4 id="signature_88">Signature</h4>
+<pre><code class="language-python">def test_get(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_in">TestWrapperElemList().test_in</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L669">Show source in test_entry.py:669</a></p>
+<h4 id="signature_89">Signature</h4>
+<pre><code class="language-python">def test_in(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_index">TestWrapperElemList().test_index</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L675">Show source in test_entry.py:675</a></p>
+<h4 id="signature_90">Signature</h4>
+<pre><code class="language-python">def test_index(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_length">TestWrapperElemList().test_length</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L613">Show source in test_entry.py:613</a></p>
+<h4 id="signature_91">Signature</h4>
+<pre><code class="language-python">def test_length(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_repr">TestWrapperElemList().test_repr</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L693">Show source in test_entry.py:693</a></p>
+<h4 id="signature_92">Signature</h4>
+<pre><code class="language-python">def test_repr(self):
+    ...
+</code></pre>
+<h3 id="testwrapperelemlisttest_str">TestWrapperElemList().test_str</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_entry.py#L680">Show source in test_entry.py:680</a></p>
+<h4 id="signature_93">Signature</h4>
+<pre><code class="language-python">def test_str(self):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

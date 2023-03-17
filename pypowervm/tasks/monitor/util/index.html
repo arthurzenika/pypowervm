@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Util - pypowervm documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../lpar/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../../tests/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#util" class="nav-link">Util</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#lparmetriccache" class="nav-link">LparMetricCache</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#metriccache" class="nav-link">MetricCache</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ensure_ltm_monitors" class="nav-link">ensure_ltm_monitors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#get_lpar_metrics" class="nav-link">get_lpar_metrics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#latest_stats" class="nav-link">latest_stats</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#query_ltm_feed" class="nav-link">query_ltm_feed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vm_metrics" class="nav-link">vm_metrics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="util">Util</h1>
+<p><a href="../../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../../#pypowervm">Pypowervm</a> /
+<a href="../../#tasks">Tasks</a> /
+<a href="../#monitor">Monitor</a> /
+Util</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../../pypowervm/tasks/monitor/util.py">pypowervm.tasks.monitor.util</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#util">Util</a></li>
+<li><a href="#lparmetriccache">LparMetricCache</a><ul>
+<li><a href="#lparmetriccache()get_latest_metric">LparMetricCache().get_latest_metric</a></li>
+<li><a href="#lparmetriccache()get_previous_metric">LparMetricCache().get_previous_metric</a></li>
+</ul>
+</li>
+<li><a href="#metriccache">MetricCache</a></li>
+<li><a href="#ensure_ltm_monitors">ensure_ltm_monitors</a></li>
+<li><a href="#get_lpar_metrics">get_lpar_metrics</a></li>
+<li><a href="#latest_stats">latest_stats</a></li>
+<li><a href="#query_ltm_feed">query_ltm_feed</a></li>
+<li><a href="#vm_metrics">vm_metrics</a></li>
+</ul>
+<h2 id="lparmetriccache">LparMetricCache</h2>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L137">Show source in util.py:137</a></p>
+<p>Provides a cache of metrics on a per LPAR level.</p>
+<p>Metrics are expensive to gather and to parse.  It is expensive because
+the backing API gathers all of the metrics at the Hypervisor and Virtual
+I/O Server levels.  This returns all of the LPARs.  Therefore, this cache
+parses in all of the data once, and allows the invoker to get individual
+LPAR metrics without having to re-query the API server.</p>
+<p>This class provides a caching mechanism along with a built in refresh
+mechanism if enough time has passed since last gathering the metrics.</p>
+<p>This cache will obtain the metrics for a given system, separate them out
+into an individual LparMetric cache.  If another LPAR is required, the
+cache will be used (so a subsequent API call is not required).</p>
+<p>There is a refresh_interval as well.  If the interval is passed, a
+subsequent query of the metrics will force a refresh of the cache.</p>
+<p>The previous metric is also saved within the cache.  This is useful for
+generating rates on the metrics (a previous element to compare against).</p>
+<p>The cache will only contain the last two samples of hypervisor/vios data.
+This is so that the current sample and the previous sample are maintained.
+The data is maintained for all of the systems that metrics data has data
+for - but this is still quite thin.  This cache does not have support
+to maintain additional samples.</p>
+<p>Trimming is done upon each refresh (which is triggered by the
+get_latest_metric).  To wipe the cache, the user should just have the cache
+go out of scope and it will be cleared.  No manual clean up is required.</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class LparMetricCache(MetricCache):
+    def __init__(self, adapter, host_uuid, refresh_delta=30, include_vio=True):
+        ...
+</code></pre>
+<h4 id="see-also">See also</h4>
+<ul>
+<li><a href="#metriccache">MetricCache</a></li>
+</ul>
+<h3 id="lparmetriccacheget_latest_metric">LparMetricCache().get_latest_metric</h3>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L195">Show source in util.py:195</a></p>
+<p>Returns the latest metrics for a given LPAR.</p>
+<p>This will pull from the cache, but will refresh the cache if the
+refresh interval has passed.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>lpar_uuid</code> - The UUID of the LPAR to query for the metrics.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>Two elements.
+          - First is the date of the metric.
+          - Second is the LparMetric</p>
+<p>Note that both of these can be None.  If the date of the
+metric is None, that indicates that there was no previous
+metric (or something is wrong with the gather flow).</p>
+<p>If the date of the metric is None, then the second value will
+be None as well.</p>
+<p>If the date of the metric is set, but None is returned for
+the value then the LPAR had no metrics for it.  Scenarios can
+occur where the current metric may have a value but not the
+previous (ex. when a LPAR was just created).</p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">@lockutils.synchronized(&quot;pvm_lpar_metrics_get&quot;)
+def get_latest_metric(self, lpar_uuid):
+    ...
+</code></pre>
+<h3 id="lparmetriccacheget_previous_metric">LparMetricCache().get_previous_metric</h3>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L228">Show source in util.py:228</a></p>
+<p>Returns the previous metric for a given LPAR.</p>
+<p>This will NOT update the cache.  That can only be triggered from the
+get_latest_metric method.</p>
+<h4 id="arguments_1">Arguments</h4>
+<ul>
+<li><code>lpar_uuid</code> - The UUID of the LPAR to query for the metrics.</li>
+</ul>
+<h4 id="returns_1">Returns</h4>
+<p>Two elements.
+          - First is the date of the metric.
+          - Second is the LparMetric</p>
+<p>Note that both of these can be None.  If the date of the
+metric is None, that indicates that there was no previous
+metric (or something is wrong with the gather flow).</p>
+<p>If the date of the metric is None, then the second value will
+be None as well.</p>
+<p>If the date of the metric is set, but None is returned for
+the value then the LPAR had no metrics for it.  Scenarios can
+occur where the current metric may have a value but not the
+previous (ex. when a LPAR was just created).</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">@lockutils.synchronized(&quot;pvm_lpar_metrics_get&quot;)
+def get_previous_metric(self, lpar_uuid):
+    ...
+</code></pre>
+<h2 id="metriccache">MetricCache</h2>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L43">Show source in util.py:43</a></p>
+<p>Provides a cache of the metrics data.</p>
+<p>The core LongTermMetrics API only refreshes its internal metric data once
+(generally) every 30 seconds.  This class provides a generalized cache
+of the metrics.  It stores both the raw phyp and vios metrics (if
+available) and will only refresh them after a specified time period has
+elapsed (30 seconds by default).</p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">class MetricCache(object):
+    def __init__(self, adapter, host_uuid, refresh_delta=30, include_vio=True):
+        ...
+</code></pre>
+<h2 id="ensure_ltm_monitors">ensure_ltm_monitors</h2>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L385">Show source in util.py:385</a></p>
+<p>Ensures that the Long Term Monitors are enabled.</p>
+<h4 id="arguments_2">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The pypowervm adapter.</li>
+<li><code>host_uuid</code> - The host systems UUID.</li>
+<li><code>override_to_default</code> - (Optional) If True will ensure that the
+                            defaults are set on the system.  This means:
+                            - Short Term Metrics - disabled
+                            - Aggregation - turned on
+                            If left off, the previous values will be
+                            adhered to.</li>
+<li><code>compute_ltm</code> - (Optional - Defaults to False) If set, will turn on
+                    only the compute long term metrics, and the VIOS
+                    and network metrics will not be considered.</li>
+</ul>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">def ensure_ltm_monitors(
+    adapter, host_uuid, override_to_default=False, compute_ltm=False
+):
+    ...
+</code></pre>
+<h2 id="get_lpar_metrics">get_lpar_metrics</h2>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L332">Show source in util.py:332</a></p>
+<p>This method returns LPAR metrics of type LparInfo</p>
+<h4 id="arguments_3">Arguments</h4>
+<ul>
+<li><code>ltm_metrics</code> - The LTM metrics</li>
+<li><code>adapter</code> - The pypowervm adapter.</li>
+<li><code>second_latest</code> - (Optional) Defaults to False.  If set to True, it
+                      will pull the second to last metric for the return
+                      data.</li>
+</ul>
+<h4 id="returns_2">Returns</h4>
+<p>LparInfo object representing the LPAR metrics. None is returned
+         if there are no LTM metrics collected.</p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">def get_lpar_metrics(ltm_metrics, adapter, second_latest=False):
+    ...
+</code></pre>
+<h2 id="latest_stats">latest_stats</h2>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L269">Show source in util.py:269</a></p>
+<p>Returns the latest PHYP and (optionally) VIOS statistics.</p>
+<h4 id="arguments_4">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The pypowervm adapter.</li>
+<li><code>host_uuid</code> - The host system's UUID.</li>
+<li><code>include_vio</code> - (Optional) Defaults to True.  If set to false, the
+                    VIO metrics will always be returned as an empty list.</li>
+<li><code>second_latest</code> - (Optional) Defaults to False.  If set to True, it
+                      will pull the second to last metric for the return
+                      data.</li>
+</ul>
+<h4 id="returns_3">Returns</h4>
+<p>datetime - When the metrics were pulled.
+phyp_data - The PhypInfo object for the raw metrics.  May be None
+         if there are issues gathering the metrics.
+vios_datas - The list of ViosInfo objects.  May be empty if the
+         metrics are unavailable or if the include_vio flag is False.  Is
+         a list as the system may have many Virtual I/O Servers.
+lpar_metrics - The list of Lpar metrics received from querying
+         IBM.Host Resource Manager via RMC. It may be empty is the
+         metrics are unavailable or if the include_lpars flag is False.
+         lpar_metrics are generally collected once every two minutes, as
+         opposed to the other data which is collected every 30 seconds.</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">def latest_stats(adapter, host_uuid, include_vio=True, second_latest=False):
+    ...
+</code></pre>
+<h2 id="query_ltm_feed">query_ltm_feed</h2>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L365">Show source in util.py:365</a></p>
+<p>Will query the long term metrics feed for a given host.</p>
+<p>This method is useful due to the difference in nature of the pcm URIs
+compared to the standard uom.</p>
+<p>PCM URI: ManagedSystem/host_uuid/RawMetrics/LongTermMonitor</p>
+<h4 id="arguments_5">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The pypowervm adapter.</li>
+<li><code>host_uuid</code> - The host system's UUID.</li>
+</ul>
+<h4 id="returns_4">Returns</h4>
+<p>A list of the LTMMetrics.  Note that both PHYP and VIOS entries
+         are returned (assuming both are enabled).</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">def query_ltm_feed(adapter, host_uuid):
+    ...
+</code></pre>
+<h2 id="vm_metrics">vm_metrics</h2>
+<p><a href="../../../../pypowervm/tasks/monitor/util.py#L424">Show source in util.py:424</a></p>
+<p>Reduces the metrics to a per VM basis.</p>
+<p>The metrics returned by PCM are on a global level.  The anchor points are
+PHYP and the Virtual I/O Servers.</p>
+<p>Typical consumption models for metrics are on a 'per-VM' basis.  The
+dictionary returned contains the LPAR UUID and a LparMetric object.  That
+object breaks down the PHYP and VIOS statistics to be approached on a LPAR
+level.</p>
+<h4 id="arguments_6">Arguments</h4>
+<ul>
+<li><code>phyp</code> - The PhypInfo for the metrics.</li>
+<li><code>vioses</code> - A list of the ViosInfos for the Virtual I/O Server
+               components.</li>
+<li><code>lpars</code> - The LparInfo object representing Lpar metrics collected
+              via RMC.</li>
+</ul>
+<h4 id="returns_5">Returns</h4>
+<p>Type: <em>vm_data</em>
+A dictionary where the UUID is the client LPAR UUID, but
+                 the data is a LparMetric for that VM.</p>
+<p>Note: Data can not be guaranteed.  It may exist in one
+sample, but then not in another (ex. VM was powered off
+between gathers).  Always validate that data is 'not
+None' before use.</p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">def vm_metrics(phyp, vioses, lpars):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

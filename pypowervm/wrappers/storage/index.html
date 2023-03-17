@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Storage - pypowervm documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Storage</a>
+</li>
+            
+<li>
+    <a href="../vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../shared_proc_pool/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../vios_file/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#storage" class="nav-link">Storage</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#backstoretype" class="nav-link">BackStoreType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#fileformattype" class="nav-link">FileFormatType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#fileio" class="nav-link">FileIO</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lu" class="nav-link">LU</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#luent" class="nav-link">LUEnt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lutargetdev" class="nav-link">LUTargetDev</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lutype" class="nav-link">LUType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pv" class="nav-link">PV</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pvstate_1" class="nav-link">PVState</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pvtargetdev" class="nav-link">PVTargetDev</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rbd" class="nav-link">RBD</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ssp" class="nav-link">SSP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tier" class="nav-link">Tier</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vclientstorageadapterelement" class="nav-link">VClientStorageAdapterElement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vdisk" class="nav-link">VDisk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vdisktargetdev" class="nav-link">VDiskTargetDev</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vdisktype" class="nav-link">VDiskType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vfcclientadapter" class="nav-link">VFCClientAdapter</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vfcclientadapterelement" class="nav-link">VFCClientAdapterElement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vfcserveradapterelement" class="nav-link">VFCServerAdapterElement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vg" class="nav-link">VG</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vmediarepos" class="nav-link">VMediaRepos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#voptmedia" class="nav-link">VOptMedia</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vopttargetdev" class="nav-link">VOptTargetDev</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vscsiclientadapterelement" class="nav-link">VSCSIClientAdapterElement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vscsiserveradapterelement" class="nav-link">VSCSIServerAdapterElement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vserverstorageadapterelement" class="nav-link">VServerStorageAdapterElement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="storage">Storage</h1>
+<p><a href="../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../#pypowervm">Pypowervm</a> /
+<a href="../#wrappers">Wrappers</a> /
+Storage</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../pypowervm/wrappers/storage.py">pypowervm.wrappers.storage</a> module.</p>
+</blockquote>
+<h4 id="attributes">Attributes</h4>
+<ul>
+<li>
+<p><code>ANY_SLOT</code> - "Any" server adapters are SCSI adapters without client
+  adapters that map to remote LPAR slot number 65535. They
+  can map to any client and are not recommended but are
+  still supported.: <code>65535</code></p>
+</li>
+<li>
+<p><code>DISK_ROOT</code> - Virtual Disk Constants: <code>'VirtualDisk'</code></p>
+</li>
+<li>
+<p><code>PVS</code> - Physical Volume Constants: <code>'PhysicalVolumes'</code></p>
+</li>
+<li>
+<p><code>VOPT_ROOT</code> - Virtual Optical Media Constants: <code>'VirtualOpticalMedia'</code></p>
+</li>
+<li>
+<p><code>CLIENT_ADPT</code> - Virtual Adapter Constants: <code>'ClientAdapter'</code></p>
+</li>
+<li>
+<p><code>LV</code> - Alias for VDisk making it explicit that it's a Logical Volume type: <code>VDisk</code></p>
+</li>
+<li>
+<p><a href="#storage">Storage</a></p>
+</li>
+<li><a href="#backstoretype">BackStoreType</a></li>
+<li><a href="#fileformattype">FileFormatType</a></li>
+<li><a href="#fileio">FileIO</a><ul>
+<li><a href="#fileiobld_ref">FileIO.bld_ref</a></li>
+<li><a href="#fileio()path">FileIO().path</a></li>
+</ul>
+</li>
+<li><a href="#lu">LU</a></li>
+<li><a href="#luent">LUEnt</a></li>
+<li><a href="#lutargetdev">LUTargetDev</a></li>
+<li><a href="#lutype">LUType</a></li>
+<li><a href="#pv">PV</a><ul>
+<li><a href="#pv()avail_for_use">PV().avail_for_use</a></li>
+<li><a href="#pvbld">PV.bld</a></li>
+<li><a href="#pv()capacity">PV().capacity</a></li>
+<li><a href="#pv()description">PV().description</a></li>
+<li><a href="#pv()emulate_model">PV().emulate_model</a></li>
+<li><a href="#pv()emulate_model-1">PV().emulate_model</a></li>
+<li><a href="#pv()is_fc_backed">PV().is_fc_backed</a></li>
+<li><a href="#pv()loc_code">PV().loc_code</a></li>
+<li><a href="#pv()name">PV().name</a></li>
+<li><a href="#pv()name-1">PV().name</a></li>
+<li><a href="#pv()pg83">PV().pg83</a></li>
+<li><a href="#pv()state">PV().state</a></li>
+<li><a href="#pv()tag">PV().tag</a></li>
+<li><a href="#pv()tag-1">PV().tag</a></li>
+<li><a href="#pv()udid">PV().udid</a></li>
+<li><a href="#pv()udid-1">PV().udid</a></li>
+</ul>
+</li>
+<li><a href="#pvstate">PVState</a></li>
+<li><a href="#pvtargetdev">PVTargetDev</a></li>
+<li><a href="#rbd">RBD</a><ul>
+<li><a href="#rbdbld_ref">RBD.bld_ref</a></li>
+</ul>
+</li>
+<li><a href="#ssp">SSP</a><ul>
+<li><a href="#sspbld">SSP.bld</a></li>
+<li><a href="#ssp()capacity">SSP().capacity</a></li>
+<li><a href="#ssp()free_space">SSP().free_space</a></li>
+<li><a href="#ssp()logical_units">SSP().logical_units</a></li>
+<li><a href="#ssp()logical_units-1">SSP().logical_units</a></li>
+<li><a href="#ssp()name">SSP().name</a></li>
+<li><a href="#ssp()name-1">SSP().name</a></li>
+<li><a href="#ssp()over_commit_space">SSP().over_commit_space</a></li>
+<li><a href="#ssp()physical_volumes">SSP().physical_volumes</a></li>
+<li><a href="#ssp()physical_volumes-1">SSP().physical_volumes</a></li>
+<li><a href="#ssp()total_lu_size">SSP().total_lu_size</a></li>
+<li><a href="#ssp()udid">SSP().udid</a></li>
+</ul>
+</li>
+<li><a href="#tier">Tier</a><ul>
+<li><a href="#tier()capacity">Tier().capacity</a></li>
+<li><a href="#tier()is_default">Tier().is_default</a></li>
+<li><a href="#tier()name">Tier().name</a></li>
+<li><a href="#tier()ssp_uuid">Tier().ssp_uuid</a></li>
+<li><a href="#tier()udid">Tier().udid</a></li>
+</ul>
+</li>
+<li><a href="#vclientstorageadapterelement">VClientStorageAdapterElement</a></li>
+<li><a href="#vdisk">VDisk</a><ul>
+<li><a href="#vdiskbld">VDisk.bld</a></li>
+<li><a href="#vdiskbld_ref">VDisk.bld_ref</a></li>
+<li><a href="#vdisk()vg_uri">VDisk().vg_uri</a></li>
+</ul>
+</li>
+<li><a href="#vdisktargetdev">VDiskTargetDev</a></li>
+<li><a href="#vdisktype">VDiskType</a></li>
+<li><a href="#vfcclientadapter">VFCClientAdapter</a></li>
+<li><a href="#vfcclientadapterelement">VFCClientAdapterElement</a><ul>
+<li><a href="#vfcclientadapterelementbld">VFCClientAdapterElement.bld</a></li>
+</ul>
+</li>
+<li><a href="#vfcserveradapterelement">VFCServerAdapterElement</a><ul>
+<li><a href="#vfcserveradapterelement()lpar_id">VFCServerAdapterElement().lpar_id</a></li>
+<li><a href="#vfcserveradapterelement()lpar_slot_num">VFCServerAdapterElement().lpar_slot_num</a></li>
+<li><a href="#vfcserveradapterelement()map_port">VFCServerAdapterElement().map_port</a></li>
+<li><a href="#vfcserveradapterelement()vios_id">VFCServerAdapterElement().vios_id</a></li>
+<li><a href="#vfcserveradapterelement()vios_slot_num">VFCServerAdapterElement().vios_slot_num</a></li>
+</ul>
+</li>
+<li><a href="#vg">VG</a><ul>
+<li><a href="#vg()available_size">VG().available_size</a></li>
+<li><a href="#vgbld">VG.bld</a></li>
+<li><a href="#vg()capacity">VG().capacity</a></li>
+<li><a href="#vg()free_space">VG().free_space</a></li>
+<li><a href="#vg()name">VG().name</a></li>
+<li><a href="#vg()name-1">VG().name</a></li>
+<li><a href="#vg()phys_vols">VG().phys_vols</a></li>
+<li><a href="#vg()phys_vols-1">VG().phys_vols</a></li>
+<li><a href="#vg()serial_id">VG().serial_id</a></li>
+<li><a href="#vg()virtual_disks">VG().virtual_disks</a></li>
+<li><a href="#vg()virtual_disks-1">VG().virtual_disks</a></li>
+<li><a href="#vg()vmedia_repos">VG().vmedia_repos</a></li>
+<li><a href="#vg()vmedia_repos-1">VG().vmedia_repos</a></li>
+</ul>
+</li>
+<li><a href="#vmediarepos">VMediaRepos</a><ul>
+<li><a href="#vmediareposbld">VMediaRepos.bld</a></li>
+<li><a href="#vmediarepos()name">VMediaRepos().name</a></li>
+<li><a href="#vmediarepos()optical_media">VMediaRepos().optical_media</a></li>
+<li><a href="#vmediarepos()optical_media-1">VMediaRepos().optical_media</a></li>
+<li><a href="#vmediarepos()size">VMediaRepos().size</a></li>
+</ul>
+</li>
+<li><a href="#voptmedia">VOptMedia</a><ul>
+<li><a href="#voptmediabld">VOptMedia.bld</a></li>
+<li><a href="#voptmediabld_ref">VOptMedia.bld_ref</a></li>
+<li><a href="#voptmedia()media_name">VOptMedia().media_name</a></li>
+<li><a href="#voptmedia()mount_type">VOptMedia().mount_type</a></li>
+<li><a href="#voptmedia()name">VOptMedia().name</a></li>
+<li><a href="#voptmedia()size">VOptMedia().size</a></li>
+<li><a href="#voptmedia()udid">VOptMedia().udid</a></li>
+</ul>
+</li>
+<li><a href="#vopttargetdev">VOptTargetDev</a></li>
+<li><a href="#vscsiclientadapterelement">VSCSIClientAdapterElement</a><ul>
+<li><a href="#vscsiclientadapterelement()vios_id">VSCSIClientAdapterElement().vios_id</a></li>
+<li><a href="#vscsiclientadapterelement()vios_slot_num">VSCSIClientAdapterElement().vios_slot_num</a></li>
+</ul>
+</li>
+<li><a href="#vscsiserveradapterelement">VSCSIServerAdapterElement</a><ul>
+<li><a href="#vscsiserveradapterelement()backing_dev_name">VSCSIServerAdapterElement().backing_dev_name</a></li>
+<li><a href="#vscsiserveradapterelement()lpar_id">VSCSIServerAdapterElement().lpar_id</a></li>
+<li><a href="#vscsiserveradapterelement()lpar_slot_num">VSCSIServerAdapterElement().lpar_slot_num</a></li>
+<li><a href="#vscsiserveradapterelement()vios_id">VSCSIServerAdapterElement().vios_id</a></li>
+<li><a href="#vscsiserveradapterelement()vios_slot_num">VSCSIServerAdapterElement().vios_slot_num</a></li>
+</ul>
+</li>
+<li><a href="#vserverstorageadapterelement">VServerStorageAdapterElement</a><ul>
+<li><a href="#vserverstorageadapterelementbld">VServerStorageAdapterElement.bld</a></li>
+<li><a href="#vserverstorageadapterelement()name">VServerStorageAdapterElement().name</a></li>
+<li><a href="#vserverstorageadapterelement()udid">VServerStorageAdapterElement().udid</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="backstoretype">BackStoreType</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L107">Show source in storage.py:107</a></p>
+<h4 id="attributes_1">Attributes</h4>
+<ul>
+<li>
+<p><code>FILE_IO</code> - A kernel-space handler that supports raw files.: <code>'fileio'</code></p>
+</li>
+<li>
+<p><code>USER_QCOW</code> - A user-space handler that supports RAW, QCOW or QCOW2 files.: <code>'user:qcow'</code></p>
+</li>
+<li>
+<p><code>LOOP</code> - Create a loop device for the file, and use the kernel-space block
+  handler. LOOP has higher performance than FILE_IO.: <code>'loop'</code></p>
+</li>
+<li>
+<p><code>USER_RBD</code> - A user-space handler that supports rbd. (Used with RBD): <code>'user:rbd'</code></p>
+</li>
+</ul>
+<p>From BackStoreType.Enum</p>
+<p>Desribes the type of backstore handler to use for VDisks.
+FILE_IO, USER_QCOW, and LOOP are used with the FileIO VDisk type.
+USER_RBD is used with the RBD VDisk type.</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class BackStoreType(object):
+    ...
+</code></pre>
+<h2 id="fileformattype">FileFormatType</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L125">Show source in storage.py:125</a></p>
+<p>From FileFormatType.Enum</p>
+<p>The format type of the image that will be stored in the VDisk (aka LV).</p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">class FileFormatType(object):
+    ...
+</code></pre>
+<h2 id="fileio">FileIO</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1015">Show source in storage.py:1015</a></p>
+<h4 id="attributes_2">Attributes</h4>
+<ul>
+<li><code>bld</code> - Maintained for backward compatibility.  FileIOs aren't created by REST.: <code>bld_ref</code></li>
+</ul>
+<p>A special case of VirtualDisk representing a File I/O object.</p>
+<p>Do not PUT (.create) this wrapper directly.  Attach it to a VSCSIMapping
+and PUT that instead.</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">class FileIO(_VDisk):
+    ...
+</code></pre>
+<h3 id="fileiobld_ref">FileIO.bld_ref</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1023">Show source in storage.py:1023</a></p>
+<p>Creates a FileIO reference for inclusion in a VSCSIMapping.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter for the REST API.</li>
+<li><a href="#fileiopath">FileIO().path</a> - The file system path of the File I/O object.</li>
+<li><code>backstore_type</code> - The type of backing storage, one of the
+                       BackStoreType enum values.</li>
+<li><code>tag</code> - String with which to tag the device upon mapping.</li>
+<li><code>emulate_model</code> - Boolean emulate model alias flag to set on the
+                      physical device upon mapping.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>An Element that can be attached to a VSCSIMapping to create a
+         File I/O mapping on the server.</p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld_ref(cls, adapter, path, backstore_type=None, tag=None, emulate_model=None):
+    ...
+</code></pre>
+<h3 id="fileiopath">FileIO().path</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1053">Show source in storage.py:1053</a></p>
+<p>Alias for 'label'.</p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">@property
+def path(self):
+    ...
+</code></pre>
+<h2 id="lu">LU</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1337">Show source in storage.py:1337</a></p>
+<p>ElementWrapper representing a LogicalUnit DETAIL object.</p>
+<p>LogicalUnit exists as a DETAIL object e.g. within a SharedStoragePool
+(accessed via SSP.logical_units[n]) or a SCSI mapping (accessed via
+VIOS.scsi_mappings[n].backing_storage).</p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">class LU(_LUBase, ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h2 id="luent">LUEnt</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1348">Show source in storage.py:1348</a></p>
+<p>EntryWrapper representing a LogicalUnit as a first-class REST object.</p>
+<p>LogicalUnit exists as a CHILD REST object under Tier.  This class provides
+the ability to perform e.g.</p>
+<p>LUEnt.get(adapter, parent=tier)</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">class LUEnt(_LUBase, ewrap.EntryWrapper):
+    ...
+</code></pre>
+<h2 id="lutargetdev">LUTargetDev</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L533">Show source in storage.py:533</a></p>
+<p>SSP Logical Unit Virtual Target Device for a VSCSIMapping.</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">class LUTargetDev(_VTargetDevMethods, ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h2 id="lutype">LUType</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L216">Show source in storage.py:216</a></p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">class LUType(object):
+    ...
+</code></pre>
+<h2 id="pv">PV</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L769">Show source in storage.py:769</a></p>
+<p>A physical volume that backs a Volume Group.</p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">class PV(ewrap.ElementWrapper, _StorageQoS, _StorageEncryption):
+    ...
+</code></pre>
+<h3 id="pvavail_for_use">PV().avail_for_use</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L842">Show source in storage.py:842</a></p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">@property
+def avail_for_use(self):
+    ...
+</code></pre>
+<h3 id="pvbld">PV.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L773">Show source in storage.py:773</a></p>
+<p>Creates the a fresh PV wrapper.</p>
+<p>This should be used when wishing to add physical volumes to a Volume
+Group.  Only the name is required.  The other attributes are generated
+from the system.</p>
+<p>The name matches the device name on the system.</p>
+<h4 id="arguments_1">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><a href="#pvname">PV().name</a> - The name of the physical volume on the Virtual I/O Server
+             to add to the Volume Group.  Ex. 'hdisk1'.</li>
+<li><a href="#pvudid">PV().udid</a> - Universal Disk Identifier.</li>
+<li><a href="#pvtag">PV().tag</a> - String with which to tag the physical device upon mapping.</li>
+<li><a href="#pvemulate_model">PV().emulate_model</a> - Boolean emulate model alias flag to set on the
+                      physical device upon mapping.</li>
+</ul>
+<h4 id="returns_1">Returns</h4>
+<p>An Element that can be used for a PhysicalVolume create or
+          mapping.</p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, name, udid=None, tag=None, emulate_model=None):
+    ...
+</code></pre>
+<h3 id="pvcapacity">PV().capacity</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L813">Show source in storage.py:813</a></p>
+<p>Returns the capacity as an int in MB.</p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">@property
+def capacity(self):
+    ...
+</code></pre>
+<h3 id="pvdescription">PV().description</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L834">Show source in storage.py:834</a></p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">@property
+def description(self):
+    ...
+</code></pre>
+<h3 id="pvemulate_model">PV().emulate_model</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L904">Show source in storage.py:904</a></p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">@property
+def emulate_model(self):
+    ...
+</code></pre>
+<h3 id="pvemulate_model_1">PV().emulate_model</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L908">Show source in storage.py:908</a></p>
+<p>Set the emulate model alias flag on the storage element.</p>
+<p>NOTE: This is only to be used when adding the storage element to a
+VSCSI mapping.  It is ignored by .update().</p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">@emulate_model.setter
+def emulate_model(self, em):
+    ...
+</code></pre>
+<h3 id="pvis_fc_backed">PV().is_fc_backed</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L830">Show source in storage.py:830</a></p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">@property
+def is_fc_backed(self):
+    ...
+</code></pre>
+<h3 id="pvloc_code">PV().loc_code</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L838">Show source in storage.py:838</a></p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">@property
+def loc_code(self):
+    ...
+</code></pre>
+<h3 id="pvname">PV().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L818">Show source in storage.py:818</a></p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="pvname_1">PV().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L822">Show source in storage.py:822</a></p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">@name.setter
+def name(self, newname):
+    ...
+</code></pre>
+<h3 id="pvpg83">PV().pg83</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L846">Show source in storage.py:846</a></p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">@property
+def pg83(self):
+    ...
+</code></pre>
+<h3 id="pvstate">PV().state</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L826">Show source in storage.py:826</a></p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">@property
+def state(self):
+    ...
+</code></pre>
+<h3 id="pvtag">PV().tag</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L891">Show source in storage.py:891</a></p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">@property
+def tag(self):
+    ...
+</code></pre>
+<h3 id="pvtag_1">PV().tag</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L895">Show source in storage.py:895</a></p>
+<p>Set the tag on the storage element.</p>
+<p>NOTE: This is only to be used when adding the storage element to a
+VSCSI mapping.  It is ignored by .update().</p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">@tag.setter
+def tag(self, tag):
+    ...
+</code></pre>
+<h3 id="pvudid">PV().udid</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L804">Show source in storage.py:804</a></p>
+<p>The unique device id.</p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre>
+<h3 id="pvudid_1">PV().udid</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L809">Show source in storage.py:809</a></p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">@udid.setter
+def udid(self, new_udid):
+    ...
+</code></pre>
+<h2 id="pvstate_1">PVState</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L160">Show source in storage.py:160</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">class PVState(object):
+    ...
+</code></pre>
+<h2 id="pvtargetdev">PVTargetDev</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L539">Show source in storage.py:539</a></p>
+<p>Physical Volume Virtual Target Device for a VSCSIMapping.</p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">class PVTargetDev(_VTargetDevMethods, ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h2 id="rbd">RBD</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1061">Show source in storage.py:1061</a></p>
+<p>A special case of VirtualDisk representing an RBD object.</p>
+<p>Do not PUT (.create) this wrapper directly.  Attach it to a VSCSIMapping
+and PUT that instead.</p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">class RBD(_VDisk):
+    ...
+</code></pre>
+<h3 id="rbdbld_ref">RBD.bld_ref</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1069">Show source in storage.py:1069</a></p>
+<p>Creates a RBD reference for inclusion in a VSCSIMapping.</p>
+<h4 id="arguments_2">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter for the REST API.</li>
+<li><code>name</code> - The name of the RBD object.  Also used as the label.</li>
+<li><code>tag</code> - String with which to tag the device upon mapping.</li>
+<li><code>emulate_model</code> - Boolean emulate model alias flag to set on the
+                      physical device upon mapping.</li>
+<li><code>user</code> - The user id used to access the rbd cluster.</li>
+</ul>
+<h4 id="returns_2">Returns</h4>
+<p>An Element that can be attached to a VSCSIMapping to create a
+         RBD mapping on the server.</p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld_ref(cls, adapter, name, tag=None, emulate_model=None, user=None):
+    ...
+</code></pre>
+<h2 id="ssp">SSP</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1387">Show source in storage.py:1387</a></p>
+<p>A Shared Storage Pool containing PVs and LUs.</p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">class SSP(ewrap.EntryWrapper):
+    ...
+</code></pre>
+<h3 id="sspbld">SSP.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1392">Show source in storage.py:1392</a></p>
+<p>Create a fresh SSP EntryWrapper.</p>
+<h4 id="arguments_3">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><a href="#sspname">SSP().name</a> - String name for the SharedStoragePool.</li>
+<li><code>data_pv_list</code> - Iterable of storage.PV instances
+                     representing the data volumes for the
+                     SharedStoragePool.</li>
+</ul>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, name, data_pv_list):
+    ...
+</code></pre>
+<h3 id="sspcapacity">SSP().capacity</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1420">Show source in storage.py:1420</a></p>
+<p>Capacity in GB as a float.</p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">@property
+def capacity(self):
+    ...
+</code></pre>
+<h3 id="sspfree_space">SSP().free_space</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1425">Show source in storage.py:1425</a></p>
+<p>Free space in GB as a float.</p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">@property
+def free_space(self):
+    ...
+</code></pre>
+<h3 id="ssplogical_units">SSP().logical_units</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1440">Show source in storage.py:1440</a></p>
+<p>WrapperElemList of LU wrappers.</p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">@property
+def logical_units(self):
+    ...
+</code></pre>
+<h3 id="ssplogical_units_1">SSP().logical_units</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1445">Show source in storage.py:1445</a></p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">@logical_units.setter
+def logical_units(self, lus):
+    ...
+</code></pre>
+<h3 id="sspname">SSP().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1408">Show source in storage.py:1408</a></p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="sspname_1">SSP().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1412">Show source in storage.py:1412</a></p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">@name.setter
+def name(self, newname):
+    ...
+</code></pre>
+<h3 id="sspover_commit_space">SSP().over_commit_space</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1430">Show source in storage.py:1430</a></p>
+<p>Over commit space in GB as a float.</p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">@property
+def over_commit_space(self):
+    ...
+</code></pre>
+<h3 id="sspphysical_volumes">SSP().physical_volumes</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1449">Show source in storage.py:1449</a></p>
+<p>WrapperElemList of PV wrappers.</p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">@property
+def physical_volumes(self):
+    ...
+</code></pre>
+<h3 id="sspphysical_volumes_1">SSP().physical_volumes</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1454">Show source in storage.py:1454</a></p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">@physical_volumes.setter
+def physical_volumes(self, pvs):
+    ...
+</code></pre>
+<h3 id="ssptotal_lu_size">SSP().total_lu_size</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1435">Show source in storage.py:1435</a></p>
+<p>Total LU size in GB as a float.</p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">@property
+def total_lu_size(self):
+    ...
+</code></pre>
+<h3 id="sspudid">SSP().udid</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1416">Show source in storage.py:1416</a></p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre>
+<h2 id="tier">Tier</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1360">Show source in storage.py:1360</a></p>
+<p>A storage grouping within a SharedStoragePool.</p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">class Tier(ewrap.EntryWrapper):
+    ...
+</code></pre>
+<h3 id="tiercapacity">Tier().capacity</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1375">Show source in storage.py:1375</a></p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">@property
+def capacity(self):
+    ...
+</code></pre>
+<h3 id="tieris_default">Tier().is_default</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1371">Show source in storage.py:1371</a></p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">@property
+def is_default(self):
+    ...
+</code></pre>
+<h3 id="tiername">Tier().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1363">Show source in storage.py:1363</a></p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="tierssp_uuid">Tier().ssp_uuid</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1379">Show source in storage.py:1379</a></p>
+<p>The UUID of this Tier's parent SharedStoragePool.</p>
+<h4 id="signature_47">Signature</h4>
+<pre><code class="language-python">@property
+def ssp_uuid(self):
+    ...
+</code></pre>
+<h3 id="tierudid">Tier().udid</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1367">Show source in storage.py:1367</a></p>
+<h4 id="signature_48">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre>
+<h2 id="vclientstorageadapterelement">VClientStorageAdapterElement</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1578">Show source in storage.py:1578</a></p>
+<p>Parent class for Client Virtual Storage Adapter Elements.</p>
+<h4 id="signature_49">Signature</h4>
+<pre><code class="language-python">class VClientStorageAdapterElement(_VClientAdapterMethods, _VStorageAdapterElement):
+    ...
+</code></pre>
+<h2 id="vdisk">VDisk</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1101">Show source in storage.py:1101</a></p>
+<p>A Logical Volume virtual disk that can be attached to a VM.</p>
+<h4 id="signature_50">Signature</h4>
+<pre><code class="language-python">class VDisk(_VDisk, _StorageQoS, _StorageEncryption):
+    ...
+</code></pre>
+<h3 id="vdiskbld">VDisk.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1105">Show source in storage.py:1105</a></p>
+<p>Creates a VDisk Wrapper for creating a new VDisk.</p>
+<p>This should be used when the user wishes to add a new Virtual Disk to
+the Volume Group.  The flow is to use this method to lay out the
+attributes of the new Virtual Disk.  Then add it to the Volume Group's
+virtual disks. Then perform an update of the Volume Group.  The disk
+should be created by the update operation.</p>
+<h4 id="arguments_4">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>name</code> - The name of the virtual disk</li>
+<li><code>capacity</code> - A float number that defines the GB of the disk.</li>
+<li><code>label</code> - The generic label for the disk.  Not required.</li>
+<li><code>base_image</code> - UDID of virtual disk that contains source data
+                   Not required.</li>
+<li><code>file_format</code> - (Optional) File format of VDisk.  See
+                    FileFormatType enumeration for valid formats.</li>
+<li><code>tag</code> - String with which to tag the device upon mapping.</li>
+<li><code>emulate_model</code> - Boolean emulate model alias flag to set on the
+                      physical device upon mapping.</li>
+</ul>
+<h4 id="returns_3">Returns</h4>
+<p>An Element that can be used for a VirtualDisk create.</p>
+<h4 id="signature_51">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(
+    cls,
+    adapter,
+    name,
+    capacity,
+    label=None,
+    base_image=None,
+    file_format=None,
+    tag=None,
+    emulate_model=None,
+):
+    ...
+</code></pre>
+<h3 id="vdiskbld_ref">VDisk.bld_ref</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1145">Show source in storage.py:1145</a></p>
+<p>Creates a VDisk Wrapper for referring to an existing VDisk.</p>
+<h4 id="signature_52">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld_ref(cls, adapter, name, tag=None, emulate_model=None):
+    ...
+</code></pre>
+<h3 id="vdiskvg_uri">VDisk().vg_uri</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1157">Show source in storage.py:1157</a></p>
+<h4 id="signature_53">Signature</h4>
+<pre><code class="language-python">@property
+def vg_uri(self):
+    ...
+</code></pre>
+<h2 id="vdisktargetdev">VDiskTargetDev</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L545">Show source in storage.py:545</a></p>
+<p>Virtual Disk (Logical Volume) Target Device for a VSCSIMapping.</p>
+<h4 id="signature_54">Signature</h4>
+<pre><code class="language-python">class VDiskTargetDev(_VTargetDevMethods, ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h2 id="vdisktype">VDiskType</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L100">Show source in storage.py:100</a></p>
+<p>From VirtualDiskType.Enum.</p>
+<h4 id="signature_55">Signature</h4>
+<pre><code class="language-python">class VDiskType(object):
+    ...
+</code></pre>
+<h2 id="vfcclientadapter">VFCClientAdapter</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1728">Show source in storage.py:1728</a></p>
+<p>EntryWrapper for VirtualFibreChannelClientAdapter CHILD.</p>
+<p>Use this to wrap LogicalPartition/{uuid}/VirtualFibreChannelClientAdapter.</p>
+<h4 id="signature_56">Signature</h4>
+<pre><code class="language-python">class VFCClientAdapter(
+    _VStorageAdapterEntry, _VClientAdapterMethods, _VFCClientAdapterMethods
+):
+    ...
+</code></pre>
+<h2 id="vfcclientadapterelement">VFCClientAdapterElement</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1700">Show source in storage.py:1700</a></p>
+<p>The Virtual Fibre Channel Client Adapter within a VFC mapping.</p>
+<p>Paired with a VFCServerAdapterElement.</p>
+<h4 id="signature_57">Signature</h4>
+<pre><code class="language-python">class VFCClientAdapterElement(VClientStorageAdapterElement, _VFCClientAdapterMethods):
+    ...
+</code></pre>
+<h4 id="see-also">See also</h4>
+<ul>
+<li><a href="#vclientstorageadapterelement">VClientStorageAdapterElement</a></li>
+</ul>
+<h3 id="vfcclientadapterelementbld">VFCClientAdapterElement.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1707">Show source in storage.py:1707</a></p>
+<p>Create a fresh Virtual Fibre Channel Client Adapter.</p>
+<h4 id="arguments_5">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>wwpns</code> - An optional set of two client WWPNs to set on the
+              adapter.</li>
+<li><code>slot_num</code> - An optional integer to be set as the Virtual
+                 slot number.</li>
+</ul>
+<h4 id="signature_58">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, wwpns=None, slot_num=None):
+    ...
+</code></pre>
+<h2 id="vfcserveradapterelement">VFCServerAdapterElement</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1738">Show source in storage.py:1738</a></p>
+<p>The Virtual Fibre Channel Server Adapter within a VFC mapping.</p>
+<p>Paired with a VFCClientAdapterElement.</p>
+<h4 id="signature_59">Signature</h4>
+<pre><code class="language-python">class VFCServerAdapterElement(VServerStorageAdapterElement):
+    ...
+</code></pre>
+<h4 id="see-also_1">See also</h4>
+<ul>
+<li><a href="#vserverstorageadapterelement">VServerStorageAdapterElement</a></li>
+</ul>
+<h3 id="vfcserveradapterelementlpar_id">VFCServerAdapterElement().lpar_id</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1749">Show source in storage.py:1749</a></p>
+<p>The short ID (not UUID) of the LPAR side of this adapter.</p>
+<h4 id="signature_60">Signature</h4>
+<pre><code class="language-python">@property
+def lpar_id(self):
+    ...
+</code></pre>
+<h3 id="vfcserveradapterelementlpar_slot_num">VFCServerAdapterElement().lpar_slot_num</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1759">Show source in storage.py:1759</a></p>
+<p>The (int) slot number that the LPAR side of the adapter.</p>
+<h4 id="signature_61">Signature</h4>
+<pre><code class="language-python">@property
+def lpar_slot_num(self):
+    ...
+</code></pre>
+<h3 id="vfcserveradapterelementmap_port">VFCServerAdapterElement().map_port</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1744">Show source in storage.py:1744</a></p>
+<p>The physical FC port name that this virtual port is connect to.</p>
+<h4 id="signature_62">Signature</h4>
+<pre><code class="language-python">@property
+def map_port(self):
+    ...
+</code></pre>
+<h3 id="vfcserveradapterelementvios_id">VFCServerAdapterElement().vios_id</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1754">Show source in storage.py:1754</a></p>
+<p>The short ID (not UUID) of the VIOS side of this adapter.</p>
+<h4 id="signature_63">Signature</h4>
+<pre><code class="language-python">@property
+def vios_id(self):
+    ...
+</code></pre>
+<h3 id="vfcserveradapterelementvios_slot_num">VFCServerAdapterElement().vios_slot_num</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1764">Show source in storage.py:1764</a></p>
+<p>The (int) slot number of the VIOS side of the adapter.</p>
+<h4 id="signature_64">Signature</h4>
+<pre><code class="language-python">@property
+def vios_slot_num(self):
+    ...
+</code></pre>
+<h2 id="vg">VG</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L343">Show source in storage.py:343</a></p>
+<p>Represents a Volume Group that resides on the Virtual I/O Server.</p>
+<h4 id="signature_65">Signature</h4>
+<pre><code class="language-python">class VG(ewrap.EntryWrapper):
+    ...
+</code></pre>
+<h3 id="vgavailable_size">VG().available_size</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L366">Show source in storage.py:366</a></p>
+<p>Available size for new volumes in GB (float).</p>
+<h4 id="signature_66">Signature</h4>
+<pre><code class="language-python">@property
+def available_size(self):
+    ...
+</code></pre>
+<h3 id="vgbld">VG.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L346">Show source in storage.py:346</a></p>
+<h4 id="signature_67">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, name, pv_list):
+    ...
+</code></pre>
+<h3 id="vgcapacity">VG().capacity</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L361">Show source in storage.py:361</a></p>
+<p>Overall capacity in GB (float).</p>
+<h4 id="signature_68">Signature</h4>
+<pre><code class="language-python">@property
+def capacity(self):
+    ...
+</code></pre>
+<h3 id="vgfree_space">VG().free_space</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L371">Show source in storage.py:371</a></p>
+<p>Current free space in GB (float).</p>
+<h4 id="signature_69">Signature</h4>
+<pre><code class="language-python">@property
+def free_space(self):
+    ...
+</code></pre>
+<h3 id="vgname">VG().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L353">Show source in storage.py:353</a></p>
+<h4 id="signature_70">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="vgname_1">VG().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L357">Show source in storage.py:357</a></p>
+<h4 id="signature_71">Signature</h4>
+<pre><code class="language-python">@name.setter
+def name(self, val):
+    ...
+</code></pre>
+<h3 id="vgphys_vols">VG().phys_vols</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L396">Show source in storage.py:396</a></p>
+<p>Returns a list of the Physical Volumes that back this repo.</p>
+<h4 id="signature_72">Signature</h4>
+<pre><code class="language-python">@property
+def phys_vols(self):
+    ...
+</code></pre>
+<h3 id="vgphys_vols_1">VG().phys_vols</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L405">Show source in storage.py:405</a></p>
+<p>Replaces the physical volumes with the new value.</p>
+<h4 id="arguments_6">Arguments</h4>
+<ul>
+<li><code>phys_vols</code> - A list of PV objects that will replace
+                  the existing Physcial Volumes.</li>
+</ul>
+<h4 id="signature_73">Signature</h4>
+<pre><code class="language-python">@phys_vols.setter
+def phys_vols(self, phys_vols):
+    ...
+</code></pre>
+<h3 id="vgserial_id">VG().serial_id</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L376">Show source in storage.py:376</a></p>
+<h4 id="signature_74">Signature</h4>
+<pre><code class="language-python">@property
+def serial_id(self):
+    ...
+</code></pre>
+<h3 id="vgvirtual_disks">VG().virtual_disks</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L414">Show source in storage.py:414</a></p>
+<p>Returns a list of the Virtual Disks that are in the repo.</p>
+<h4 id="signature_75">Signature</h4>
+<pre><code class="language-python">@property
+def virtual_disks(self):
+    ...
+</code></pre>
+<h3 id="vgvirtual_disks_1">VG().virtual_disks</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L420">Show source in storage.py:420</a></p>
+<p>Replaces the virtual disks with the new value.</p>
+<h4 id="arguments_7">Arguments</h4>
+<ul>
+<li><code>virt_disks</code> - A list of VDisk objects that will replace
+                   the existing Virtual Disks.</li>
+</ul>
+<h4 id="signature_76">Signature</h4>
+<pre><code class="language-python">@virtual_disks.setter
+def virtual_disks(self, virt_disks):
+    ...
+</code></pre>
+<h3 id="vgvmedia_repos">VG().vmedia_repos</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L380">Show source in storage.py:380</a></p>
+<p>Returns a list of  wrappers.</p>
+<h4 id="signature_77">Signature</h4>
+<pre><code class="language-python">@property
+def vmedia_repos(self):
+    ...
+</code></pre>
+<h3 id="vgvmedia_repos_1">VG().vmedia_repos</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L387">Show source in storage.py:387</a></p>
+<p>Replaces the VirtualMediaRepositories with the new value.</p>
+<h4 id="arguments_8">Arguments</h4>
+<ul>
+<li><code>repos</code> - A list of VMediaRepos objects that will
+              replace the existing repositories.</li>
+</ul>
+<h4 id="signature_78">Signature</h4>
+<pre><code class="language-python">@vmedia_repos.setter
+def vmedia_repos(self, repos):
+    ...
+</code></pre>
+<h2 id="vmediarepos">VMediaRepos</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L432">Show source in storage.py:432</a></p>
+<p>A Virtual Media Repository for a VIOS.</p>
+<p>Typically used to store an ISO file for image building.</p>
+<h4 id="signature_79">Signature</h4>
+<pre><code class="language-python">class VMediaRepos(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="vmediareposbld">VMediaRepos.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L438">Show source in storage.py:438</a></p>
+<p>Creates a fresh VMediaRepos wrapper.</p>
+<p>This should be used when adding a new Virtual Media Repository to a
+Volume Group.  The name and size for the media repository is required.
+The other attributes are generated from the system.</p>
+<p>Additionally, once created, specific VirtualOpticalMedia can be added
+onto the object.</p>
+<h4 id="arguments_9">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><a href="#vmediareposname">VMediaRepos().name</a> - The name of the Virtual Media Repository.</li>
+<li><a href="#vmediarepossize">VMediaRepos().size</a> - The size of the repository in GB (float).</li>
+</ul>
+<h4 id="returns_4">Returns</h4>
+<p>A VMediaRepos wrapper that can be used for create.</p>
+<h4 id="signature_80">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, name, size):
+    ...
+</code></pre>
+<h3 id="vmediareposname">VMediaRepos().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L473">Show source in storage.py:473</a></p>
+<h4 id="signature_81">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="vmediareposoptical_media">VMediaRepos().optical_media</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L459">Show source in storage.py:459</a></p>
+<p>Returns a list of the VirtualOpticalMedia devices in the repo.</p>
+<h4 id="signature_82">Signature</h4>
+<pre><code class="language-python">@property
+def optical_media(self):
+    ...
+</code></pre>
+<h3 id="vmediareposoptical_media_1">VMediaRepos().optical_media</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L465">Show source in storage.py:465</a></p>
+<p>Sets the list of VirtualOpticalMedia devices in the repo.</p>
+<h4 id="arguments_10">Arguments</h4>
+<ul>
+<li><code>new_media</code> - The list of new VOptMedia.</li>
+</ul>
+<h4 id="signature_83">Signature</h4>
+<pre><code class="language-python">@optical_media.setter
+def optical_media(self, new_media):
+    ...
+</code></pre>
+<h3 id="vmediarepossize">VMediaRepos().size</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L480">Show source in storage.py:480</a></p>
+<p>Returns the size in GB (float).</p>
+<h4 id="signature_84">Signature</h4>
+<pre><code class="language-python">@property
+def size(self):
+    ...
+</code></pre>
+<h2 id="voptmedia">VOptMedia</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L558">Show source in storage.py:558</a></p>
+<p>A virtual optical piece of media.</p>
+<h4 id="signature_85">Signature</h4>
+<pre><code class="language-python">class VOptMedia(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="voptmediabld">VOptMedia.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L562">Show source in storage.py:562</a></p>
+<p>Creates a fresh VOptMedia wrapper.</p>
+<p>This should be used when adding a new VirtualOpticalMedia device to a
+VirtualMediaRepository.</p>
+<h4 id="arguments_11">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><a href="#voptmedianame">VOptMedia().name</a> - The device name.</li>
+<li><a href="#voptmediasize">VOptMedia().size</a> - The device size in GB, decimal precision.</li>
+<li><a href="#voptmediamount_type">VOptMedia().mount_type</a> - The type of mount.  Defaults to RW.  Can be set to R</li>
+</ul>
+<h4 id="returns_5">Returns</h4>
+<p>A VOptMedia wrapper that can be used for create.</p>
+<h4 id="signature_86">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, name, size=None, mount_type=&quot;rw&quot;):
+    ...
+</code></pre>
+<h3 id="voptmediabld_ref">VOptMedia.bld_ref</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L582">Show source in storage.py:582</a></p>
+<p>Creates a VOptMedia wrapper for referencing an existing VOpt.</p>
+<h4 id="signature_87">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld_ref(cls, adapter, name):
+    ...
+</code></pre>
+<h3 id="voptmediamedia_name">VOptMedia().media_name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L589">Show source in storage.py:589</a></p>
+<h4 id="signature_88">Signature</h4>
+<pre><code class="language-python">@property
+def media_name(self):
+    ...
+</code></pre>
+<h3 id="voptmediamount_type">VOptMedia().mount_type</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L613">Show source in storage.py:613</a></p>
+<h4 id="signature_89">Signature</h4>
+<pre><code class="language-python">@property
+def mount_type(self):
+    ...
+</code></pre>
+<h3 id="voptmedianame">VOptMedia().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L593">Show source in storage.py:593</a></p>
+<p>Same as media_name - for consistency with other storage types.</p>
+<h4 id="signature_90">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="voptmediasize">VOptMedia().size</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L601">Show source in storage.py:601</a></p>
+<p>Size is a float represented in GB.</p>
+<h4 id="signature_91">Signature</h4>
+<pre><code class="language-python">@property
+def size(self):
+    ...
+</code></pre>
+<h3 id="voptmediaudid">VOptMedia().udid</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L609">Show source in storage.py:609</a></p>
+<h4 id="signature_92">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre>
+<h2 id="vopttargetdev">VOptTargetDev</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L551">Show source in storage.py:551</a></p>
+<p>Virtual Optical Media Target Device for a VSCSIMapping.</p>
+<h4 id="signature_93">Signature</h4>
+<pre><code class="language-python">class VOptTargetDev(_VTargetDevMethods, ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h2 id="vscsiclientadapterelement">VSCSIClientAdapterElement</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1607">Show source in storage.py:1607</a></p>
+<p>The Virtual SCSI Client Adapter within a VSCSI mapping.</p>
+<p>Paired with a VSCSIServerAdapterElement.</p>
+<h4 id="signature_94">Signature</h4>
+<pre><code class="language-python">class VSCSIClientAdapterElement(VClientStorageAdapterElement):
+    ...
+</code></pre>
+<h4 id="see-also_2">See also</h4>
+<ul>
+<li><a href="#vclientstorageadapterelement">VClientStorageAdapterElement</a></li>
+</ul>
+<h3 id="vscsiclientadapterelementvios_id">VSCSIClientAdapterElement().vios_id</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1612">Show source in storage.py:1612</a></p>
+<p>The short ID (not UUID) of the VIOS side of this adapter.</p>
+<p>Note that the VIOS ID is RemoteLogicalPartitionID on the client side,
+and LocalPartitionID on the server side.</p>
+<h4 id="signature_95">Signature</h4>
+<pre><code class="language-python">@property
+def vios_id(self):
+    ...
+</code></pre>
+<h3 id="vscsiclientadapterelementvios_slot_num">VSCSIClientAdapterElement().vios_slot_num</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1621">Show source in storage.py:1621</a></p>
+<p>The (int) remote slot number of the paired adapter.</p>
+<h4 id="signature_96">Signature</h4>
+<pre><code class="language-python">@property
+def vios_slot_num(self):
+    ...
+</code></pre>
+<h2 id="vscsiserveradapterelement">VSCSIServerAdapterElement</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1628">Show source in storage.py:1628</a></p>
+<p>The Virtual SCSI Server Adapter within a VSCSI mapping.</p>
+<p>Paired with a VSCSIClientAdapterElement.</p>
+<h4 id="signature_97">Signature</h4>
+<pre><code class="language-python">class VSCSIServerAdapterElement(VServerStorageAdapterElement):
+    ...
+</code></pre>
+<h4 id="see-also_3">See also</h4>
+<ul>
+<li><a href="#vserverstorageadapterelement">VServerStorageAdapterElement</a></li>
+</ul>
+<h3 id="vscsiserveradapterelementbacking_dev_name">VSCSIServerAdapterElement().backing_dev_name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1634">Show source in storage.py:1634</a></p>
+<p>The backing device name that this virtual adapter is hooked into.</p>
+<h4 id="signature_98">Signature</h4>
+<pre><code class="language-python">@property
+def backing_dev_name(self):
+    ...
+</code></pre>
+<h3 id="vscsiserveradapterelementlpar_id">VSCSIServerAdapterElement().lpar_id</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1639">Show source in storage.py:1639</a></p>
+<p>The short ID (not UUID) of the LPAR side of this adapter.</p>
+<p>Note that the LPAR ID is LocalPartitionID on the client side, and
+RemoteLogicalPartitionID on the server side.</p>
+<h4 id="signature_99">Signature</h4>
+<pre><code class="language-python">@property
+def lpar_id(self):
+    ...
+</code></pre>
+<h3 id="vscsiserveradapterelementlpar_slot_num">VSCSIServerAdapterElement().lpar_slot_num</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1657">Show source in storage.py:1657</a></p>
+<p>The (int) slot number that the LPAR side of the adapter.</p>
+<h4 id="signature_100">Signature</h4>
+<pre><code class="language-python">@property
+def lpar_slot_num(self):
+    ...
+</code></pre>
+<h3 id="vscsiserveradapterelementvios_id">VSCSIServerAdapterElement().vios_id</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1648">Show source in storage.py:1648</a></p>
+<p>The short ID (not UUID) of the VIOS side of this adapter.</p>
+<p>Note that the VIOS ID is RemoteLogicalPartitionID on the client side,
+and LocalPartitionID on the server side.</p>
+<h4 id="signature_101">Signature</h4>
+<pre><code class="language-python">@property
+def vios_id(self):
+    ...
+</code></pre>
+<h3 id="vscsiserveradapterelementvios_slot_num">VSCSIServerAdapterElement().vios_slot_num</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1662">Show source in storage.py:1662</a></p>
+<p>The (int) slot number of the VIOS side of the adapter.</p>
+<h4 id="signature_102">Signature</h4>
+<pre><code class="language-python">@property
+def vios_slot_num(self):
+    ...
+</code></pre>
+<h2 id="vserverstorageadapterelement">VServerStorageAdapterElement</h2>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1587">Show source in storage.py:1587</a></p>
+<p>Parent class for Server Virtual Storage Adapters.</p>
+<h4 id="signature_103">Signature</h4>
+<pre><code class="language-python">class VServerStorageAdapterElement(_VStorageAdapterElement):
+    ...
+</code></pre>
+<h3 id="vserverstorageadapterelementbld">VServerStorageAdapterElement.bld</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1590">Show source in storage.py:1590</a></p>
+<h4 id="signature_104">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter):
+    ...
+</code></pre>
+<h3 id="vserverstorageadapterelementname">VServerStorageAdapterElement().name</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1595">Show source in storage.py:1595</a></p>
+<p>The adapter's name on the Virtual I/O Server.</p>
+<h4 id="signature_105">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="vserverstorageadapterelementudid">VServerStorageAdapterElement().udid</h3>
+<p><a href="../../../pypowervm/wrappers/storage.py#L1600">Show source in storage.py:1600</a></p>
+<p>The device's Unique Device Identifier.</p>
+<h4 id="signature_106">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

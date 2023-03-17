@@ -1,0 +1,2492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>BasePartition - pypowervm documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../cluster/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#basepartition" class="nav-link">BasePartition</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#basepartition_1" class="nav-link">BasePartition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#bootmode" class="nav-link">BootMode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dedicatedprocessorconfiguration" class="nav-link">DedicatedProcessorConfiguration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dedicatedsharingmode" class="nav-link">DedicatedSharingMode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ioslot" class="nav-link">IOSlot</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#keylockpos" class="nav-link">KeylockPos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lparcompat" class="nav-link">LPARCompat</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lparstate" class="nav-link">LPARState</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lpartype" class="nav-link">LPARType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#partitioncapabilities" class="nav-link">PartitionCapabilities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#partitionioconfiguration" class="nav-link">PartitionIOConfiguration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#partitionmemoryconfiguration" class="nav-link">PartitionMemoryConfiguration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#partitionprocessorconfiguration" class="nav-link">PartitionProcessorConfiguration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rmcstate" class="nav-link">RMCState</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sharedprocessorconfiguration" class="nav-link">SharedProcessorConfiguration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sharingmode" class="nav-link">SharingMode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#taggedio" class="nav-link">TaggedIO</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="basepartition">BasePartition</h1>
+<p><a href="../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../#pypowervm">Pypowervm</a> /
+<a href="../#wrappers">Wrappers</a> /
+BasePartition</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../pypowervm/wrappers/base_partition.py">pypowervm.wrappers.base_partition</a> module.</p>
+</blockquote>
+<h4 id="attributes">Attributes</h4>
+<ul>
+<li>
+<p><code>IO_CFG_ROOT</code> - Partition I/O Configuration (_IO): <code>_BP_IO_CFG</code></p>
+</li>
+<li>
+<p><code>IO_SLOTS_ROOT</code> - Constants for the I/O Slot Configuration: <code>'ProfileIOSlots'</code></p>
+</li>
+<li>
+<p><code>ASSOC_IO_SLOT_ROOT</code> - Constants for the Associated I/O Slot: <code>'AssociatedIOSlot'</code></p>
+</li>
+<li>
+<p><code>IO_ADPT_ROOT</code> - Constants for generic I/O Adapter: <code>'IOAdapter'</code></p>
+</li>
+<li>
+<p><a href="#basepartition">BasePartition</a></p>
+</li>
+<li><a href="#basepartition-1">BasePartition</a><ul>
+<li><a href="#basepartition()allow_perf_data_collection">BasePartition().allow_perf_data_collection</a></li>
+<li><a href="#basepartition()allow_perf_data_collection-1">BasePartition().allow_perf_data_collection</a></li>
+<li><a href="#basepartition()assoc_sys_uuid">BasePartition().assoc_sys_uuid</a></li>
+<li><a href="#basepartition()avail_priority">BasePartition().avail_priority</a></li>
+<li><a href="#basepartition()avail_priority-1">BasePartition().avail_priority</a></li>
+<li><a href="#basepartition()bootmode">BasePartition().bootmode</a></li>
+<li><a href="#basepartition()bootmode-1">BasePartition().bootmode</a></li>
+<li><a href="#basepartition()capabilities">BasePartition().capabilities</a></li>
+<li><a href="#basepartition()cur_dram_pmem_volumes">BasePartition().cur_dram_pmem_volumes</a></li>
+<li><a href="#basepartition()cur_pmem_volumes">BasePartition().cur_pmem_volumes</a></li>
+<li><a href="#basepartition()current_secure_boot">BasePartition().current_secure_boot</a></li>
+<li><a href="#basepartition()disable_secure_boot">BasePartition().disable_secure_boot</a></li>
+<li><a href="#basepartition()disable_secure_boot-1">BasePartition().disable_secure_boot</a></li>
+<li><a href="#basepartition()env">BasePartition().env</a></li>
+<li><a href="#basepartition()id">BasePartition().id</a></li>
+<li><a href="#basepartition()io_config">BasePartition().io_config</a></li>
+<li><a href="#basepartition()io_config-1">BasePartition().io_config</a></li>
+<li><a href="#basepartition()is_mgmt_partition">BasePartition().is_mgmt_partition</a></li>
+<li><a href="#basepartition()is_service_partition">BasePartition().is_service_partition</a></li>
+<li><a href="#basepartition()is_service_partition-1">BasePartition().is_service_partition</a></li>
+<li><a href="#basepartition()keylock_pos">BasePartition().keylock_pos</a></li>
+<li><a href="#basepartition()keylock_pos-1">BasePartition().keylock_pos</a></li>
+<li><a href="#basepartition()max_dram_pmem_volumes">BasePartition().max_dram_pmem_volumes</a></li>
+<li><a href="#basepartition()max_pmem_volumes">BasePartition().max_pmem_volumes</a></li>
+<li><a href="#basepartition()mem_config">BasePartition().mem_config</a></li>
+<li><a href="#basepartition()mem_config-1">BasePartition().mem_config</a></li>
+<li><a href="#basepartition()name">BasePartition().name</a></li>
+<li><a href="#basepartition()name-1">BasePartition().name</a></li>
+<li><a href="#basepartition()nvram">BasePartition().nvram</a></li>
+<li><a href="#basepartition()nvram-1">BasePartition().nvram</a></li>
+<li><a href="#basepartition()operating_system">BasePartition().operating_system</a></li>
+<li><a href="#basepartition()partition_uuid">BasePartition().partition_uuid</a></li>
+<li><a href="#basepartition()pending_proc_compat_mode">BasePartition().pending_proc_compat_mode</a></li>
+<li><a href="#basepartition()pending_secure_boot">BasePartition().pending_secure_boot</a></li>
+<li><a href="#basepartition()pending_secure_boot-1">BasePartition().pending_secure_boot</a></li>
+<li><a href="#basepartition()proc_compat_mode">BasePartition().proc_compat_mode</a></li>
+<li><a href="#basepartition()proc_compat_mode-1">BasePartition().proc_compat_mode</a></li>
+<li><a href="#basepartition()proc_config">BasePartition().proc_config</a></li>
+<li><a href="#basepartition()proc_config-1">BasePartition().proc_config</a></li>
+<li><a href="#basepartition()profile_sync">BasePartition().profile_sync</a></li>
+<li><a href="#basepartition()profile_sync-1">BasePartition().profile_sync</a></li>
+<li><a href="#basepartition()ref_code">BasePartition().ref_code</a></li>
+<li><a href="#basepartition()ref_code_full">BasePartition().ref_code_full</a></li>
+<li><a href="#basepartition()rmc_ip">BasePartition().rmc_ip</a></li>
+<li><a href="#basepartition()rmc_state">BasePartition().rmc_state</a></li>
+<li><a href="#basepartition()state">BasePartition().state</a></li>
+<li><a href="#basepartition()uptime">BasePartition().uptime</a></li>
+</ul>
+</li>
+<li><a href="#bootmode">BootMode</a></li>
+<li><a href="#dedicatedprocessorconfiguration">DedicatedProcessorConfiguration</a><ul>
+<li><a href="#dedicatedprocessorconfigurationbld">DedicatedProcessorConfiguration.bld</a></li>
+<li><a href="#dedicatedprocessorconfiguration()desired">DedicatedProcessorConfiguration().desired</a></li>
+<li><a href="#dedicatedprocessorconfiguration()desired-1">DedicatedProcessorConfiguration().desired</a></li>
+<li><a href="#dedicatedprocessorconfiguration()max">DedicatedProcessorConfiguration().max</a></li>
+<li><a href="#dedicatedprocessorconfiguration()max-1">DedicatedProcessorConfiguration().max</a></li>
+<li><a href="#dedicatedprocessorconfiguration()min">DedicatedProcessorConfiguration().min</a></li>
+<li><a href="#dedicatedprocessorconfiguration()min-1">DedicatedProcessorConfiguration().min</a></li>
+</ul>
+</li>
+<li><a href="#dedicatedsharingmode">DedicatedSharingMode</a></li>
+<li><a href="#ioslot">IOSlot</a><ul>
+<li><a href="#ioslot()__get_prop">IOSlot().__get_prop</a></li>
+<li><a href="#ioslot()adapter">IOSlot().adapter</a></li>
+<li><a href="#ioslotbld">IOSlot.bld</a></li>
+<li><a href="#ioslot()bus_grp_required">IOSlot().bus_grp_required</a></li>
+<li><a href="#ioslot()bus_grp_required-1">IOSlot().bus_grp_required</a></li>
+<li><a href="#ioslot()description">IOSlot().description</a></li>
+<li><a href="#ioslot()description-1">IOSlot().description</a></li>
+<li><a href="#ioslot()drc_index">IOSlot().drc_index</a></li>
+<li><a href="#ioslot()drc_index-1">IOSlot().drc_index</a></li>
+<li><a href="#ioslot()drc_name">IOSlot().drc_name</a></li>
+<li><a href="#ioslot()drc_name-1">IOSlot().drc_name</a></li>
+<li><a href="#ioslot()io_adapter">IOSlot().io_adapter</a></li>
+<li><a href="#ioslot()io_adapter-1">IOSlot().io_adapter</a></li>
+<li><a href="#ioslot()pc_adpt_id">IOSlot().pc_adpt_id</a></li>
+<li><a href="#ioslot()pc_adpt_id-1">IOSlot().pc_adpt_id</a></li>
+<li><a href="#ioslot()pci_class">IOSlot().pci_class</a></li>
+<li><a href="#ioslot()pci_class-1">IOSlot().pci_class</a></li>
+<li><a href="#ioslot()pci_dev_id">IOSlot().pci_dev_id</a></li>
+<li><a href="#ioslot()pci_dev_id-1">IOSlot().pci_dev_id</a></li>
+<li><a href="#ioslot()pci_mfg_id">IOSlot().pci_mfg_id</a></li>
+<li><a href="#ioslot()pci_mfg_id-1">IOSlot().pci_mfg_id</a></li>
+<li><a href="#ioslot()pci_rev_id">IOSlot().pci_rev_id</a></li>
+<li><a href="#ioslot()pci_rev_id-1">IOSlot().pci_rev_id</a></li>
+<li><a href="#ioslot()pci_subsys_dev_id">IOSlot().pci_subsys_dev_id</a></li>
+<li><a href="#ioslot()pci_subsys_dev_id-1">IOSlot().pci_subsys_dev_id</a></li>
+<li><a href="#ioslot()pci_subsys_vendor_id">IOSlot().pci_subsys_vendor_id</a></li>
+<li><a href="#ioslot()pci_subsys_vendor_id-1">IOSlot().pci_subsys_vendor_id</a></li>
+<li><a href="#ioslot()pci_vendor_id">IOSlot().pci_vendor_id</a></li>
+<li><a href="#ioslot()pci_vendor_id-1">IOSlot().pci_vendor_id</a></li>
+<li><a href="#ioslot()phys_loc">IOSlot().phys_loc</a></li>
+<li><a href="#ioslot()phys_loc-1">IOSlot().phys_loc</a></li>
+<li><a href="#ioslot()required">IOSlot().required</a></li>
+<li><a href="#ioslot()required-1">IOSlot().required</a></li>
+</ul>
+</li>
+<li><a href="#keylockpos">KeylockPos</a></li>
+<li><a href="#lparcompat">LPARCompat</a></li>
+<li><a href="#lparstate">LPARState</a></li>
+<li><a href="#lpartype">LPARType</a></li>
+<li><a href="#partitioncapabilities">PartitionCapabilities</a><ul>
+<li><a href="#partitioncapabilities()io_dlpar">PartitionCapabilities().io_dlpar</a></li>
+<li><a href="#partitioncapabilities()mem_dlpar">PartitionCapabilities().mem_dlpar</a></li>
+<li><a href="#partitioncapabilities()proc_dlpar">PartitionCapabilities().proc_dlpar</a></li>
+</ul>
+</li>
+<li><a href="#partitionioconfiguration">PartitionIOConfiguration</a><ul>
+<li><a href="#partitionioconfigurationbld">PartitionIOConfiguration.bld</a></li>
+<li><a href="#partitionioconfiguration()io_slots">PartitionIOConfiguration().io_slots</a></li>
+<li><a href="#partitionioconfiguration()io_slots-1">PartitionIOConfiguration().io_slots</a></li>
+<li><a href="#partitionioconfiguration()max_virtual_slots">PartitionIOConfiguration().max_virtual_slots</a></li>
+<li><a href="#partitionioconfiguration()max_virtual_slots-1">PartitionIOConfiguration().max_virtual_slots</a></li>
+<li><a href="#partitionioconfiguration()tagged_io">PartitionIOConfiguration().tagged_io</a></li>
+<li><a href="#partitionioconfiguration()tagged_io-1">PartitionIOConfiguration().tagged_io</a></li>
+</ul>
+</li>
+<li><a href="#partitionmemoryconfiguration">PartitionMemoryConfiguration</a><ul>
+<li><a href="#partitionmemoryconfiguration()ame_enabled">PartitionMemoryConfiguration().ame_enabled</a></li>
+<li><a href="#partitionmemoryconfigurationbld">PartitionMemoryConfiguration.bld</a></li>
+<li><a href="#partitionmemoryconfiguration()current">PartitionMemoryConfiguration().current</a></li>
+<li><a href="#partitionmemoryconfiguration()desired">PartitionMemoryConfiguration().desired</a></li>
+<li><a href="#partitionmemoryconfiguration()desired-1">PartitionMemoryConfiguration().desired</a></li>
+<li><a href="#partitionmemoryconfiguration()exp_factor">PartitionMemoryConfiguration().exp_factor</a></li>
+<li><a href="#partitionmemoryconfiguration()exp_factor-1">PartitionMemoryConfiguration().exp_factor</a></li>
+<li><a href="#partitionmemoryconfiguration()max">PartitionMemoryConfiguration().max</a></li>
+<li><a href="#partitionmemoryconfiguration()max-1">PartitionMemoryConfiguration().max</a></li>
+<li><a href="#partitionmemoryconfiguration()min">PartitionMemoryConfiguration().min</a></li>
+<li><a href="#partitionmemoryconfiguration()min-1">PartitionMemoryConfiguration().min</a></li>
+<li><a href="#partitionmemoryconfiguration()ppt_ratio">PartitionMemoryConfiguration().ppt_ratio</a></li>
+<li><a href="#partitionmemoryconfiguration()ppt_ratio-1">PartitionMemoryConfiguration().ppt_ratio</a></li>
+<li><a href="#partitionmemoryconfiguration()shared_enabled">PartitionMemoryConfiguration().shared_enabled</a></li>
+</ul>
+</li>
+<li><a href="#partitionprocessorconfiguration">PartitionProcessorConfiguration</a><ul>
+<li><a href="#partitionprocessorconfigurationbld_dedicated">PartitionProcessorConfiguration.bld_dedicated</a></li>
+<li><a href="#partitionprocessorconfigurationbld_shared">PartitionProcessorConfiguration.bld_shared</a></li>
+<li><a href="#partitionprocessorconfiguration()dedicated_proc_cfg">PartitionProcessorConfiguration().dedicated_proc_cfg</a></li>
+<li><a href="#partitionprocessorconfiguration()has_dedicated">PartitionProcessorConfiguration().has_dedicated</a></li>
+<li><a href="#partitionprocessorconfiguration()shared_proc_cfg">PartitionProcessorConfiguration().shared_proc_cfg</a></li>
+<li><a href="#partitionprocessorconfiguration()sharing_mode">PartitionProcessorConfiguration().sharing_mode</a></li>
+<li><a href="#partitionprocessorconfiguration()sharing_mode-1">PartitionProcessorConfiguration().sharing_mode</a></li>
+</ul>
+</li>
+<li><a href="#rmcstate">RMCState</a></li>
+<li><a href="#sharedprocessorconfiguration">SharedProcessorConfiguration</a><ul>
+<li><a href="#sharedprocessorconfigurationbld">SharedProcessorConfiguration.bld</a></li>
+<li><a href="#sharedprocessorconfiguration()desired_units">SharedProcessorConfiguration().desired_units</a></li>
+<li><a href="#sharedprocessorconfiguration()desired_units-1">SharedProcessorConfiguration().desired_units</a></li>
+<li><a href="#sharedprocessorconfiguration()desired_virtual">SharedProcessorConfiguration().desired_virtual</a></li>
+<li><a href="#sharedprocessorconfiguration()desired_virtual-1">SharedProcessorConfiguration().desired_virtual</a></li>
+<li><a href="#sharedprocessorconfiguration()max_units">SharedProcessorConfiguration().max_units</a></li>
+<li><a href="#sharedprocessorconfiguration()max_units-1">SharedProcessorConfiguration().max_units</a></li>
+<li><a href="#sharedprocessorconfiguration()max_virtual">SharedProcessorConfiguration().max_virtual</a></li>
+<li><a href="#sharedprocessorconfiguration()max_virtual-1">SharedProcessorConfiguration().max_virtual</a></li>
+<li><a href="#sharedprocessorconfiguration()min_units">SharedProcessorConfiguration().min_units</a></li>
+<li><a href="#sharedprocessorconfiguration()min_units-1">SharedProcessorConfiguration().min_units</a></li>
+<li><a href="#sharedprocessorconfiguration()min_virtual">SharedProcessorConfiguration().min_virtual</a></li>
+<li><a href="#sharedprocessorconfiguration()min_virtual-1">SharedProcessorConfiguration().min_virtual</a></li>
+<li><a href="#sharedprocessorconfiguration()pool_id">SharedProcessorConfiguration().pool_id</a></li>
+<li><a href="#sharedprocessorconfiguration()pool_id-1">SharedProcessorConfiguration().pool_id</a></li>
+<li><a href="#sharedprocessorconfiguration()uncapped_weight">SharedProcessorConfiguration().uncapped_weight</a></li>
+<li><a href="#sharedprocessorconfiguration()uncapped_weight-1">SharedProcessorConfiguration().uncapped_weight</a></li>
+</ul>
+</li>
+<li><a href="#sharingmode">SharingMode</a></li>
+<li><a href="#taggedio">TaggedIO</a><ul>
+<li><a href="#taggedio()alt_load_src">TaggedIO().alt_load_src</a></li>
+<li><a href="#taggedio()alt_load_src-1">TaggedIO().alt_load_src</a></li>
+<li><a href="#taggediobld">TaggedIO.bld</a></li>
+<li><a href="#taggedio()console">TaggedIO().console</a></li>
+<li><a href="#taggedio()console-1">TaggedIO().console</a></li>
+<li><a href="#taggedio()load_src">TaggedIO().load_src</a></li>
+<li><a href="#taggedio()load_src-1">TaggedIO().load_src</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="basepartition_1">BasePartition</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L484">Show source in base_partition.py:484</a></p>
+<p>Base class for Logical Partition (LPAR) &amp; Virtual I/O Server (VIOS).</p>
+<p>This corresponds to the abstract BasePartition object in the PowerVM
+schema.</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class BasePartition(ewrap.EntryWrapper, _DlparCapable):
+    ...
+</code></pre>
+<h3 id="basepartitionallow_perf_data_collection">BasePartition().allow_perf_data_collection</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L713">Show source in base_partition.py:713</a></p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">@property
+def allow_perf_data_collection(self):
+    ...
+</code></pre>
+<h3 id="basepartitionallow_perf_data_collection_1">BasePartition().allow_perf_data_collection</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L717">Show source in base_partition.py:717</a></p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">@allow_perf_data_collection.setter
+def allow_perf_data_collection(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionassoc_sys_uuid">BasePartition().assoc_sys_uuid</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L559">Show source in base_partition.py:559</a></p>
+<p>UUID of the associated ManagedSystem.</p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">@property
+def assoc_sys_uuid(self):
+    ...
+</code></pre>
+<h3 id="basepartitionavail_priority">BasePartition().avail_priority</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L591">Show source in base_partition.py:591</a></p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">@property
+def avail_priority(self):
+    ...
+</code></pre>
+<h3 id="basepartitionavail_priority_1">BasePartition().avail_priority</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L595">Show source in base_partition.py:595</a></p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">@avail_priority.setter
+def avail_priority(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionbootmode">BasePartition().bootmode</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L663">Show source in base_partition.py:663</a></p>
+<p>Boot mode - one of the BootMode enum values.</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">@property
+def bootmode(self):
+    ...
+</code></pre>
+<h3 id="basepartitionbootmode_1">BasePartition().bootmode</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L668">Show source in base_partition.py:668</a></p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">@bootmode.setter
+def bootmode(self, val):
+    ...
+</code></pre>
+<h3 id="basepartitioncapabilities">BasePartition().capabilities</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L722">Show source in base_partition.py:722</a></p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">@property
+def capabilities(self):
+    ...
+</code></pre>
+<h3 id="basepartitioncur_dram_pmem_volumes">BasePartition().cur_dram_pmem_volumes</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L792">Show source in base_partition.py:792</a></p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">@property
+def cur_dram_pmem_volumes(self):
+    ...
+</code></pre>
+<h3 id="basepartitioncur_pmem_volumes">BasePartition().cur_pmem_volumes</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L784">Show source in base_partition.py:784</a></p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">@property
+def cur_pmem_volumes(self):
+    ...
+</code></pre>
+<h3 id="basepartitioncurrent_secure_boot">BasePartition().current_secure_boot</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L698">Show source in base_partition.py:698</a></p>
+<p>The Secure Boot Policy Value</p>
+<p>The secure boot value will determine what level of enforcement will
+take place when the LPAR is booted. The following are the values
+and their interpretations:
+  * 0: Secure boot disabled
+  * 1: Secure boot enabled (log only)
+  * 2: Secure boot enabled and enforced
+  * 3-9: Secure boot enabled and enforced. Firmware or OS may
+         take additional measures.</p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">@property
+def current_secure_boot(self):
+    ...
+</code></pre>
+<h3 id="basepartitiondisable_secure_boot">BasePartition().disable_secure_boot</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L674">Show source in base_partition.py:674</a></p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">@property
+def disable_secure_boot(self):
+    ...
+</code></pre>
+<h3 id="basepartitiondisable_secure_boot_1">BasePartition().disable_secure_boot</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L678">Show source in base_partition.py:678</a></p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">@disable_secure_boot.setter
+def disable_secure_boot(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionenv">BasePartition().env</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L543">Show source in base_partition.py:543</a></p>
+<p>See the LPARType Enumeration.</p>
+<p>Should usually be 'AIX/Linux' for LPAR.  'Virtual IO Server' should
+only happen for VIOS.</p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">@property
+def env(self):
+    ...
+</code></pre>
+<h3 id="basepartitionid">BasePartition().id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L534">Show source in base_partition.py:534</a></p>
+<p>Short ID (not UUID).</p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">@property
+def id(self):
+    ...
+</code></pre>
+<h3 id="basepartitionio_config">BasePartition().io_config</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L727">Show source in base_partition.py:727</a></p>
+<p>The Partition I/O Configuration.</p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">@property
+def io_config(self):
+    ...
+</code></pre>
+<h3 id="basepartitionio_config_1">BasePartition().io_config</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L733">Show source in base_partition.py:733</a></p>
+<p>The Partition I/O Configuration for the LPAR.</p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">@io_config.setter
+def io_config(self, io_cfg):
+    ...
+</code></pre>
+<h3 id="basepartitionis_mgmt_partition">BasePartition().is_mgmt_partition</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L636">Show source in base_partition.py:636</a></p>
+<p>Is this the management partition?  Default False if field absent.</p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">@property
+def is_mgmt_partition(self):
+    ...
+</code></pre>
+<h3 id="basepartitionis_service_partition">BasePartition().is_service_partition</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L641">Show source in base_partition.py:641</a></p>
+<p>Is this the service partition?  Default False if field absent.</p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">@property
+def is_service_partition(self):
+    ...
+</code></pre>
+<h3 id="basepartitionis_service_partition_1">BasePartition().is_service_partition</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L646">Show source in base_partition.py:646</a></p>
+<p>Set if this is the service partition.</p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">@is_service_partition.setter
+def is_service_partition(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionkeylock_pos">BasePartition().keylock_pos</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L651">Show source in base_partition.py:651</a></p>
+<p>Keylock position - see KeylockPos enumeration.</p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">@property
+def keylock_pos(self):
+    ...
+</code></pre>
+<h3 id="basepartitionkeylock_pos_1">BasePartition().keylock_pos</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L656">Show source in base_partition.py:656</a></p>
+<p>Keylock position - see KeylockPos enumeration.</p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">@keylock_pos.setter
+def keylock_pos(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionmax_dram_pmem_volumes">BasePartition().max_dram_pmem_volumes</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L788">Show source in base_partition.py:788</a></p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">@property
+def max_dram_pmem_volumes(self):
+    ...
+</code></pre>
+<h3 id="basepartitionmax_pmem_volumes">BasePartition().max_pmem_volumes</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L780">Show source in base_partition.py:780</a></p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">@property
+def max_pmem_volumes(self):
+    ...
+</code></pre>
+<h3 id="basepartitionmem_config">BasePartition().mem_config</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L741">Show source in base_partition.py:741</a></p>
+<p>The Partition Memory Configuration for the LPAR.</p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">@property
+def mem_config(self):
+    ...
+</code></pre>
+<h3 id="basepartitionmem_config_1">BasePartition().mem_config</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L747">Show source in base_partition.py:747</a></p>
+<p>The Partition Memory Configuration for the LPAR.</p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">@mem_config.setter
+def mem_config(self, mem_cfg):
+    ...
+</code></pre>
+<h3 id="basepartitionname">BasePartition().name</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L525">Show source in base_partition.py:525</a></p>
+<p>Short name (not ID, MTMS, or hostname).</p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="basepartitionname_1">BasePartition().name</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L530">Show source in base_partition.py:530</a></p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">@name.setter
+def name(self, val):
+    ...
+</code></pre>
+<h3 id="basepartitionnvram">BasePartition().nvram</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L765">Show source in base_partition.py:765</a></p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">@ewrap.Wrapper.xag_property(const.XAG.NVRAM)
+def nvram(self):
+    ...
+</code></pre>
+<h3 id="basepartitionnvram_1">BasePartition().nvram</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L769">Show source in base_partition.py:769</a></p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">@nvram.setter
+def nvram(self, nvram):
+    ...
+</code></pre>
+<h3 id="basepartitionoperating_system">BasePartition().operating_system</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L578">Show source in base_partition.py:578</a></p>
+<p>String representing the OS and version, or 'Unknown'.</p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">@property
+def operating_system(self):
+    ...
+</code></pre>
+<h3 id="basepartitionpartition_uuid">BasePartition().partition_uuid</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L555">Show source in base_partition.py:555</a></p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">@property
+def partition_uuid(self):
+    ...
+</code></pre>
+<h3 id="basepartitionpending_proc_compat_mode">BasePartition().pending_proc_compat_mode</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L618">Show source in base_partition.py:618</a></p>
+<p>Pending processor compatibility mode.</p>
+<p>See LPARCompat.  E.g. 'POWER7',
+'POWER7_Plus', 'POWER8', etc.</p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">@property
+def pending_proc_compat_mode(self):
+    ...
+</code></pre>
+<h3 id="basepartitionpending_secure_boot">BasePartition().pending_secure_boot</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L684">Show source in base_partition.py:684</a></p>
+<p>The Pending Secure Boot Policy Value</p>
+<p>This parameter can be set while the LPAR is running. It will
+be the policy used when the LPAR is next booted.</p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">@property
+def pending_secure_boot(self):
+    ...
+</code></pre>
+<h3 id="basepartitionpending_secure_boot_1">BasePartition().pending_secure_boot</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L693">Show source in base_partition.py:693</a></p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">@pending_secure_boot.setter
+def pending_secure_boot(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionproc_compat_mode">BasePartition().proc_compat_mode</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L609">Show source in base_partition.py:609</a></p>
+<p><em>Current</em> processor compatibility mode.</p>
+<p>See LPARCompat.  E.g. 'POWER7',
+'POWER7_Plus', 'POWER8', etc.</p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">@property
+def proc_compat_mode(self):
+    ...
+</code></pre>
+<h3 id="basepartitionproc_compat_mode_1">BasePartition().proc_compat_mode</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L627">Show source in base_partition.py:627</a></p>
+<p>Sets <em>PENDING</em> proc compat mode.</p>
+<p>Note that corresponding getter retrieves the <em>CURRENT</em> proc compat
+mode.</p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">@proc_compat_mode.setter
+def proc_compat_mode(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionproc_config">BasePartition().proc_config</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L753">Show source in base_partition.py:753</a></p>
+<p>The Partition Processor Configuration for the LPAR.</p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">@property
+def proc_config(self):
+    ...
+</code></pre>
+<h3 id="basepartitionproc_config_1">BasePartition().proc_config</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L759">Show source in base_partition.py:759</a></p>
+<p>The Partition Processor Configuration for the LPAR.</p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">@proc_config.setter
+def proc_config(self, proc_config):
+    ...
+</code></pre>
+<h3 id="basepartitionprofile_sync">BasePartition().profile_sync</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L599">Show source in base_partition.py:599</a></p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">@property
+def profile_sync(self):
+    ...
+</code></pre>
+<h3 id="basepartitionprofile_sync_1">BasePartition().profile_sync</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L603">Show source in base_partition.py:603</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">@profile_sync.setter
+def profile_sync(self, value):
+    ...
+</code></pre>
+<h3 id="basepartitionref_code">BasePartition().ref_code</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L583">Show source in base_partition.py:583</a></p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">@property
+def ref_code(self):
+    ...
+</code></pre>
+<h3 id="basepartitionref_code_full">BasePartition().ref_code_full</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L587">Show source in base_partition.py:587</a></p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">@property
+def ref_code_full(self):
+    ...
+</code></pre>
+<h3 id="basepartitionrmc_ip">BasePartition().rmc_ip</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L573">Show source in base_partition.py:573</a></p>
+<p>IP address used for RMC communication, as a string.</p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">@property
+def rmc_ip(self):
+    ...
+</code></pre>
+<h3 id="basepartitionrmc_state">BasePartition().rmc_state</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L565">Show source in base_partition.py:565</a></p>
+<p>See RMCState.</p>
+<p>e.g. 'active', 'inactive', 'busy', etc.</p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">@property
+def rmc_state(self):
+    ...
+</code></pre>
+<h3 id="basepartitionstate">BasePartition().state</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L517">Show source in base_partition.py:517</a></p>
+<p>See LPARState.</p>
+<p>e.g. 'not activated', 'running', 'migrating running', etc.</p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">@property
+def state(self):
+    ...
+</code></pre>
+<h3 id="basepartitionuptime">BasePartition().uptime</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L775">Show source in base_partition.py:775</a></p>
+<p>Integer time since partition boot, in seconds.</p>
+<h4 id="signature_47">Signature</h4>
+<pre><code class="language-python">@property
+def uptime(self):
+    ...
+</code></pre>
+<h2 id="bootmode">BootMode</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L389">Show source in base_partition.py:389</a></p>
+<p>Mirror of PartitionBootMode.Enum.</p>
+<p>Valid values for LPAR.bootmode/VIOS.bootmode.</p>
+<p>Not to be confused with pypowervm.tasks.power.BootMode.</p>
+<p>Example usage:
+    lwrap.bootmode = BootMode.NORM
+    lwrap.update()</p>
+<h4 id="signature_48">Signature</h4>
+<pre><code class="language-python">class BootMode(object):
+    ...
+</code></pre>
+<h2 id="dedicatedprocessorconfiguration">DedicatedProcessorConfiguration</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1143">Show source in base_partition.py:1143</a></p>
+<p>Represents the partition's Dedicated Processor Configuration.</p>
+<h4 id="signature_49">Signature</h4>
+<pre><code class="language-python">class DedicatedProcessorConfiguration(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="dedicatedprocessorconfigurationbld">DedicatedProcessorConfiguration.bld</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1146">Show source in base_partition.py:1146</a></p>
+<p>Builds a Dedicated Processor configuration wrapper.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>proc</code> - Number of virtual processors (int)</li>
+<li><code>min_proc</code> - Minimum processors, default to proc value</li>
+<li><code>max_proc</code> - Maximum processors, default to proc value</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>Processor Config with dedicated processors</p>
+<h4 id="signature_50">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, proc, min_proc=None, max_proc=None):
+    ...
+</code></pre>
+<h3 id="dedicatedprocessorconfigurationdesired">DedicatedProcessorConfiguration().desired</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1172">Show source in base_partition.py:1172</a></p>
+<h4 id="signature_51">Signature</h4>
+<pre><code class="language-python">@property
+def desired(self):
+    ...
+</code></pre>
+<h3 id="dedicatedprocessorconfigurationdesired_1">DedicatedProcessorConfiguration().desired</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1176">Show source in base_partition.py:1176</a></p>
+<h4 id="signature_52">Signature</h4>
+<pre><code class="language-python">@desired.setter
+def desired(self, value):
+    ...
+</code></pre>
+<h3 id="dedicatedprocessorconfigurationmax">DedicatedProcessorConfiguration().max</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1180">Show source in base_partition.py:1180</a></p>
+<h4 id="signature_53">Signature</h4>
+<pre><code class="language-python">@property
+def max(self):
+    ...
+</code></pre>
+<h3 id="dedicatedprocessorconfigurationmax_1">DedicatedProcessorConfiguration().max</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1184">Show source in base_partition.py:1184</a></p>
+<h4 id="signature_54">Signature</h4>
+<pre><code class="language-python">@max.setter
+def max(self, value):
+    ...
+</code></pre>
+<h3 id="dedicatedprocessorconfigurationmin">DedicatedProcessorConfiguration().min</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1188">Show source in base_partition.py:1188</a></p>
+<h4 id="signature_55">Signature</h4>
+<pre><code class="language-python">@property
+def min(self):
+    ...
+</code></pre>
+<h3 id="dedicatedprocessorconfigurationmin_1">DedicatedProcessorConfiguration().min</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1192">Show source in base_partition.py:1192</a></p>
+<h4 id="signature_56">Signature</h4>
+<pre><code class="language-python">@min.setter
+def min(self, value):
+    ...
+</code></pre>
+<h2 id="dedicatedsharingmode">DedicatedSharingMode</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L315">Show source in base_partition.py:315</a></p>
+<p>Dedicated Processor sharing modes.</p>
+<p>Subset of LogicalPartitionProcessorSharingModeEnum.</p>
+<h4 id="signature_57">Signature</h4>
+<pre><code class="language-python">class DedicatedSharingMode(object):
+    ...
+</code></pre>
+<h2 id="ioslot">IOSlot</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1311">Show source in base_partition.py:1311</a></p>
+<p>An I/O Slot represents a device bus on the system.</p>
+<p>It may contain a piece of hardware within it.</p>
+<h4 id="signature_58">Signature</h4>
+<pre><code class="language-python">class IOSlot(ewrap.ElementWrapper, ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="ioslot__get_prop">IOSlot().__get_prop</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1461">Show source in base_partition.py:1461</a></p>
+<p>Thin wrapper to get the Associated I/O Slot and get a property.</p>
+<h4 id="signature_59">Signature</h4>
+<pre><code class="language-python">def __get_prop(self, func):
+    ...
+</code></pre>
+<h3 id="ioslotadapter">IOSlot().adapter</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1523">Show source in base_partition.py:1523</a></p>
+<p>DEPRECATED - use 'io_adapter' method instead.</p>
+<h4 id="signature_60">Signature</h4>
+<pre><code class="language-python">@property
+def adapter(self):
+    ...
+</code></pre>
+<h3 id="ioslotbld">IOSlot.bld</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1316">Show source in base_partition.py:1316</a></p>
+<p>Build a new IOSlot wrapper with all required parameters.</p>
+<h4 id="returns_1">Returns</h4>
+<p>A new IOSlot wrapper.</p>
+<h4 id="signature_61">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, bus_grp_required, drc_index, required=False):
+    ...
+</code></pre>
+<h3 id="ioslotbus_grp_required">IOSlot().bus_grp_required</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1368">Show source in base_partition.py:1368</a></p>
+<h4 id="signature_62">Signature</h4>
+<pre><code class="language-python">@property
+def bus_grp_required(self):
+    ...
+</code></pre>
+<h3 id="ioslotbus_grp_required_1">IOSlot().bus_grp_required</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1471">Show source in base_partition.py:1471</a></p>
+<h4 id="signature_63">Signature</h4>
+<pre><code class="language-python">@property
+def bus_grp_required(self):
+    ...
+</code></pre>
+<h3 id="ioslotdescription">IOSlot().description</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1376">Show source in base_partition.py:1376</a></p>
+<h4 id="signature_64">Signature</h4>
+<pre><code class="language-python">@property
+def description(self):
+    ...
+</code></pre>
+<h3 id="ioslotdescription_1">IOSlot().description</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1475">Show source in base_partition.py:1475</a></p>
+<h4 id="signature_65">Signature</h4>
+<pre><code class="language-python">@property
+def description(self):
+    ...
+</code></pre>
+<h3 id="ioslotdrc_index">IOSlot().drc_index</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1416">Show source in base_partition.py:1416</a></p>
+<h4 id="signature_66">Signature</h4>
+<pre><code class="language-python">@property
+def drc_index(self):
+    ...
+</code></pre>
+<h3 id="ioslotdrc_index_1">IOSlot().drc_index</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1515">Show source in base_partition.py:1515</a></p>
+<h4 id="signature_67">Signature</h4>
+<pre><code class="language-python">@property
+def drc_index(self):
+    ...
+</code></pre>
+<h3 id="ioslotdrc_name">IOSlot().drc_name</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1423">Show source in base_partition.py:1423</a></p>
+<h4 id="signature_68">Signature</h4>
+<pre><code class="language-python">@property
+def drc_name(self):
+    ...
+</code></pre>
+<h3 id="ioslotdrc_name_1">IOSlot().drc_name</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1519">Show source in base_partition.py:1519</a></p>
+<h4 id="signature_69">Signature</h4>
+<pre><code class="language-python">@property
+def drc_name(self):
+    ...
+</code></pre>
+<h3 id="ioslotio_adapter">IOSlot().io_adapter</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1427">Show source in base_partition.py:1427</a></p>
+<p>Jumps over the 'Related IO Adapter' element direct to the I/O.</p>
+<p>This is another area where the schema has a two step jump that the
+API can avoid.  This method skips over the RelatedIOAdapter
+and jumps right to the IO Adapter.</p>
+<p>Return values are either the generic IOAdapter or the
+PhysFCAdapter.</p>
+<h4 id="signature_70">Signature</h4>
+<pre><code class="language-python">@property
+def io_adapter(self):
+    ...
+</code></pre>
+<h3 id="ioslotio_adapter_1">IOSlot().io_adapter</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1532">Show source in base_partition.py:1532</a></p>
+<p>Returns the physical I/O Adapter for this slot.</p>
+<p>This will be one of two types.  Either a generic I/O Adapter or
+a Physical Fibre Channel Adapter (PhysFCAdapter).</p>
+<h4 id="signature_71">Signature</h4>
+<pre><code class="language-python">@property
+def io_adapter(self):
+    ...
+</code></pre>
+<h3 id="ioslotpc_adpt_id">IOSlot().pc_adpt_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1384">Show source in base_partition.py:1384</a></p>
+<h4 id="signature_72">Signature</h4>
+<pre><code class="language-python">@property
+def pc_adpt_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpc_adpt_id_1">IOSlot().pc_adpt_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1483">Show source in base_partition.py:1483</a></p>
+<h4 id="signature_73">Signature</h4>
+<pre><code class="language-python">@property
+def pc_adpt_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_class">IOSlot().pci_class</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1388">Show source in base_partition.py:1388</a></p>
+<h4 id="signature_74">Signature</h4>
+<pre><code class="language-python">@property
+def pci_class(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_class_1">IOSlot().pci_class</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1487">Show source in base_partition.py:1487</a></p>
+<h4 id="signature_75">Signature</h4>
+<pre><code class="language-python">@property
+def pci_class(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_dev_id">IOSlot().pci_dev_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1392">Show source in base_partition.py:1392</a></p>
+<h4 id="signature_76">Signature</h4>
+<pre><code class="language-python">@property
+def pci_dev_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_dev_id_1">IOSlot().pci_dev_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1491">Show source in base_partition.py:1491</a></p>
+<h4 id="signature_77">Signature</h4>
+<pre><code class="language-python">@property
+def pci_dev_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_mfg_id">IOSlot().pci_mfg_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1400">Show source in base_partition.py:1400</a></p>
+<h4 id="signature_78">Signature</h4>
+<pre><code class="language-python">@property
+def pci_mfg_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_mfg_id_1">IOSlot().pci_mfg_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1499">Show source in base_partition.py:1499</a></p>
+<h4 id="signature_79">Signature</h4>
+<pre><code class="language-python">@property
+def pci_mfg_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_rev_id">IOSlot().pci_rev_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1404">Show source in base_partition.py:1404</a></p>
+<h4 id="signature_80">Signature</h4>
+<pre><code class="language-python">@property
+def pci_rev_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_rev_id_1">IOSlot().pci_rev_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1503">Show source in base_partition.py:1503</a></p>
+<h4 id="signature_81">Signature</h4>
+<pre><code class="language-python">@property
+def pci_rev_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_subsys_dev_id">IOSlot().pci_subsys_dev_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1396">Show source in base_partition.py:1396</a></p>
+<h4 id="signature_82">Signature</h4>
+<pre><code class="language-python">@property
+def pci_subsys_dev_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_subsys_dev_id_1">IOSlot().pci_subsys_dev_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1495">Show source in base_partition.py:1495</a></p>
+<h4 id="signature_83">Signature</h4>
+<pre><code class="language-python">@property
+def pci_subsys_dev_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_subsys_vendor_id">IOSlot().pci_subsys_vendor_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1412">Show source in base_partition.py:1412</a></p>
+<h4 id="signature_84">Signature</h4>
+<pre><code class="language-python">@property
+def pci_subsys_vendor_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_subsys_vendor_id_1">IOSlot().pci_subsys_vendor_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1511">Show source in base_partition.py:1511</a></p>
+<h4 id="signature_85">Signature</h4>
+<pre><code class="language-python">@property
+def pci_subsys_vendor_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_vendor_id">IOSlot().pci_vendor_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1408">Show source in base_partition.py:1408</a></p>
+<h4 id="signature_86">Signature</h4>
+<pre><code class="language-python">@property
+def pci_vendor_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotpci_vendor_id_1">IOSlot().pci_vendor_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1507">Show source in base_partition.py:1507</a></p>
+<h4 id="signature_87">Signature</h4>
+<pre><code class="language-python">@property
+def pci_vendor_id(self):
+    ...
+</code></pre>
+<h3 id="ioslotphys_loc">IOSlot().phys_loc</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1380">Show source in base_partition.py:1380</a></p>
+<h4 id="signature_88">Signature</h4>
+<pre><code class="language-python">@property
+def phys_loc(self):
+    ...
+</code></pre>
+<h3 id="ioslotphys_loc_1">IOSlot().phys_loc</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1479">Show source in base_partition.py:1479</a></p>
+<h4 id="signature_89">Signature</h4>
+<pre><code class="language-python">@property
+def phys_loc(self):
+    ...
+</code></pre>
+<h3 id="ioslotrequired">IOSlot().required</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1453">Show source in base_partition.py:1453</a></p>
+<h4 id="signature_90">Signature</h4>
+<pre><code class="language-python">@property
+def required(self):
+    ...
+</code></pre>
+<h3 id="ioslotrequired_1">IOSlot().required</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1457">Show source in base_partition.py:1457</a></p>
+<h4 id="signature_91">Signature</h4>
+<pre><code class="language-python">@required.setter
+def required(self, val):
+    ...
+</code></pre>
+<h2 id="keylockpos">KeylockPos</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L412">Show source in base_partition.py:412</a></p>
+<p>Mirror of KeylockPosition.Enum.</p>
+<p>Valid values for LPAR.keylock_pos/VIOS.keylock_pos.</p>
+<p>Not to be confused with pypowervm.tasks.power.KeylockPos.</p>
+<p>Example usage:
+    lwrap.keylock_pos = KeylockPos.MANUAL
+    lwrap.update()</p>
+<h4 id="signature_92">Signature</h4>
+<pre><code class="language-python">class KeylockPos(object):
+    ...
+</code></pre>
+<h2 id="lparcompat">LPARCompat</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L356">Show source in base_partition.py:356</a></p>
+<p>LPAR compatibility modes.</p>
+<p>From LogicalPartitionProcessorCompatibilityModeEnum.</p>
+<h4 id="signature_93">Signature</h4>
+<pre><code class="language-python">class LPARCompat(object):
+    ...
+</code></pre>
+<h2 id="lparstate">LPARState</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L328">Show source in base_partition.py:328</a></p>
+<p>State of a given LPAR.</p>
+<p>From LogicalPartitionStateEnum.</p>
+<h4 id="signature_94">Signature</h4>
+<pre><code class="language-python">class LPARState(object):
+    ...
+</code></pre>
+<h2 id="lpartype">LPARType</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L349">Show source in base_partition.py:349</a></p>
+<p>Subset of LogicalPartitionEnvironmentEnum.</p>
+<h4 id="signature_95">Signature</h4>
+<pre><code class="language-python">class LPARType(object):
+    ...
+</code></pre>
+<h2 id="partitioncapabilities">PartitionCapabilities</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L799">Show source in base_partition.py:799</a></p>
+<p>See LogicalPartitionCapabilities.</p>
+<h4 id="signature_96">Signature</h4>
+<pre><code class="language-python">class PartitionCapabilities(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="partitioncapabilitiesio_dlpar">PartitionCapabilities().io_dlpar</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L801">Show source in base_partition.py:801</a></p>
+<h4 id="signature_97">Signature</h4>
+<pre><code class="language-python">@property
+def io_dlpar(self):
+    ...
+</code></pre>
+<h3 id="partitioncapabilitiesmem_dlpar">PartitionCapabilities().mem_dlpar</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L805">Show source in base_partition.py:805</a></p>
+<h4 id="signature_98">Signature</h4>
+<pre><code class="language-python">@property
+def mem_dlpar(self):
+    ...
+</code></pre>
+<h3 id="partitioncapabilitiesproc_dlpar">PartitionCapabilities().proc_dlpar</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L809">Show source in base_partition.py:809</a></p>
+<h4 id="signature_99">Signature</h4>
+<pre><code class="language-python">@property
+def proc_dlpar(self):
+    ...
+</code></pre>
+<h2 id="partitionioconfiguration">PartitionIOConfiguration</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1198">Show source in base_partition.py:1198</a></p>
+<p>Represents the partitions Dedicated IO Configuration.</p>
+<p>Comprised of I/O Slots.  There are two types of IO slots.  Those dedicated
+to physical hardware (io_slots) and those that get used by virtual
+hardware.</p>
+<h4 id="signature_100">Signature</h4>
+<pre><code class="language-python">class PartitionIOConfiguration(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="partitionioconfigurationbld">PartitionIOConfiguration.bld</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1206">Show source in base_partition.py:1206</a></p>
+<p>Builds a Partition IO configuration wrapper.</p>
+<h4 id="arguments_1">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>max_virt_slots</code> - Number of virtual slots (int)</li>
+<li><a href="#partitionioconfigurationio_slots">PartitionIOConfiguration().io_slots</a> - I/O slots to assign to the LPAR (list of IOSlot).</li>
+</ul>
+<h4 id="returns_2">Returns</h4>
+<p>Partition IO configuration wrapper</p>
+<h4 id="signature_101">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, max_virt_slots, io_slots=None):
+    ...
+</code></pre>
+<h3 id="partitionioconfigurationio_slots">PartitionIOConfiguration().io_slots</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1235">Show source in base_partition.py:1235</a></p>
+<p>The physical I/O Slots.</p>
+<p>Each slot will have hardware associated with it.</p>
+<h4 id="signature_102">Signature</h4>
+<pre><code class="language-python">@property
+def io_slots(self):
+    ...
+</code></pre>
+<h3 id="partitionioconfigurationio_slots_1">PartitionIOConfiguration().io_slots</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1244">Show source in base_partition.py:1244</a></p>
+<h4 id="signature_103">Signature</h4>
+<pre><code class="language-python">@io_slots.setter
+def io_slots(self, val):
+    ...
+</code></pre>
+<h3 id="partitionioconfigurationmax_virtual_slots">PartitionIOConfiguration().max_virtual_slots</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1223">Show source in base_partition.py:1223</a></p>
+<p>The maximum number of virtual slots.</p>
+<p>Slots are used for every VirtualScsiServerAdapter, TrunkAdapter, etc...</p>
+<h4 id="signature_104">Signature</h4>
+<pre><code class="language-python">@property
+def max_virtual_slots(self):
+    ...
+</code></pre>
+<h3 id="partitionioconfigurationmax_virtual_slots_1">PartitionIOConfiguration().max_virtual_slots</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1231">Show source in base_partition.py:1231</a></p>
+<h4 id="signature_105">Signature</h4>
+<pre><code class="language-python">@max_virtual_slots.setter
+def max_virtual_slots(self, value):
+    ...
+</code></pre>
+<h3 id="partitionioconfigurationtagged_io">PartitionIOConfiguration().tagged_io</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1248">Show source in base_partition.py:1248</a></p>
+<p>IBMi only - tagged I/O attributes of the I/O configuration.</p>
+<h4 id="signature_106">Signature</h4>
+<pre><code class="language-python">@property
+def tagged_io(self):
+    ...
+</code></pre>
+<h3 id="partitionioconfigurationtagged_io_1">PartitionIOConfiguration().tagged_io</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1254">Show source in base_partition.py:1254</a></p>
+<h4 id="signature_107">Signature</h4>
+<pre><code class="language-python">@tagged_io.setter
+def tagged_io(self, tio):
+    ...
+</code></pre>
+<h2 id="partitionmemoryconfiguration">PartitionMemoryConfiguration</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L919">Show source in base_partition.py:919</a></p>
+<p>Represents the partitions Memory Configuration.</p>
+<h4 id="signature_108">Signature</h4>
+<pre><code class="language-python">class PartitionMemoryConfiguration(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationame_enabled">PartitionMemoryConfiguration().ame_enabled</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L980">Show source in base_partition.py:980</a></p>
+<h4 id="signature_109">Signature</h4>
+<pre><code class="language-python">@property
+def ame_enabled(self):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationbld">PartitionMemoryConfiguration.bld</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L922">Show source in base_partition.py:922</a></p>
+<p>Creates the ParitionMemoryConfiguration.</p>
+<h4 id="arguments_2">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>mem</code> - The amount of memory for the partition in MB</li>
+<li><code>min_mem</code> - The minimum amount of memory in MB. Defaults to
+    the mem param</li>
+<li><code>max_mem</code> - The maximum amount of memory in MB. Defaults to
+    the mem param</li>
+</ul>
+<h4 id="returns_3">Returns</h4>
+<p>The memory configuration wrapper.</p>
+<h4 id="signature_110">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, mem, min_mem=None, max_mem=None):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationcurrent">PartitionMemoryConfiguration().current</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L946">Show source in base_partition.py:946</a></p>
+<h4 id="signature_111">Signature</h4>
+<pre><code class="language-python">@property
+def current(self):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationdesired">PartitionMemoryConfiguration().desired</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L950">Show source in base_partition.py:950</a></p>
+<h4 id="signature_112">Signature</h4>
+<pre><code class="language-python">@property
+def desired(self):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationdesired_1">PartitionMemoryConfiguration().desired</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L954">Show source in base_partition.py:954</a></p>
+<h4 id="signature_113">Signature</h4>
+<pre><code class="language-python">@desired.setter
+def desired(self, mem):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationexp_factor">PartitionMemoryConfiguration().exp_factor</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L984">Show source in base_partition.py:984</a></p>
+<p>The Active Memory Expansion Factor</p>
+<p>The expansion factor represents the target memory multiplier.
+e.g. An LPAR with EF = 2 which has 4 GB of memory will have a target
+expansion memory of 8 GB.</p>
+<h4 id="signature_114">Signature</h4>
+<pre><code class="language-python">@property
+def exp_factor(self):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationexp_factor_1">PartitionMemoryConfiguration().exp_factor</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L994">Show source in base_partition.py:994</a></p>
+<p>The Active Memory Expansion Factor</p>
+<h4 id="arguments_3">Arguments</h4>
+<ul>
+<li><code>exp_factor</code> - The expansion factor value. Setting this to 0 will
+                   turn/keep AME off. The valid values are
+                   1.0 &lt;= x &lt;= 10.0 up to 2 decimal places.</li>
+</ul>
+<h4 id="signature_115">Signature</h4>
+<pre><code class="language-python">@exp_factor.setter
+def exp_factor(self, exp_factor):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationmax">PartitionMemoryConfiguration().max</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L958">Show source in base_partition.py:958</a></p>
+<h4 id="signature_116">Signature</h4>
+<pre><code class="language-python">@property
+def max(self):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationmax_1">PartitionMemoryConfiguration().max</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L962">Show source in base_partition.py:962</a></p>
+<h4 id="signature_117">Signature</h4>
+<pre><code class="language-python">@max.setter
+def max(self, mem):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationmin">PartitionMemoryConfiguration().min</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L966">Show source in base_partition.py:966</a></p>
+<h4 id="signature_118">Signature</h4>
+<pre><code class="language-python">@property
+def min(self):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationmin_1">PartitionMemoryConfiguration().min</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L970">Show source in base_partition.py:970</a></p>
+<h4 id="signature_119">Signature</h4>
+<pre><code class="language-python">@min.setter
+def min(self, mem):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationppt_ratio">PartitionMemoryConfiguration().ppt_ratio</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1005">Show source in base_partition.py:1005</a></p>
+<p>The Physical Page Table Ratio</p>
+<p>The physical page table ratio represents the ratio of a VM's maximum
+memory to the size of its physical page table. The PPT is used by the
+platform to maintain the translation of the VM's physical to virtual
+memory addresses during mobility operations (i.e. LPM).</p>
+<p>The ppt_ratio is represented as 1:2^N where accepted values for N range
+from 6 to 12. If the ratio is 1:4096 for a VM with 64 GB of maximum
+memory, it would have a PPT of 16 MB (64 GB / 4096 = 16 MB).</p>
+<h4 id="signature_120">Signature</h4>
+<pre><code class="language-python">@property
+def ppt_ratio(self):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationppt_ratio_1">PartitionMemoryConfiguration().ppt_ratio</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1020">Show source in base_partition.py:1020</a></p>
+<p>The Physical Page Table Ratio</p>
+<h4 id="arguments_4">Arguments</h4>
+<ul>
+<li><code>ppt_ratio</code> - The ppt ratio value.</li>
+</ul>
+<h4 id="signature_121">Signature</h4>
+<pre><code class="language-python">@ppt_ratio.setter
+def ppt_ratio(self, ppt_ratio):
+    ...
+</code></pre>
+<h3 id="partitionmemoryconfigurationshared_enabled">PartitionMemoryConfiguration().shared_enabled</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L974">Show source in base_partition.py:974</a></p>
+<h4 id="signature_122">Signature</h4>
+<pre><code class="language-python">@property
+def shared_enabled(self):
+    ...
+</code></pre>
+<h2 id="partitionprocessorconfiguration">PartitionProcessorConfiguration</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L816">Show source in base_partition.py:816</a></p>
+<p>Represents the partitions Processor Configuration.</p>
+<p>Comprised of either the shared or dedicated processor config.</p>
+<h4 id="signature_123">Signature</h4>
+<pre><code class="language-python">class PartitionProcessorConfiguration(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="partitionprocessorconfigurationbld_dedicated">PartitionProcessorConfiguration.bld_dedicated</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L854">Show source in base_partition.py:854</a></p>
+<p>Builds a Dedicated Processor configuration wrapper.</p>
+<h4 id="arguments_5">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>proc</code> - Number of virtual processors (int)</li>
+<li><code>min_proc</code> - Minimum processors, default to proc value</li>
+<li><code>max_proc</code> - Maximum processors, default to proc value</li>
+<li><a href="#partitionprocessorconfigurationsharing_mode">PartitionProcessorConfiguration().sharing_mode</a> - Sharing mode of the processors, 'sre idle proces'</li>
+</ul>
+<h4 id="returns_4">Returns</h4>
+<p>Processor Config with dedicated processors</p>
+<h4 id="signature_124">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld_dedicated(
+    cls,
+    adapter,
+    proc,
+    min_proc=None,
+    max_proc=None,
+    sharing_mode=DedicatedSharingMode.SHARE_IDLE_PROCS,
+):
+    ...
+</code></pre>
+<h3 id="partitionprocessorconfigurationbld_shared">PartitionProcessorConfiguration.bld_shared</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L822">Show source in base_partition.py:822</a></p>
+<p>Builds a Shared Processor configuration wrapper.</p>
+<h4 id="arguments_6">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>proc_unit</code> - Amount of desired proc units (float)</li>
+<li><code>proc</code> - Number of virtual processors (int)</li>
+<li><a href="#partitionprocessorconfigurationsharing_mode">PartitionProcessorConfiguration().sharing_mode</a> - Sharing mode of the processors (uncapped)</li>
+<li><code>uncapped_weight</code> - Uncapped weight of the processors (0-255)</li>
+<li><code>min_proc_unit</code> - Minimum proc units, default to proc unit value</li>
+<li><code>max_proc_unit</code> - Maximum proc units, default to proc unit value</li>
+<li><code>min_proc</code> - Minimum processors, default to proc value</li>
+<li><code>max_proc</code> - Maximum processors, default to proc value</li>
+<li><code>proc_pool</code> - The shared processor pool for the lpar, defaults to 0</li>
+</ul>
+<h4 id="returns_5">Returns</h4>
+<p>Processor Config with shared processors</p>
+<h4 id="signature_125">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld_shared(
+    cls,
+    adapter,
+    proc_unit,
+    proc,
+    sharing_mode=SharingMode.UNCAPPED,
+    uncapped_weight=128,
+    min_proc_unit=None,
+    max_proc_unit=None,
+    min_proc=None,
+    max_proc=None,
+    proc_pool=0,
+):
+    ...
+</code></pre>
+<h3 id="partitionprocessorconfigurationdedicated_proc_cfg">PartitionProcessorConfiguration().dedicated_proc_cfg</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L906">Show source in base_partition.py:906</a></p>
+<p>Returns the Dedicated Processor Configuration.</p>
+<h4 id="signature_126">Signature</h4>
+<pre><code class="language-python">@property
+def dedicated_proc_cfg(self):
+    ...
+</code></pre>
+<h3 id="partitionprocessorconfigurationhas_dedicated">PartitionProcessorConfiguration().has_dedicated</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L879">Show source in base_partition.py:879</a></p>
+<p>Returns boolean True if dedicated, False if shared or not found.</p>
+<h4 id="signature_127">Signature</h4>
+<pre><code class="language-python">@property
+def has_dedicated(self):
+    ...
+</code></pre>
+<h3 id="partitionprocessorconfigurationshared_proc_cfg">PartitionProcessorConfiguration().shared_proc_cfg</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L896">Show source in base_partition.py:896</a></p>
+<p>Returns the Shared Processor Configuration.</p>
+<h4 id="signature_128">Signature</h4>
+<pre><code class="language-python">@property
+def shared_proc_cfg(self):
+    ...
+</code></pre>
+<h3 id="partitionprocessorconfigurationsharing_mode">PartitionProcessorConfiguration().sharing_mode</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L888">Show source in base_partition.py:888</a></p>
+<h4 id="signature_129">Signature</h4>
+<pre><code class="language-python">@property
+def sharing_mode(self):
+    ...
+</code></pre>
+<h3 id="partitionprocessorconfigurationsharing_mode_1">PartitionProcessorConfiguration().sharing_mode</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L892">Show source in base_partition.py:892</a></p>
+<h4 id="signature_130">Signature</h4>
+<pre><code class="language-python">@sharing_mode.setter
+def sharing_mode(self, value):
+    ...
+</code></pre>
+<h2 id="rmcstate">RMCState</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L377">Show source in base_partition.py:377</a></p>
+<p>Various RMC States.</p>
+<p>From ResourceMonitoringControlStateEnum.</p>
+<h4 id="signature_131">Signature</h4>
+<pre><code class="language-python">class RMCState(object):
+    ...
+</code></pre>
+<h2 id="sharedprocessorconfiguration">SharedProcessorConfiguration</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1031">Show source in base_partition.py:1031</a></p>
+<p>Represents the partition's Shared Processor Configuration.</p>
+<h4 id="signature_132">Signature</h4>
+<pre><code class="language-python">class SharedProcessorConfiguration(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationbld">SharedProcessorConfiguration.bld</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1034">Show source in base_partition.py:1034</a></p>
+<p>Builds a Shared Processor configuration wrapper.</p>
+<h4 id="arguments_7">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><code>proc_unit</code> - Amount of desired proc units (float)</li>
+<li><code>proc</code> - Number of virtual processors (int)</li>
+<li><a href="#sharedprocessorconfigurationuncapped_weight">SharedProcessorConfiguration().uncapped_weight</a> - Uncapped weight of the processors, 0-255</li>
+<li><code>min_proc_unit</code> - Minimum proc units, default to proc unit value</li>
+<li><code>max_proc_unit</code> - Maximum proc units, default to proc unit value</li>
+<li><code>min_proc</code> - Minimum processors, default to proc value</li>
+<li><code>max_proc</code> - Maximum processors, default to proc value</li>
+<li><code>proc_pool</code> - The shared processor pool for the lpar, defaults to 0</li>
+</ul>
+<h4 id="returns_6">Returns</h4>
+<p>Processor Config with shared processors</p>
+<h4 id="signature_133">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(
+    cls,
+    adapter,
+    proc_unit,
+    proc,
+    uncapped_weight=None,
+    min_proc_unit=None,
+    max_proc_unit=None,
+    min_proc=None,
+    max_proc=None,
+    proc_pool=0,
+):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationdesired_units">SharedProcessorConfiguration().desired_units</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1077">Show source in base_partition.py:1077</a></p>
+<h4 id="signature_134">Signature</h4>
+<pre><code class="language-python">@property
+def desired_units(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationdesired_units_1">SharedProcessorConfiguration().desired_units</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1081">Show source in base_partition.py:1081</a></p>
+<h4 id="signature_135">Signature</h4>
+<pre><code class="language-python">@desired_units.setter
+def desired_units(self, val):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationdesired_virtual">SharedProcessorConfiguration().desired_virtual</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1101">Show source in base_partition.py:1101</a></p>
+<h4 id="signature_136">Signature</h4>
+<pre><code class="language-python">@property
+def desired_virtual(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationdesired_virtual_1">SharedProcessorConfiguration().desired_virtual</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1105">Show source in base_partition.py:1105</a></p>
+<h4 id="signature_137">Signature</h4>
+<pre><code class="language-python">@desired_virtual.setter
+def desired_virtual(self, val):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmax_units">SharedProcessorConfiguration().max_units</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1085">Show source in base_partition.py:1085</a></p>
+<h4 id="signature_138">Signature</h4>
+<pre><code class="language-python">@property
+def max_units(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmax_units_1">SharedProcessorConfiguration().max_units</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1089">Show source in base_partition.py:1089</a></p>
+<h4 id="signature_139">Signature</h4>
+<pre><code class="language-python">@max_units.setter
+def max_units(self, val):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmax_virtual">SharedProcessorConfiguration().max_virtual</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1109">Show source in base_partition.py:1109</a></p>
+<h4 id="signature_140">Signature</h4>
+<pre><code class="language-python">@property
+def max_virtual(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmax_virtual_1">SharedProcessorConfiguration().max_virtual</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1113">Show source in base_partition.py:1113</a></p>
+<h4 id="signature_141">Signature</h4>
+<pre><code class="language-python">@max_virtual.setter
+def max_virtual(self, val):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmin_units">SharedProcessorConfiguration().min_units</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1093">Show source in base_partition.py:1093</a></p>
+<h4 id="signature_142">Signature</h4>
+<pre><code class="language-python">@property
+def min_units(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmin_units_1">SharedProcessorConfiguration().min_units</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1097">Show source in base_partition.py:1097</a></p>
+<h4 id="signature_143">Signature</h4>
+<pre><code class="language-python">@min_units.setter
+def min_units(self, val):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmin_virtual">SharedProcessorConfiguration().min_virtual</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1117">Show source in base_partition.py:1117</a></p>
+<h4 id="signature_144">Signature</h4>
+<pre><code class="language-python">@property
+def min_virtual(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationmin_virtual_1">SharedProcessorConfiguration().min_virtual</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1121">Show source in base_partition.py:1121</a></p>
+<h4 id="signature_145">Signature</h4>
+<pre><code class="language-python">@min_virtual.setter
+def min_virtual(self, val):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationpool_id">SharedProcessorConfiguration().pool_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1125">Show source in base_partition.py:1125</a></p>
+<h4 id="signature_146">Signature</h4>
+<pre><code class="language-python">@property
+def pool_id(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationpool_id_1">SharedProcessorConfiguration().pool_id</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1129">Show source in base_partition.py:1129</a></p>
+<h4 id="signature_147">Signature</h4>
+<pre><code class="language-python">@pool_id.setter
+def pool_id(self, val):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationuncapped_weight">SharedProcessorConfiguration().uncapped_weight</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1133">Show source in base_partition.py:1133</a></p>
+<h4 id="signature_148">Signature</h4>
+<pre><code class="language-python">@property
+def uncapped_weight(self):
+    ...
+</code></pre>
+<h3 id="sharedprocessorconfigurationuncapped_weight_1">SharedProcessorConfiguration().uncapped_weight</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1137">Show source in base_partition.py:1137</a></p>
+<h4 id="signature_149">Signature</h4>
+<pre><code class="language-python">@uncapped_weight.setter
+def uncapped_weight(self, val):
+    ...
+</code></pre>
+<h2 id="sharingmode">SharingMode</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L305">Show source in base_partition.py:305</a></p>
+<p>Shared Processor sharing modes.</p>
+<p>Subset of LogicalPartitionProcessorSharingModeEnum.</p>
+<h4 id="signature_150">Signature</h4>
+<pre><code class="language-python">class SharingMode(object):
+    ...
+</code></pre>
+<h2 id="taggedio">TaggedIO</h2>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1261">Show source in base_partition.py:1261</a></p>
+<p>IBMi only - tagged I/O attributes of the I/O configuration.</p>
+<h4 id="signature_151">Signature</h4>
+<pre><code class="language-python">class TaggedIO(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="taggedioalt_load_src">TaggedIO().alt_load_src</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1281">Show source in base_partition.py:1281</a></p>
+<p>Value may or may not be an integer - always returned as string.</p>
+<h4 id="signature_152">Signature</h4>
+<pre><code class="language-python">@property
+def alt_load_src(self):
+    ...
+</code></pre>
+<h3 id="taggedioalt_load_src_1">TaggedIO().alt_load_src</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1286">Show source in base_partition.py:1286</a></p>
+<h4 id="signature_153">Signature</h4>
+<pre><code class="language-python">@alt_load_src.setter
+def alt_load_src(self, value):
+    ...
+</code></pre>
+<h3 id="taggediobld">TaggedIO.bld</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1264">Show source in base_partition.py:1264</a></p>
+<p>Builds a Partition TaggedIO wrapper.</p>
+<h4 id="arguments_8">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><a href="#taggedioload_src">TaggedIO().load_src</a> - Load source to use</li>
+<li><a href="#taggedioconsole">TaggedIO().console</a> - Console to use for IBMi</li>
+<li><a href="#taggedioalt_load_src">TaggedIO().alt_load_src</a> - Alternate load source to use</li>
+</ul>
+<h4 id="returns_7">Returns</h4>
+<p>Partition TaggedIO wrapper</p>
+<h4 id="signature_154">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(cls, adapter, load_src=&quot;0&quot;, console=&quot;HMC&quot;, alt_load_src=&quot;NONE&quot;):
+    ...
+</code></pre>
+<h3 id="taggedioconsole">TaggedIO().console</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1290">Show source in base_partition.py:1290</a></p>
+<p>Value may or may not be an integer - always returned as string.</p>
+<h4 id="signature_155">Signature</h4>
+<pre><code class="language-python">@property
+def console(self):
+    ...
+</code></pre>
+<h3 id="taggedioconsole_1">TaggedIO().console</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1295">Show source in base_partition.py:1295</a></p>
+<h4 id="signature_156">Signature</h4>
+<pre><code class="language-python">@console.setter
+def console(self, value):
+    ...
+</code></pre>
+<h3 id="taggedioload_src">TaggedIO().load_src</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1299">Show source in base_partition.py:1299</a></p>
+<p>Value may or may not be an integer - always returned as string.</p>
+<h4 id="signature_157">Signature</h4>
+<pre><code class="language-python">@property
+def load_src(self):
+    ...
+</code></pre>
+<h3 id="taggedioload_src_1">TaggedIO().load_src</h3>
+<p><a href="../../../pypowervm/wrappers/base_partition.py#L1304">Show source in base_partition.py:1304</a></p>
+<h4 id="signature_158">Signature</h4>
+<pre><code class="language-python">@load_src.setter
+def load_src(self, value):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

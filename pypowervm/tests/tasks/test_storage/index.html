@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Test Storage - pypowervm documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../test_sriov/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../test_vfc_mapper/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#test-storage" class="nav-link">Test Storage</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#testlu" class="nav-link">TestLU</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testluent" class="nav-link">TestLUEnt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testlulinkedclone" class="nav-link">TestLULinkedClone</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testrmstorage" class="nav-link">TestRMStorage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testscrub" class="nav-link">TestScrub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testscrub2" class="nav-link">TestScrub2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testscrub3" class="nav-link">TestScrub3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testscrub4" class="nav-link">TestScrub4</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testtier" class="nav-link">TestTier</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testuploadlv" class="nav-link">TestUploadLV</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testvdisk" class="nav-link">TestVDisk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testvg" class="nav-link">TestVG</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="test-storage">Test Storage</h1>
+<p><a href="../../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../../#pypowervm">Pypowervm</a> /
+<a href="../../#tests">Tests</a> /
+<a href="../#tasks">Tasks</a> /
+Test Storage</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../../pypowervm/tests/tasks/test_storage.py">pypowervm.tests.tasks.test_storage</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#test-storage">Test Storage</a></li>
+<li><a href="#testlu">TestLU</a><ul>
+<li><a href="#testlu()setup">TestLU().setUp</a></li>
+<li><a href="#testlu()test_crt_lu">TestLU().test_crt_lu</a></li>
+<li><a href="#testlu()test_rm_lu_by_lu">TestLU().test_rm_lu_by_lu</a></li>
+</ul>
+</li>
+<li><a href="#testluent">TestLUEnt</a><ul>
+<li><a href="#testluent()setup">TestLUEnt().setUp</a></li>
+<li><a href="#testluent()test_rm_tier_storage1">TestLUEnt().test_rm_tier_storage1</a></li>
+<li><a href="#testluent()test_rm_tier_storage_errors">TestLUEnt().test_rm_tier_storage_errors</a></li>
+<li><a href="#testluent()test_rm_tier_storage_feed_get">TestLUEnt().test_rm_tier_storage_feed_get</a></li>
+</ul>
+</li>
+<li><a href="#testlulinkedclone">TestLULinkedClone</a><ul>
+<li><a href="#testlulinkedclone()setup">TestLULinkedClone().setUp</a></li>
+<li><a href="#testlulinkedclone()test_crt_lu_linked_clone">TestLULinkedClone().test_crt_lu_linked_clone</a></li>
+<li><a href="#testlulinkedclone()test_image_lu_for_clone">TestLULinkedClone().test_image_lu_for_clone</a></li>
+<li><a href="#testlulinkedclone()test_image_lu_in_use">TestLULinkedClone().test_image_lu_in_use</a></li>
+<li><a href="#testlulinkedclone()test_rm_ssp_storage">TestLULinkedClone().test_rm_ssp_storage</a></li>
+</ul>
+</li>
+<li><a href="#testrmstorage">TestRMStorage</a><ul>
+<li><a href="#testrmstorage()setup">TestRMStorage().setUp</a></li>
+<li><a href="#testrmstorage()test_rm_dev_by_udid">TestRMStorage().test_rm_dev_by_udid</a></li>
+<li><a href="#testrmstorage()test_rm_vdisks">TestRMStorage().test_rm_vdisks</a></li>
+<li><a href="#testrmstorage()test_rm_vopts">TestRMStorage().test_rm_vopts</a></li>
+</ul>
+</li>
+<li><a href="#testscrub">TestScrub</a><ul>
+<li><a href="#testscrub()setup">TestScrub().setUp</a></li>
+<li><a href="#testscrub()test_matches_warn">TestScrub().test_matches_warn</a></li>
+<li><a href="#testscrub()test_multiple_removals">TestScrub().test_multiple_removals</a></li>
+<li><a href="#testscrub()test_no_matches">TestScrub().test_no_matches</a></li>
+</ul>
+</li>
+<li><a href="#testscrub2">TestScrub2</a><ul>
+<li><a href="#testscrub2()setup">TestScrub2().setUp</a></li>
+<li><a href="#testscrub2()test_find_stale_lpars">TestScrub2().test_find_stale_lpars</a></li>
+<li><a href="#testscrub2()test_lu_vopt_vdisk">TestScrub2().test_lu_vopt_vdisk</a></li>
+<li><a href="#testscrub2()test_no_remove_storage">TestScrub2().test_no_remove_storage</a></li>
+</ul>
+</li>
+<li><a href="#testscrub3">TestScrub3</a><ul>
+<li><a href="#testscrub3count_maps_for_lpar">TestScrub3.count_maps_for_lpar</a></li>
+<li><a href="#testscrub3()setup">TestScrub3().setUp</a></li>
+<li><a href="#testscrub3()test_comprehensive_scrub">TestScrub3().test_comprehensive_scrub</a></li>
+<li><a href="#testscrub3()test_orphan">TestScrub3().test_orphan</a></li>
+<li><a href="#testscrub3()test_orphans_by_lpar_id">TestScrub3().test_orphans_by_lpar_id</a></li>
+<li><a href="#testscrub3()test_remove_portless_vfc_maps1">TestScrub3().test_remove_portless_vfc_maps1</a></li>
+<li><a href="#testscrub3()test_remove_portless_vfc_maps2">TestScrub3().test_remove_portless_vfc_maps2</a></li>
+</ul>
+</li>
+<li><a href="#testscrub4">TestScrub4</a><ul>
+<li><a href="#testscrub4()setup">TestScrub4().setUp</a></li>
+<li><a href="#testscrub4()test_add_lpar_storage_scrub_tasks">TestScrub4().test_add_lpar_storage_scrub_tasks</a></li>
+<li><a href="#testscrub4()test_find_stale_lpars_combined">TestScrub4().test_find_stale_lpars_combined</a></li>
+<li><a href="#testscrub4()test_find_stale_lpars_vios_only">TestScrub4().test_find_stale_lpars_vios_only</a></li>
+<li><a href="#testscrub4()test_orphan_scrub">TestScrub4().test_orphan_scrub</a></li>
+</ul>
+</li>
+<li><a href="#testtier">TestTier</a><ul>
+<li><a href="#testtier()test_default_tier_for_ssp">TestTier().test_default_tier_for_ssp</a></li>
+</ul>
+</li>
+<li><a href="#testuploadlv">TestUploadLV</a><ul>
+<li><a href="#testuploadlv()setup">TestUploadLV().setUp</a></li>
+<li><a href="#testuploadlv()test_create_file">TestUploadLV().test_create_file</a></li>
+<li><a href="#testuploadlv()test_crt_copy_vdisk">TestUploadLV().test_crt_copy_vdisk</a></li>
+<li><a href="#testuploadlv()test_rest_api_pipe">TestUploadLV().test_rest_api_pipe</a></li>
+<li><a href="#testuploadlv()test_upload_lu_func_remote">TestUploadLV().test_upload_lu_func_remote</a></li>
+<li><a href="#testuploadlv()test_upload_new_lu">TestUploadLV().test_upload_new_lu</a></li>
+<li><a href="#testuploadlv()test_upload_new_lu_calls">TestUploadLV().test_upload_new_lu_calls</a></li>
+<li><a href="#testuploadlv()test_upload_new_lu_calls_via_func">TestUploadLV().test_upload_new_lu_calls_via_func</a></li>
+<li><a href="#testuploadlv()test_upload_new_vdisk">TestUploadLV().test_upload_new_vdisk</a></li>
+<li><a href="#testuploadlv()test_upload_new_vdisk_failed">TestUploadLV().test_upload_new_vdisk_failed</a></li>
+<li><a href="#testuploadlv()test_upload_new_vdisk_failure">TestUploadLV().test_upload_new_vdisk_failure</a></li>
+<li><a href="#testuploadlv()test_upload_new_vdisk_func_remote">TestUploadLV().test_upload_new_vdisk_func_remote</a></li>
+<li><a href="#testuploadlv()test_upload_new_vopt">TestUploadLV().test_upload_new_vopt</a></li>
+<li><a href="#testuploadlv()test_upload_new_vopt_w_fail">TestUploadLV().test_upload_new_vopt_w_fail</a></li>
+<li><a href="#testuploadlv()test_upload_stream_api_func">TestUploadLV().test_upload_stream_api_func</a></li>
+<li><a href="#testuploadlv()test_upload_stream_via_stream_bld">TestUploadLV().test_upload_stream_via_stream_bld</a></li>
+<li><a href="#testuploadlv()test_upload_vopt_by_filepath">TestUploadLV().test_upload_vopt_by_filepath</a></li>
+</ul>
+</li>
+<li><a href="#testvdisk">TestVDisk</a><ul>
+<li><a href="#testvdisk()setup">TestVDisk().setUp</a></li>
+<li><a href="#testvdisk()test_crt_vdisk">TestVDisk().test_crt_vdisk</a></li>
+<li><a href="#testvdisk()test_rescan_vstor">TestVDisk().test_rescan_vstor</a></li>
+</ul>
+</li>
+<li><a href="#testvg">TestVG</a><ul>
+<li><a href="#testvg()setup">TestVG().setUp</a></li>
+<li><a href="#testvg()test_find_vg_all_vioses">TestVG().test_find_vg_all_vioses</a></li>
+<li><a href="#testvg()test_find_vg_no_vios">TestVG().test_find_vg_no_vios</a></li>
+<li><a href="#testvg()test_find_vg_not_found">TestVG().test_find_vg_not_found</a></li>
+<li><a href="#testvg()test_find_vg_specified_vios">TestVG().test_find_vg_specified_vios</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="testlu">TestLU</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L815">Show source in test_storage.py:815</a></p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class TestLU(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testlusetup">TestLU().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L816">Show source in test_storage.py:816</a></p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testlutest_crt_lu">TestLU().test_crt_lu</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L830">Show source in test_storage.py:830</a></p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.storage.LUEnt.bld&quot;)
+@mock.patch(&quot;pypowervm.wrappers.storage.Tier.search&quot;)
+def test_crt_lu(self, mock_tier_srch, mock_lu_bld):
+    ...
+</code></pre>
+<h3 id="testlutest_rm_lu_by_lu">TestLU().test_rm_lu_by_lu</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L879">Show source in test_storage.py:879</a></p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">def test_rm_lu_by_lu(self):
+    ...
+</code></pre>
+<h2 id="testluent">TestLUEnt</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L741">Show source in test_storage.py:741</a></p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">class TestLUEnt(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testluentsetup">TestLUEnt().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L745">Show source in test_storage.py:745</a></p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testluenttest_rm_tier_storage1">TestLUEnt().test_rm_tier_storage1</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L795">Show source in test_storage.py:795</a></p>
+<p>Verify rm_tier_storage removes what it oughtta.</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">def test_rm_tier_storage1(self):
+    ...
+</code></pre>
+<h3 id="testluenttest_rm_tier_storage_errors">TestLUEnt().test_rm_tier_storage_errors</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L763">Show source in test_storage.py:763</a></p>
+<p>Test rm_tier_storage ValueErrors.</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">def test_rm_tier_storage_errors(self):
+    ...
+</code></pre>
+<h3 id="testluenttest_rm_tier_storage_feed_get">TestLUEnt().test_rm_tier_storage_feed_get</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L774">Show source in test_storage.py:774</a></p>
+<p>Verify rm_tier_storage does a feed GET if lufeed not provided.</p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._rm_lus&quot;)
+def test_rm_tier_storage_feed_get(self, mock_rm_lus):
+    ...
+</code></pre>
+<h2 id="testlulinkedclone">TestLULinkedClone</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L887">Show source in test_storage.py:887</a></p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">class TestLULinkedClone(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testlulinkedclonesetup">TestLULinkedClone().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L889">Show source in test_storage.py:889</a></p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testlulinkedclonetest_crt_lu_linked_clone">TestLULinkedClone().test_crt_lu_linked_clone</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L931">Show source in test_storage.py:931</a></p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;warnings.warn&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.crt_lu&quot;)
+def test_crt_lu_linked_clone(self, mock_crt_lu, mock_warn):
+    ...
+</code></pre>
+<h3 id="testlulinkedclonetest_image_lu_for_clone">TestLULinkedClone().test_image_lu_for_clone</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L953">Show source in test_storage.py:953</a></p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">def test_image_lu_for_clone(self):
+    ...
+</code></pre>
+<h3 id="testlulinkedclonetest_image_lu_in_use">TestLULinkedClone().test_image_lu_in_use</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L944">Show source in test_storage.py:944</a></p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">def test_image_lu_in_use(self):
+    ...
+</code></pre>
+<h3 id="testlulinkedclonetest_rm_ssp_storage">TestLULinkedClone().test_rm_ssp_storage</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L961">Show source in test_storage.py:961</a></p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">def test_rm_ssp_storage(self):
+    ...
+</code></pre>
+<h2 id="testrmstorage">TestRMStorage</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L624">Show source in test_storage.py:624</a></p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">class TestRMStorage(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testrmstoragesetup">TestRMStorage().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L625">Show source in test_storage.py:625</a></p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testrmstoragetest_rm_dev_by_udid">TestRMStorage().test_rm_dev_by_udid</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L633">Show source in test_storage.py:633</a></p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">def test_rm_dev_by_udid(self):
+    ...
+</code></pre>
+<h3 id="testrmstoragetest_rm_vdisks">TestRMStorage().test_rm_vdisks</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L666">Show source in test_storage.py:666</a></p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.update_by_path&quot;)
+def test_rm_vdisks(self, mock_update):
+    ...
+</code></pre>
+<h3 id="testrmstoragetest_rm_vopts">TestRMStorage().test_rm_vopts</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L698">Show source in test_storage.py:698</a></p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.update_by_path&quot;)
+def test_rm_vopts(self, mock_update):
+    ...
+</code></pre>
+<h2 id="testscrub">TestScrub</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L989">Show source in test_storage.py:989</a></p>
+<p>Two VIOSes in feed; no VFC mappings; no storage in VSCSI mappings.</p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">class TestScrub(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testscrubsetup">TestScrub().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L991">Show source in test_storage.py:991</a></p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testscrubtest_matches_warn">TestScrub().test_matches_warn</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1014">Show source in test_storage.py:1014</a></p>
+<p>When removals hit, log warnings including the removal count.</p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.vfc_mapper.remove_maps&quot;)
+def test_matches_warn(self, mock_rm_vfc_maps):
+    ...
+</code></pre>
+<h3 id="testscrubtest_multiple_removals">TestScrub().test_multiple_removals</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1037">Show source in test_storage.py:1037</a></p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.wrap&quot;)
+def test_multiple_removals(self, mock_wrap):
+    ...
+</code></pre>
+<h3 id="testscrubtest_no_matches">TestScrub().test_no_matches</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L999">Show source in test_storage.py:999</a></p>
+<p>When removals have no hits, log debug messages, but no warnings.</p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._RemoveStorage.execute&quot;)
+def test_no_matches(self, mock_rm_stg):
+    ...
+</code></pre>
+<h2 id="testscrub2">TestScrub2</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1084">Show source in test_storage.py:1084</a></p>
+<p>One VIOS in feed; VFC mappings; interesting VSCSI mappings.</p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">class TestScrub2(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testscrub2setup">TestScrub2().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1086">Show source in test_storage.py:1086</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testscrub2test_find_stale_lpars">TestScrub2().test_find_stale_lpars</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1151">Show source in test_storage.py:1151</a></p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.logical_partition.LPAR.get&quot;)
+@mock.patch(&quot;pypowervm.wrappers.virtual_io_server.VIOS.get&quot;)
+def test_find_stale_lpars(self, mock_vios, mock_lpar):
+    ...
+</code></pre>
+<h3 id="testscrub2test_lu_vopt_vdisk">TestScrub2().test_lu_vopt_vdisk</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1095">Show source in test_storage.py:1095</a></p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._rm_vdisks&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._rm_vopts&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._rm_lus&quot;)
+def test_lu_vopt_vdisk(self, mock_rm_lu, mock_rm_vopt, mock_rm_vd):
+    ...
+</code></pre>
+<h3 id="testscrub2test_no_remove_storage">TestScrub2().test_no_remove_storage</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1140">Show source in test_storage.py:1140</a></p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._rm_vdisks&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._rm_vopts&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._rm_lus&quot;)
+def test_no_remove_storage(self, mock_rm_lu, mock_rm_vopt, mock_rm_vd):
+    ...
+</code></pre>
+<h2 id="testscrub3">TestScrub3</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1160">Show source in test_storage.py:1160</a></p>
+<p>One VIOS; lots of orphan VSCSI and VFC mappings.</p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">class TestScrub3(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testscrub3count_maps_for_lpar">TestScrub3.count_maps_for_lpar</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1238">Show source in test_storage.py:1238</a></p>
+<p>Count the mappings whose client side is the specified LPAR ID.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>mappings</code> - List of VFC or VSCSI mappings to search.</li>
+<li><code>lpar_id</code> - The client LPAR ID to search for.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>Integer - the number of mappings whose server_adapter.lpar_id
+         matches the specified lpar_id.</p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">@staticmethod
+def count_maps_for_lpar(mappings, lpar_id):
+    ...
+</code></pre>
+<h3 id="testscrub3setup">TestScrub3().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1162">Show source in test_storage.py:1162</a></p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testscrub3test_comprehensive_scrub">TestScrub3().test_comprehensive_scrub</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1212">Show source in test_storage.py:1212</a></p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._rm_vdisks&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._rm_vopts&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.find_stale_lpars&quot;)
+@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.wrap&quot;)
+def test_comprehensive_scrub(
+    self, mock_wrap, mock_stale_lids, mock_rm_vopts, mock_rm_vdisks
+):
+    ...
+</code></pre>
+<h3 id="testscrub3test_orphan">TestScrub3().test_orphan</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1170">Show source in test_storage.py:1170</a></p>
+<p>Scrub orphan VSCSI and VFC mappings.</p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._rm_vopts&quot;)
+def test_orphan(self, mock_rm_vopts):
+    ...
+</code></pre>
+<h3 id="testscrub3test_orphans_by_lpar_id">TestScrub3().test_orphans_by_lpar_id</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1283">Show source in test_storage.py:1283</a></p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._rm_vopts&quot;)
+@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.wrap&quot;)
+def test_orphans_by_lpar_id(self, mock_wrap, mock_rm_vopts):
+    ...
+</code></pre>
+<h3 id="testscrub3test_remove_portless_vfc_maps1">TestScrub3().test_remove_portless_vfc_maps1</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1250">Show source in test_storage.py:1250</a></p>
+<p>Test _remove_portless_vfc_maps with no LPAR ID.</p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">def test_remove_portless_vfc_maps1(self):
+    ...
+</code></pre>
+<h3 id="testscrub3test_remove_portless_vfc_maps2">TestScrub3().test_remove_portless_vfc_maps2</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1268">Show source in test_storage.py:1268</a></p>
+<p>Test _remove_portless_vfc_maps specifying an LPAR ID.</p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">def test_remove_portless_vfc_maps2(self):
+    ...
+</code></pre>
+<h2 id="testscrub4">TestScrub4</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1303">Show source in test_storage.py:1303</a></p>
+<p>Novalink partition hosting storage for another VIOS partition</p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">class TestScrub4(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testscrub4setup">TestScrub4().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1305">Show source in test_storage.py:1305</a></p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testscrub4test_add_lpar_storage_scrub_tasks">TestScrub4().test_add_lpar_storage_scrub_tasks</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1353">Show source in test_storage.py:1353</a></p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._remove_lpar_maps&quot;)
+def test_add_lpar_storage_scrub_tasks(self, mock_rm_lpar):
+    ...
+</code></pre>
+<h3 id="testscrub4test_find_stale_lpars_combined">TestScrub4().test_find_stale_lpars_combined</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1325">Show source in test_storage.py:1325</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">def test_find_stale_lpars_combined(self):
+    ...
+</code></pre>
+<h3 id="testscrub4test_find_stale_lpars_vios_only">TestScrub4().test_find_stale_lpars_vios_only</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1321">Show source in test_storage.py:1321</a></p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">def test_find_stale_lpars_vios_only(self):
+    ...
+</code></pre>
+<h3 id="testscrub4test_orphan_scrub">TestScrub4().test_orphan_scrub</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L1328">Show source in test_storage.py:1328</a></p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._remove_lpar_maps&quot;)
+def test_orphan_scrub(self, mock_rm_lpar):
+    ...
+</code></pre>
+<h2 id="testtier">TestTier</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L729">Show source in test_storage.py:729</a></p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">class TestTier(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testtiertest_default_tier_for_ssp">TestTier().test_default_tier_for_ssp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L730">Show source in test_storage.py:730</a></p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.storage.Tier.search&quot;)
+def test_default_tier_for_ssp(self, mock_srch):
+    ...
+</code></pre>
+<h2 id="testuploadlv">TestUploadLV</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L65">Show source in test_storage.py:65</a></p>
+<p>Unit Tests for Instance uploads.</p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">class TestUploadLV(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testuploadlvsetup">TestUploadLV().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L68">Show source in test_storage.py:68</a></p>
+<h4 id="signature_47">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_create_file">TestUploadLV().test_create_file</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L451">Show source in test_storage.py:451</a></p>
+<p>Validates that the _create_file builds the Element properly.</p>
+<h4 id="signature_48">Signature</h4>
+<pre><code class="language-python">def test_create_file(self):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_crt_copy_vdisk">TestUploadLV().test_crt_copy_vdisk</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L245">Show source in test_storage.py:245</a></p>
+<p>Tests the uploads of the virtual disks.</p>
+<h4 id="signature_49">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage.crt_vdisk&quot;)
+def test_crt_copy_vdisk(self, mock_crt_vdisk):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_rest_api_pipe">TestUploadLV().test_rest_api_pipe</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L75">Show source in test_storage.py:75</a></p>
+<h4 id="signature_50">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;tempfile.mkdtemp&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.os&quot;)
+@mock.patch(&quot;pypowervm.util.retry_io_command&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.open&quot;)
+def test_rest_api_pipe(self, mock_open, mock_retry, mock_os, mock_mkdtemp):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_lu_func_remote">TestUploadLV().test_upload_lu_func_remote</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L418">Show source in test_storage.py:418</a></p>
+<p>With FUNC and non-local, upload_lu uses REST API upload.</p>
+<h4 id="signature_51">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._upload_stream_api&quot;)
+def test_upload_lu_func_remote(self, mock_usa, mock_crt_file):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_lu">TestUploadLV().test_upload_new_lu</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L339">Show source in test_storage.py:339</a></p>
+<p>Tests create/upload of SSP LU.</p>
+<h4 id="signature_52">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.crt_lu&quot;)
+def test_upload_new_lu(self, mock_crt_lu, mock_create_file):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_lu_calls">TestUploadLV().test_upload_new_lu_calls</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L371">Show source in test_storage.py:371</a></p>
+<p>Various permutations of how to call upload_new_lu.</p>
+<h4 id="signature_53">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.util.convert_bytes_to_gb&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.crt_lu&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.upload_lu&quot;)
+def test_upload_new_lu_calls(self, mock_upl, mock_crt, mock_b2g):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_lu_calls_via_func">TestUploadLV().test_upload_new_lu_calls_via_func</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L431">Show source in test_storage.py:431</a></p>
+<p>Various permutations of how to call upload_new_lu.</p>
+<h4 id="signature_54">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.util.convert_bytes_to_gb&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.crt_lu&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.upload_lu&quot;)
+def test_upload_new_lu_calls_via_func(self, mock_upl, mock_crt, mock_b2g):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_vdisk">TestUploadLV().test_upload_new_vdisk</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L213">Show source in test_storage.py:213</a></p>
+<p>Tests the uploads of the virtual disks.</p>
+<h4 id="signature_55">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+def test_upload_new_vdisk(self, mock_create_file):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_vdisk_failed">TestUploadLV().test_upload_new_vdisk_failed</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L188">Show source in test_storage.py:188</a></p>
+<p>Tests the uploads of the virtual disks.</p>
+<h4 id="signature_56">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage.rm_vg_storage&quot;)
+@mock.patch(&quot;pypowervm.wrappers.storage.VG.get&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._upload_stream&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage.crt_vdisk&quot;)
+def test_upload_new_vdisk_failed(
+    self, mock_create_vdisk, mock_create_file, mock_upload_stream, mock_vg_get, mock_rm
+):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_vdisk_failure">TestUploadLV().test_upload_new_vdisk_failure</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L314">Show source in test_storage.py:314</a></p>
+<p>Tests the failure path for uploading of the virtual disks.</p>
+<h4 id="signature_57">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+def test_upload_new_vdisk_failure(self, mock_create_file):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_vdisk_func_remote">TestUploadLV().test_upload_new_vdisk_func_remote</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L265">Show source in test_storage.py:265</a></p>
+<p>With FUNC and non-local, upload_new_vdisk uses REST API upload.</p>
+<h4 id="signature_58">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage.crt_vdisk&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._upload_stream_api&quot;)
+def test_upload_new_vdisk_func_remote(self, mock_usa, mock_crt_file, mock_crt_vdisk):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_vopt">TestUploadLV().test_upload_new_vopt</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L106">Show source in test_storage.py:106</a></p>
+<p>Tests the uploads of the virtual disks.</p>
+<h4 id="signature_59">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+def test_upload_new_vopt(self, mock_create_file):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_new_vopt_w_fail">TestUploadLV().test_upload_new_vopt_w_fail</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L179">Show source in test_storage.py:179</a></p>
+<p>Tests the uploads of the virtual disks with an upload fail.</p>
+<h4 id="signature_60">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+def test_upload_new_vopt_w_fail(self, mock_create_file):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_stream_api_func">TestUploadLV().test_upload_stream_api_func</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L95">Show source in test_storage.py:95</a></p>
+<p>With FUNC, _upload_stream_api uses _rest_api_pipe properly.</p>
+<h4 id="signature_61">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._rest_api_pipe&quot;)
+def test_upload_stream_api_func(self, mock_rap):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_stream_via_stream_bld">TestUploadLV().test_upload_stream_via_stream_bld</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L291">Show source in test_storage.py:291</a></p>
+<p>Tests the uploads of a vDisk - via UploadType.IO_STREAM_BUILDER.</p>
+<h4 id="signature_62">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.tasks.storage._upload_stream_api&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+def test_upload_stream_via_stream_bld(self, mock_create_file, mock_upload_st):
+    ...
+</code></pre>
+<h3 id="testuploadlvtest_upload_vopt_by_filepath">TestUploadLV().test_upload_vopt_by_filepath</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L146">Show source in test_storage.py:146</a></p>
+<p>Tests the uploads of the virtual disks with an upload retry.</p>
+<h4 id="signature_63">Signature</h4>
+<pre><code class="language-python">@mock.patch.object(ts.LOG, &quot;warning&quot;)
+@mock.patch(&quot;pypowervm.tasks.storage._create_file&quot;)
+def test_upload_vopt_by_filepath(self, mock_create_file, mock_log_warn):
+    ...
+</code></pre>
+<h2 id="testvdisk">TestVDisk</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L539">Show source in test_storage.py:539</a></p>
+<h4 id="signature_64">Signature</h4>
+<pre><code class="language-python">class TestVDisk(testtools.TestCase):
+    ...
+</code></pre>
+<h3 id="testvdisksetup">TestVDisk().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L540">Show source in test_storage.py:540</a></p>
+<h4 id="signature_65">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testvdisktest_crt_vdisk">TestVDisk().test_crt_vdisk</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L548">Show source in test_storage.py:548</a></p>
+<h4 id="signature_66">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.adapter.Adapter.update_by_path&quot;)
+@mock.patch(&quot;pypowervm.adapter.Adapter.read&quot;)
+def test_crt_vdisk(self, mock_read, mock_update):
+    ...
+</code></pre>
+<h3 id="testvdisktest_rescan_vstor">TestVDisk().test_rescan_vstor</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L585">Show source in test_storage.py:585</a></p>
+<h4 id="signature_67">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.job.Job.run_job&quot;)
+@mock.patch(&quot;pypowervm.adapter.Adapter.read&quot;)
+def test_rescan_vstor(self, mock_adpt_read, mock_run_job):
+    ...
+</code></pre>
+<h2 id="testvg">TestVG</h2>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L480">Show source in test_storage.py:480</a></p>
+<h4 id="signature_68">Signature</h4>
+<pre><code class="language-python">class TestVG(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testvgsetup">TestVG().setUp</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L484">Show source in test_storage.py:484</a></p>
+<h4 id="signature_69">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testvgtest_find_vg_all_vioses">TestVG().test_find_vg_all_vioses</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L500">Show source in test_storage.py:500</a></p>
+<h4 id="signature_70">Signature</h4>
+<pre><code class="language-python">def test_find_vg_all_vioses(self):
+    ...
+</code></pre>
+<h3 id="testvgtest_find_vg_no_vios">TestVG().test_find_vg_no_vios</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L521">Show source in test_storage.py:521</a></p>
+<h4 id="signature_71">Signature</h4>
+<pre><code class="language-python">def test_find_vg_no_vios(self):
+    ...
+</code></pre>
+<h3 id="testvgtest_find_vg_not_found">TestVG().test_find_vg_not_found</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L530">Show source in test_storage.py:530</a></p>
+<h4 id="signature_72">Signature</h4>
+<pre><code class="language-python">def test_find_vg_not_found(self):
+    ...
+</code></pre>
+<h3 id="testvgtest_find_vg_specified_vios">TestVG().test_find_vg_specified_vios</h3>
+<p><a href="../../../../pypowervm/tests/tasks/test_storage.py#L509">Show source in test_storage.py:509</a></p>
+<h4 id="signature_73">Signature</h4>
+<pre><code class="language-python">def test_find_vg_specified_vios(self):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

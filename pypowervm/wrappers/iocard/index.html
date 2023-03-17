@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Iocard - pypowervm documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Iocard</a>
+</li>
+            
+<li>
+    <a href="../job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../http_error/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../job/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#iocard" class="nav-link">Iocard</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#ioadapter" class="nav-link">IOAdapter</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linkaggrioadapterchoice" class="nav-link">LinkAggrIOAdapterChoice</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#physfcadapter" class="nav-link">PhysFCAdapter</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#physfcport" class="nav-link">PhysFCPort</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovadapter" class="nav-link">SRIOVAdapter</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovadaptermode_2" class="nav-link">SRIOVAdapterMode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovadapterpersonality_1" class="nav-link">SRIOVAdapterPersonality</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovadapterstate_1" class="nav-link">SRIOVAdapterState</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovconvpport" class="nav-link">SRIOVConvPPort</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovethlport" class="nav-link">SRIOVEthLPort</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovethpport" class="nav-link">SRIOVEthPPort</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovppmtu" class="nav-link">SRIOVPPMTU</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovrocepport" class="nav-link">SRIOVRoCEPPort</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sriovspeed" class="nav-link">SRIOVSpeed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vnic" class="nav-link">VNIC</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vnicbackdev" class="nav-link">VNICBackDev</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vnicbackdevstatus_1" class="nav-link">VNICBackDevStatus</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vnicportusage" class="nav-link">VNICPortUsage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="iocard">Iocard</h1>
+<p><a href="../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../#pypowervm">Pypowervm</a> /
+<a href="../#wrappers">Wrappers</a> /
+Iocard</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../pypowervm/wrappers/iocard.py">pypowervm.wrappers.iocard</a> module.</p>
+</blockquote>
+<h4 id="attributes">Attributes</h4>
+<ul>
+<li>
+<p><code>IO_ADPT_ROOT</code> - Constants for generic I/O Adapter: <code>'IOAdapter'</code></p>
+</li>
+<li>
+<p><a href="#iocard">Iocard</a></p>
+</li>
+<li><a href="#ioadapter">IOAdapter</a><ul>
+<li><a href="#ioadapter()description">IOAdapter().description</a></li>
+<li><a href="#ioadapter()dev_name">IOAdapter().dev_name</a></li>
+<li><a href="#ioadapter()dev_type">IOAdapter().dev_type</a></li>
+<li><a href="#ioadapter()drc_name">IOAdapter().drc_name</a></li>
+<li><a href="#ioadapter()id">IOAdapter().id</a></li>
+<li><a href="#ioadapter()phys_loc_code">IOAdapter().phys_loc_code</a></li>
+<li><a href="#ioadapter()udid">IOAdapter().udid</a></li>
+</ul>
+</li>
+<li><a href="#linkaggrioadapterchoice">LinkAggrIOAdapterChoice</a><ul>
+<li><a href="#linkaggrioadapterchoice()__get_prop">LinkAggrIOAdapterChoice().__get_prop</a></li>
+<li><a href="#linkaggrioadapterchoice()description">LinkAggrIOAdapterChoice().description</a></li>
+<li><a href="#linkaggrioadapterchoice()dev_name">LinkAggrIOAdapterChoice().dev_name</a></li>
+<li><a href="#linkaggrioadapterchoice()dev_type">LinkAggrIOAdapterChoice().dev_type</a></li>
+<li><a href="#linkaggrioadapterchoice()drc_name">LinkAggrIOAdapterChoice().drc_name</a></li>
+<li><a href="#linkaggrioadapterchoice()id">LinkAggrIOAdapterChoice().id</a></li>
+<li><a href="#linkaggrioadapterchoice()phys_loc_code">LinkAggrIOAdapterChoice().phys_loc_code</a></li>
+<li><a href="#linkaggrioadapterchoice()udid">LinkAggrIOAdapterChoice().udid</a></li>
+</ul>
+</li>
+<li><a href="#physfcadapter">PhysFCAdapter</a><ul>
+<li><a href="#physfcadapter()fc_ports">PhysFCAdapter().fc_ports</a></li>
+</ul>
+</li>
+<li><a href="#physfcport">PhysFCPort</a><ul>
+<li><a href="#physfcportbld_ref">PhysFCPort.bld_ref</a></li>
+<li><a href="#physfcport()loc_code">PhysFCPort().loc_code</a></li>
+<li><a href="#physfcport()name">PhysFCPort().name</a></li>
+<li><a href="#physfcport()npiv_available_ports">PhysFCPort().npiv_available_ports</a></li>
+<li><a href="#physfcport()npiv_total_ports">PhysFCPort().npiv_total_ports</a></li>
+<li><a href="#physfcport()udid">PhysFCPort().udid</a></li>
+<li><a href="#physfcport()wwpn">PhysFCPort().wwpn</a></li>
+</ul>
+</li>
+<li><a href="#sriovadapter">SRIOVAdapter</a><ul>
+<li><a href="#sriovadapter()mode">SRIOVAdapter().mode</a></li>
+<li><a href="#sriovadapter()mode-1">SRIOVAdapter().mode</a></li>
+<li><a href="#sriovadapter()personality">SRIOVAdapter().personality</a></li>
+<li><a href="#sriovadapter()phys_ports">SRIOVAdapter().phys_ports</a></li>
+<li><a href="#sriovadapter()sriov_adap_id">SRIOVAdapter().sriov_adap_id</a></li>
+<li><a href="#sriovadapter()state">SRIOVAdapter().state</a></li>
+</ul>
+</li>
+<li><a href="#sriovadaptermode">SRIOVAdapterMode</a></li>
+<li><a href="#sriovadapterpersonality">SRIOVAdapterPersonality</a></li>
+<li><a href="#sriovadapterstate">SRIOVAdapterState</a></li>
+<li><a href="#sriovconvpport">SRIOVConvPPort</a></li>
+<li><a href="#sriovethlport">SRIOVEthLPort</a><ul>
+<li><a href="#sriovethlport()allowed_macs">SRIOVEthLPort().allowed_macs</a></li>
+<li><a href="#sriovethlport()allowed_macs-1">SRIOVEthLPort().allowed_macs</a></li>
+<li><a href="#sriovethlport()allowed_vlans">SRIOVEthLPort().allowed_vlans</a></li>
+<li><a href="#sriovethlport()allowed_vlans-1">SRIOVEthLPort().allowed_vlans</a></li>
+<li><a href="#sriovethlportbld">SRIOVEthLPort.bld</a></li>
+<li><a href="#sriovethlport()cfg_capacity">SRIOVEthLPort().cfg_capacity</a></li>
+<li><a href="#sriovethlport()cfg_max_capacity">SRIOVEthLPort().cfg_max_capacity</a></li>
+<li><a href="#sriovethlport()cur_mac">SRIOVEthLPort().cur_mac</a></li>
+<li><a href="#sriovethlport()dev_name">SRIOVEthLPort().dev_name</a></li>
+<li><a href="#sriovethlport()is_promisc">SRIOVEthLPort().is_promisc</a></li>
+<li><a href="#sriovethlport()loc_code">SRIOVEthLPort().loc_code</a></li>
+<li><a href="#sriovethlport()lport_id">SRIOVEthLPort().lport_id</a></li>
+<li><a href="#sriovethlport()mac">SRIOVEthLPort().mac</a></li>
+<li><a href="#sriovethlport()pport_id">SRIOVEthLPort().pport_id</a></li>
+<li><a href="#sriovethlport()pvid">SRIOVEthLPort().pvid</a></li>
+<li><a href="#sriovethlport()pvid-1">SRIOVEthLPort().pvid</a></li>
+<li><a href="#sriovethlport()sriov_adap_id">SRIOVEthLPort().sriov_adap_id</a></li>
+<li><a href="#sriovethlport()vnic_port_usage">SRIOVEthLPort().vnic_port_usage</a></li>
+</ul>
+</li>
+<li><a href="#sriovethpport">SRIOVEthPPort</a><ul>
+<li><a href="#sriovethpport()allocated_capacity">SRIOVEthPPort().allocated_capacity</a></li>
+<li><a href="#sriovethpport()cfg_lps">SRIOVEthPPort().cfg_lps</a></li>
+<li><a href="#sriovethpport()cfg_max_lps">SRIOVEthPPort().cfg_max_lps</a></li>
+<li><a href="#sriovethpport()cfg_max_lps-1">SRIOVEthPPort().cfg_max_lps</a></li>
+<li><a href="#sriovethpport()curr_speed">SRIOVEthPPort().curr_speed</a></li>
+<li><a href="#sriovethpport()flow_ctl">SRIOVEthPPort().flow_ctl</a></li>
+<li><a href="#sriovethpport()flow_ctl-1">SRIOVEthPPort().flow_ctl</a></li>
+<li><a href="#sriovethpport()label">SRIOVEthPPort().label</a></li>
+<li><a href="#sriovethpport()label-1">SRIOVEthPPort().label</a></li>
+<li><a href="#sriovethpport()link_status">SRIOVEthPPort().link_status</a></li>
+<li><a href="#sriovethpport()loc_code">SRIOVEthPPort().loc_code</a></li>
+<li><a href="#sriovethpport()min_granularity">SRIOVEthPPort().min_granularity</a></li>
+<li><a href="#sriovethpport()mtu">SRIOVEthPPort().mtu</a></li>
+<li><a href="#sriovethpport()mtu-1">SRIOVEthPPort().mtu</a></li>
+<li><a href="#sriovethpport()port_id">SRIOVEthPPort().port_id</a></li>
+<li><a href="#sriovethpport()sriov_adap">SRIOVEthPPort().sriov_adap</a></li>
+<li><a href="#sriovethpport()sriov_adap_id">SRIOVEthPPort().sriov_adap_id</a></li>
+<li><a href="#sriovethpport()sublabel">SRIOVEthPPort().sublabel</a></li>
+<li><a href="#sriovethpport()sublabel-1">SRIOVEthPPort().sublabel</a></li>
+<li><a href="#sriovethpport()supp_max_lps">SRIOVEthPPort().supp_max_lps</a></li>
+<li><a href="#sriovethpport()switch_mode">SRIOVEthPPort().switch_mode</a></li>
+<li><a href="#sriovethpport()switch_mode-1">SRIOVEthPPort().switch_mode</a></li>
+</ul>
+</li>
+<li><a href="#sriovppmtu">SRIOVPPMTU</a></li>
+<li><a href="#sriovrocepport">SRIOVRoCEPPort</a></li>
+<li><a href="#sriovspeed">SRIOVSpeed</a></li>
+<li><a href="#vnic">VNIC</a><ul>
+<li><a href="#vnic()allowed_macs">VNIC().allowed_macs</a></li>
+<li><a href="#vnic()allowed_macs-1">VNIC().allowed_macs</a></li>
+<li><a href="#vnic()allowed_vlans">VNIC().allowed_vlans</a></li>
+<li><a href="#vnic()allowed_vlans-1">VNIC().allowed_vlans</a></li>
+<li><a href="#vnic()auto_pri_failover">VNIC().auto_pri_failover</a></li>
+<li><a href="#vnic()auto_pri_failover-1">VNIC().auto_pri_failover</a></li>
+<li><a href="#vnic()back_devs">VNIC().back_devs</a></li>
+<li><a href="#vnic()back_devs-1">VNIC().back_devs</a></li>
+<li><a href="#vnicbld">VNIC.bld</a></li>
+<li><a href="#vnic()capacity">VNIC().capacity</a></li>
+<li><a href="#vnic()drc_name">VNIC().drc_name</a></li>
+<li><a href="#vnic()gateway">VNIC().gateway</a></li>
+<li><a href="#vnic()ip_address">VNIC().ip_address</a></li>
+<li><a href="#vnic()lpar_id">VNIC().lpar_id</a></li>
+<li><a href="#vnic()mac">VNIC().mac</a></li>
+<li><a href="#vnic()pvid">VNIC().pvid</a></li>
+<li><a href="#vnic()pvid-1">VNIC().pvid</a></li>
+<li><a href="#vnic()slot">VNIC().slot</a></li>
+<li><a href="#vnic()subnet_mask">VNIC().subnet_mask</a></li>
+</ul>
+</li>
+<li><a href="#vnicbackdev">VNICBackDev</a><ul>
+<li><a href="#vnicbackdevbld">VNICBackDev.bld</a></li>
+<li><a href="#vnicbackdev()capacity">VNICBackDev().capacity</a></li>
+<li><a href="#vnicbackdev()desired_max_capacity">VNICBackDev().desired_max_capacity</a></li>
+<li><a href="#vnicbackdev()failover_pri">VNICBackDev().failover_pri</a></li>
+<li><a href="#vnicbackdev()failover_pri-1">VNICBackDev().failover_pri</a></li>
+<li><a href="#vnicbackdev()is_active">VNICBackDev().is_active</a></li>
+<li><a href="#vnicbackdev()lport_href">VNICBackDev().lport_href</a></li>
+<li><a href="#vnicbackdev()max_capacity">VNICBackDev().max_capacity</a></li>
+<li><a href="#vnicbackdev()pport_id">VNICBackDev().pport_id</a></li>
+<li><a href="#vnicbackdev()sriov_adap_id">VNICBackDev().sriov_adap_id</a></li>
+<li><a href="#vnicbackdev()status">VNICBackDev().status</a></li>
+<li><a href="#vnicbackdev()vios_href">VNICBackDev().vios_href</a></li>
+</ul>
+</li>
+<li><a href="#vnicbackdevstatus">VNICBackDevStatus</a></li>
+<li><a href="#vnicportusage">VNICPortUsage</a></li>
+</ul>
+<h2 id="ioadapter">IOAdapter</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L303">Show source in iocard.py:303</a></p>
+<p>A generic IO Adapter.</p>
+<p>This is a device plugged in to the system.  The location code indicates
+where it is plugged into the system.</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class IOAdapter(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="ioadapterdescription">IOAdapter().description</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L315">Show source in iocard.py:315</a></p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">@property
+def description(self):
+    ...
+</code></pre>
+<h3 id="ioadapterdev_name">IOAdapter().dev_name</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L319">Show source in iocard.py:319</a></p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">@property
+def dev_name(self):
+    ...
+</code></pre>
+<h3 id="ioadapterdev_type">IOAdapter().dev_type</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L323">Show source in iocard.py:323</a></p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">@property
+def dev_type(self):
+    ...
+</code></pre>
+<h3 id="ioadapterdrc_name">IOAdapter().drc_name</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L327">Show source in iocard.py:327</a></p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">@property
+def drc_name(self):
+    ...
+</code></pre>
+<h3 id="ioadapterid">IOAdapter().id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L310">Show source in iocard.py:310</a></p>
+<p>The adapter system id.</p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">@property
+def id(self):
+    ...
+</code></pre>
+<h3 id="ioadapterphys_loc_code">IOAdapter().phys_loc_code</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L331">Show source in iocard.py:331</a></p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">@property
+def phys_loc_code(self):
+    ...
+</code></pre>
+<h3 id="ioadapterudid">IOAdapter().udid</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L335">Show source in iocard.py:335</a></p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre>
+<h2 id="linkaggrioadapterchoice">LinkAggrIOAdapterChoice</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1220">Show source in iocard.py:1220</a></p>
+<p>A free I/O Adapter link aggregation choice.</p>
+<p>Flattens this two step hierarchy to pull the information needed directly
+from the IOAdapter element.</p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">class LinkAggrIOAdapterChoice(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoice__get_prop">LinkAggrIOAdapterChoice().__get_prop</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1226">Show source in iocard.py:1226</a></p>
+<p>Thin wrapper to get the IOAdapter and get a property.</p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">def __get_prop(self, func):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoicedescription">LinkAggrIOAdapterChoice().description</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1239">Show source in iocard.py:1239</a></p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">@property
+def description(self):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoicedev_name">LinkAggrIOAdapterChoice().dev_name</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1243">Show source in iocard.py:1243</a></p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">@property
+def dev_name(self):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoicedev_type">LinkAggrIOAdapterChoice().dev_type</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1247">Show source in iocard.py:1247</a></p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">@property
+def dev_type(self):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoicedrc_name">LinkAggrIOAdapterChoice().drc_name</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1251">Show source in iocard.py:1251</a></p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">@property
+def drc_name(self):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoiceid">LinkAggrIOAdapterChoice().id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1235">Show source in iocard.py:1235</a></p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">@property
+def id(self):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoicephys_loc_code">LinkAggrIOAdapterChoice().phys_loc_code</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1255">Show source in iocard.py:1255</a></p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">@property
+def phys_loc_code(self):
+    ...
+</code></pre>
+<h3 id="linkaggrioadapterchoiceudid">LinkAggrIOAdapterChoice().udid</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1259">Show source in iocard.py:1259</a></p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre>
+<h2 id="physfcadapter">PhysFCAdapter</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L342">Show source in iocard.py:342</a></p>
+<p>A Physical Fibre Channel I/O Adapter.</p>
+<p>Extends the generic I/O Adapter, but provides port detail as well.
+The adapter has a set of Physical Fibre Channel Ports (PhysFCPort).</p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">class PhysFCAdapter(IOAdapter):
+    ...
+</code></pre>
+<h4 id="see-also">See also</h4>
+<ul>
+<li><a href="#ioadapter">IOAdapter</a></li>
+</ul>
+<h3 id="physfcadapterfc_ports">PhysFCAdapter().fc_ports</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L349">Show source in iocard.py:349</a></p>
+<p>A set of Physical Fibre Channel Ports.</p>
+<p>The set of PhysFCPort's that are attached to this adapter.
+The data on this should be considered read only.</p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">@property
+def fc_ports(self):
+    ...
+</code></pre>
+<h2 id="physfcport">PhysFCPort</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L362">Show source in iocard.py:362</a></p>
+<p>A Physical Fibre Channel Port.</p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">class PhysFCPort(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="physfcportbld_ref">PhysFCPort.bld_ref</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L365">Show source in iocard.py:365</a></p>
+<p>Create a wrapper that serves as a reference to a port.</p>
+<p>This is typically used when another element (ex. Virtual FC Mapping)
+requires a port to be specified in it.  Rather than query to find
+the port, one can simply be built and referenced as a child element.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><a href="#physfcportname">PhysFCPort().name</a> - The name of the physical FC port.  End users need to
+             verify the port name.  Typically starts with 'fcs'.</li>
+<li><code>ref_tag</code> - (Optional, Default=None) If set, override the
+                default 'PhysicalFibreChannelPort' tag/label in the
+                element with the string specified.</li>
+</ul>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld_ref(cls, adapter, name, ref_tag=None):
+    ...
+</code></pre>
+<h3 id="physfcportloc_code">PhysFCPort().loc_code</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L385">Show source in iocard.py:385</a></p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">@property
+def loc_code(self):
+    ...
+</code></pre>
+<h3 id="physfcportname">PhysFCPort().name</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L389">Show source in iocard.py:389</a></p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">@property
+def name(self):
+    ...
+</code></pre>
+<h3 id="physfcportnpiv_available_ports">PhysFCPort().npiv_available_ports</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L404">Show source in iocard.py:404</a></p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">@property
+def npiv_available_ports(self):
+    ...
+</code></pre>
+<h3 id="physfcportnpiv_total_ports">PhysFCPort().npiv_total_ports</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L408">Show source in iocard.py:408</a></p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">@property
+def npiv_total_ports(self):
+    ...
+</code></pre>
+<h3 id="physfcportudid">PhysFCPort().udid</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L396">Show source in iocard.py:396</a></p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">@property
+def udid(self):
+    ...
+</code></pre>
+<h3 id="physfcportwwpn">PhysFCPort().wwpn</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L400">Show source in iocard.py:400</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">@property
+def wwpn(self):
+    ...
+</code></pre>
+<h2 id="sriovadapter">SRIOVAdapter</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L414">Show source in iocard.py:414</a></p>
+<p>The SR-IOV adapters for this system.</p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">class SRIOVAdapter(IOAdapter):
+    ...
+</code></pre>
+<h4 id="see-also_1">See also</h4>
+<ul>
+<li><a href="#ioadapter">IOAdapter</a></li>
+</ul>
+<h3 id="sriovadaptermode">SRIOVAdapter().mode</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L422">Show source in iocard.py:422</a></p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">@property
+def mode(self):
+    ...
+</code></pre>
+<h3 id="sriovadaptermode_1">SRIOVAdapter().mode</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L426">Show source in iocard.py:426</a></p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">@mode.setter
+def mode(self, value):
+    ...
+</code></pre>
+<h3 id="sriovadapterpersonality">SRIOVAdapter().personality</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L430">Show source in iocard.py:430</a></p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">@property
+def personality(self):
+    ...
+</code></pre>
+<h3 id="sriovadapterphys_ports">SRIOVAdapter().phys_ports</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L459">Show source in iocard.py:459</a></p>
+<p>Retrieve Combined list of all physical ports.</p>
+<p>Returns a list of converged and ethernet physical ports.
+This list is not modifiable, cannot insert or remove
+items from it, however, individual item can be updated.
+For example, label and sublabels can be updated.</p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">@property
+def phys_ports(self):
+    ...
+</code></pre>
+<h3 id="sriovadaptersriov_adap_id">SRIOVAdapter().sriov_adap_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L417">Show source in iocard.py:417</a></p>
+<p>Not to be confused with the 'id' property (IOAdapter.AdapterID).</p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">@property
+def sriov_adap_id(self):
+    ...
+</code></pre>
+<h3 id="sriovadapterstate">SRIOVAdapter().state</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L434">Show source in iocard.py:434</a></p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">@property
+def state(self):
+    ...
+</code></pre>
+<h2 id="sriovadaptermode_2">SRIOVAdapterMode</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L236">Show source in iocard.py:236</a></p>
+<p>Enumeration for SR-IOV adapter modes (from SRIOVAdapterMode.Enum).</p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">class SRIOVAdapterMode(object):
+    ...
+</code></pre>
+<h2 id="sriovadapterpersonality_1">SRIOVAdapterPersonality</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L244">Show source in iocard.py:244</a></p>
+<p>Enum for SR-IOV adapter personalities (from SRIOVPersonality.Enum).</p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">class SRIOVAdapterPersonality(object):
+    ...
+</code></pre>
+<h2 id="sriovadapterstate_1">SRIOVAdapterState</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L252">Show source in iocard.py:252</a></p>
+<p>Enumeration for SR-IOV adapter states (from SRIOVAdapterState.Enum).</p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">class SRIOVAdapterState(object):
+    ...
+</code></pre>
+<h2 id="sriovconvpport">SRIOVConvPPort</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L606">Show source in iocard.py:606</a></p>
+<p>The SR-IOV Converged Physical port.</p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">class SRIOVConvPPort(SRIOVEthPPort):
+    ...
+</code></pre>
+<h4 id="see-also_2">See also</h4>
+<ul>
+<li><a href="#sriovethpport">SRIOVEthPPort</a></li>
+</ul>
+<h2 id="sriovethlport">SRIOVEthLPort</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L621">Show source in iocard.py:621</a></p>
+<p>The SR-IOV Ethernet Logical port.</p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">class SRIOVEthLPort(ewrap.EntryWrapper):
+    ...
+</code></pre>
+<h3 id="sriovethlportallowed_macs">SRIOVEthLPort().allowed_macs</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L780">Show source in iocard.py:780</a></p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">@property
+def allowed_macs(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportallowed_macs_1">SRIOVEthLPort().allowed_macs</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L785">Show source in iocard.py:785</a></p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">@allowed_macs.setter
+def allowed_macs(self, maclist):
+    ...
+</code></pre>
+<h3 id="sriovethlportallowed_vlans">SRIOVEthLPort().allowed_vlans</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L758">Show source in iocard.py:758</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">@property
+def allowed_vlans(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportallowed_vlans_1">SRIOVEthLPort().allowed_vlans</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L763">Show source in iocard.py:763</a></p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">@allowed_vlans.setter
+def allowed_vlans(self, vlans):
+    ...
+</code></pre>
+<h3 id="sriovethlportbld">SRIOVEthLPort.bld</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L624">Show source in iocard.py:624</a></p>
+<p>Create a wrapper used to create a logical port on the server.</p>
+<h4 id="arguments_1">Arguments</h4>
+<ul>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter (for traits, etc.)</li>
+<li><a href="#sriovethlportsriov_adap_id">SRIOVEthLPort().sriov_adap_id</a> - Corresponds to SRIOVAdapter.SRIOVAdapterID,
+                      <em>not</em> SRIOVAdapter.AdapterID</li>
+<li><a href="#sriovethlportpport_id">SRIOVEthLPort().pport_id</a> - The physical port ID this logical port is part of.</li>
+<li><a href="#sriovethlportpvid">SRIOVEthLPort().pvid</a> - The port VLAN identifier for this logical port. Any
+             untagged traffic passing through this port will have
+             this VLAN tag added.</li>
+<li><a href="#sriovethlportmac">SRIOVEthLPort().mac</a> - The MAC address to assign to the logical port.</li>
+<li><a href="#sriovethlportallowed_vlans">SRIOVEthLPort().allowed_vlans</a> - An integer list of VLANS allowed on this logical
+                      port. Specify pypowervm.util.VLANList.ALL to
+                      allow all VLANs or .NONE to allow no VLANs on
+                      this logical port. Default: ALL.</li>
+<li><a href="#sriovethlportallowed_macs">SRIOVEthLPort().allowed_macs</a> - List of string MAC addresses allowed on this
+                     logical port. Specify pypowervm.util.MACList.ALL
+                     to allow all MAC addresses, or .NONE to allow no
+                     MAC addresses on this logical port.  Default: ALL.</li>
+<li><a href="#sriovethlportis_promisc">SRIOVEthLPort().is_promisc</a> - Set to True if using the logical port for bridging
+                   (e.g. SEA, OVS, etc.); False if assigning directly
+                   to an LPAR.  Only one logical port per physical port
+                   may be promiscuous.</li>
+<li><a href="#sriovethlportcfg_capacity">SRIOVEthLPort().cfg_capacity</a> - The configured capacity of the logical port as a
+                     percentage.  This represents the minimum bandwidth
+                     this logical port will receive, as a percentage
+                     of bandwidth available from the physical port.
+                     The valid values are 0.0 &lt;= x &lt;= 1.0 up to 2
+                     decimal places.  This will be interpreted as a
+                     percentage, where 0.02 == 2%.</li>
+<li><code>max_capacity</code> - The configured max capacity of the logical port as
+                     a percentage.  This represents the maximum
+                     bandwidth this logical port will receive.
+                     The valid values are 0.0 &lt;= x &lt;= 1.0 up to 2
+                     decimal places.  This will be interpreted as a
+                     percentage, where 0.02 == 2%.</li>
+</ul>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(
+    cls,
+    adapter,
+    sriov_adap_id,
+    pport_id,
+    pvid=None,
+    mac=None,
+    allowed_vlans=u.VLANList.ALL,
+    allowed_macs=u.MACList.ALL,
+    is_promisc=False,
+    cfg_capacity=None,
+    max_capacity=None,
+):
+    ...
+</code></pre>
+<h3 id="sriovethlportcfg_capacity">SRIOVEthLPort().cfg_capacity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L703">Show source in iocard.py:703</a></p>
+<p>Gets the configured capacity in a float-percentage format.</p>
+<h4 id="returns">Returns</h4>
+<p>If the property is say "2.45%", a value of .0245 will be
+         returned.</p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">@property
+def cfg_capacity(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportcfg_max_capacity">SRIOVEthLPort().cfg_max_capacity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L722">Show source in iocard.py:722</a></p>
+<p>Gets the configured maximum capacity in a float-percentage format.</p>
+<h4 id="returns_1">Returns</h4>
+<p>If the property is say "2.45%", a value of .0245 will be
+         returned.</p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">@property
+def cfg_max_capacity(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportcur_mac">SRIOVEthLPort().cur_mac</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L789">Show source in iocard.py:789</a></p>
+<p>MAC address of the format XXXXXXXXXXXX (12 uppercase hex digits).</p>
+<p>This is the real value set on the interface, possibly by the VM's OS.</p>
+<p>Note that some SR-IOV cards are broken and don't report the OS-assigned
+value correctly.  In such cases, cur_mac will report the same as mac.</p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">@property
+def cur_mac(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportdev_name">SRIOVEthLPort().dev_name</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L699">Show source in iocard.py:699</a></p>
+<h4 id="signature_47">Signature</h4>
+<pre><code class="language-python">@property
+def dev_name(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportis_promisc">SRIOVEthLPort().is_promisc</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L691">Show source in iocard.py:691</a></p>
+<h4 id="signature_48">Signature</h4>
+<pre><code class="language-python">@property
+def is_promisc(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportloc_code">SRIOVEthLPort().loc_code</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L800">Show source in iocard.py:800</a></p>
+<h4 id="signature_49">Signature</h4>
+<pre><code class="language-python">@property
+def loc_code(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportlport_id">SRIOVEthLPort().lport_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L680">Show source in iocard.py:680</a></p>
+<h4 id="signature_50">Signature</h4>
+<pre><code class="language-python">@property
+def lport_id(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportmac">SRIOVEthLPort().mac</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L767">Show source in iocard.py:767</a></p>
+<p>MAC address of the format XXXXXXXXXXXX (12 uppercase hex digits).</p>
+<p>This is the MAC address "burned into" the logical port.  The actual MAC
+address on the interface (cur_mac) may be this value or the value set
+from within the OS on the VM.</p>
+<h4 id="signature_51">Signature</h4>
+<pre><code class="language-python">@property
+def mac(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportpport_id">SRIOVEthLPort().pport_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L741">Show source in iocard.py:741</a></p>
+<p>Gets the physical port short ID.</p>
+<h4 id="signature_52">Signature</h4>
+<pre><code class="language-python">@property
+def pport_id(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportpvid">SRIOVEthLPort().pvid</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L750">Show source in iocard.py:750</a></p>
+<h4 id="signature_53">Signature</h4>
+<pre><code class="language-python">@property
+def pvid(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportpvid_1">SRIOVEthLPort().pvid</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L754">Show source in iocard.py:754</a></p>
+<h4 id="signature_54">Signature</h4>
+<pre><code class="language-python">@pvid.setter
+def pvid(self, value):
+    ...
+</code></pre>
+<h3 id="sriovethlportsriov_adap_id">SRIOVEthLPort().sriov_adap_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L684">Show source in iocard.py:684</a></p>
+<h4 id="signature_55">Signature</h4>
+<pre><code class="language-python">@property
+def sriov_adap_id(self):
+    ...
+</code></pre>
+<h3 id="sriovethlportvnic_port_usage">SRIOVEthLPort().vnic_port_usage</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L804">Show source in iocard.py:804</a></p>
+<h4 id="signature_56">Signature</h4>
+<pre><code class="language-python">@property
+def vnic_port_usage(self):
+    ...
+</code></pre>
+<h2 id="sriovethpport">SRIOVEthPPort</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L487">Show source in iocard.py:487</a></p>
+<p>The SR-IOV Ethernet Physical port.</p>
+<h4 id="signature_57">Signature</h4>
+<pre><code class="language-python">class SRIOVEthPPort(ewrap.ElementWrapper):
+    def __init__(self):
+        ...
+</code></pre>
+<h3 id="sriovethpportallocated_capacity">SRIOVEthPPort().allocated_capacity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L561">Show source in iocard.py:561</a></p>
+<p>Gets the allocated capacity in a float-percentage format.</p>
+<h4 id="returns_2">Returns</h4>
+<p>If the property is say "2.45%", a value of .0245 will be
+         returned.</p>
+<h4 id="signature_58">Signature</h4>
+<pre><code class="language-python">@property
+def allocated_capacity(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportcfg_lps">SRIOVEthPPort().cfg_lps</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L544">Show source in iocard.py:544</a></p>
+<h4 id="signature_59">Signature</h4>
+<pre><code class="language-python">@property
+def cfg_lps(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportcfg_max_lps">SRIOVEthPPort().cfg_max_lps</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L536">Show source in iocard.py:536</a></p>
+<h4 id="signature_60">Signature</h4>
+<pre><code class="language-python">@property
+def cfg_max_lps(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportcfg_max_lps_1">SRIOVEthPPort().cfg_max_lps</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L540">Show source in iocard.py:540</a></p>
+<h4 id="signature_61">Signature</h4>
+<pre><code class="language-python">@cfg_max_lps.setter
+def cfg_max_lps(self, value):
+    ...
+</code></pre>
+<h3 id="sriovethpportcurr_speed">SRIOVEthPPort().curr_speed</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L570">Show source in iocard.py:570</a></p>
+<h4 id="signature_62">Signature</h4>
+<pre><code class="language-python">@property
+def curr_speed(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportflow_ctl">SRIOVEthPPort().flow_ctl</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L594">Show source in iocard.py:594</a></p>
+<h4 id="signature_63">Signature</h4>
+<pre><code class="language-python">@property
+def flow_ctl(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportflow_ctl_1">SRIOVEthPPort().flow_ctl</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L598">Show source in iocard.py:598</a></p>
+<h4 id="signature_64">Signature</h4>
+<pre><code class="language-python">@flow_ctl.setter
+def flow_ctl(self, val):
+    ...
+</code></pre>
+<h3 id="sriovethpportlabel">SRIOVEthPPort().label</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L508">Show source in iocard.py:508</a></p>
+<h4 id="signature_65">Signature</h4>
+<pre><code class="language-python">@property
+def label(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportlabel_1">SRIOVEthPPort().label</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L512">Show source in iocard.py:512</a></p>
+<h4 id="signature_66">Signature</h4>
+<pre><code class="language-python">@label.setter
+def label(self, value):
+    ...
+</code></pre>
+<h3 id="sriovethpportlink_status">SRIOVEthPPort().link_status</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L532">Show source in iocard.py:532</a></p>
+<h4 id="signature_67">Signature</h4>
+<pre><code class="language-python">@property
+def link_status(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportloc_code">SRIOVEthPPort().loc_code</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L516">Show source in iocard.py:516</a></p>
+<h4 id="signature_68">Signature</h4>
+<pre><code class="language-python">@property
+def loc_code(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportmin_granularity">SRIOVEthPPort().min_granularity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L548">Show source in iocard.py:548</a></p>
+<p>Gets the minimum granularity in a float-percentage format.</p>
+<h4 id="returns_3">Returns</h4>
+<p>If the property is say "2.45%", a value of .0245 will be
+         returned.</p>
+<h4 id="signature_69">Signature</h4>
+<pre><code class="language-python">@property
+def min_granularity(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportmtu">SRIOVEthPPort().mtu</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L574">Show source in iocard.py:574</a></p>
+<p>Result should be a SRIOVPPMTU value.</p>
+<h4 id="signature_70">Signature</h4>
+<pre><code class="language-python">@property
+def mtu(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportmtu_1">SRIOVEthPPort().mtu</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L579">Show source in iocard.py:579</a></p>
+<p>Input val should be a SRIOVPPMTU value.</p>
+<h4 id="signature_71">Signature</h4>
+<pre><code class="language-python">@mtu.setter
+def mtu(self, val):
+    ...
+</code></pre>
+<h3 id="sriovethpportport_id">SRIOVEthPPort().port_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L520">Show source in iocard.py:520</a></p>
+<h4 id="signature_72">Signature</h4>
+<pre><code class="language-python">@property
+def port_id(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportsriov_adap">SRIOVEthPPort().sriov_adap</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L495">Show source in iocard.py:495</a></p>
+<p>Backpointer to the SRIOVAdapter owning this physical port.</p>
+<h4 id="signature_73">Signature</h4>
+<pre><code class="language-python">@property
+def sriov_adap(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportsriov_adap_id">SRIOVEthPPort().sriov_adap_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L503">Show source in iocard.py:503</a></p>
+<p>The integer sriov_adap_id of the SRIOVAdapter owning this port.</p>
+<h4 id="signature_74">Signature</h4>
+<pre><code class="language-python">@property
+def sriov_adap_id(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportsublabel">SRIOVEthPPort().sublabel</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L524">Show source in iocard.py:524</a></p>
+<h4 id="signature_75">Signature</h4>
+<pre><code class="language-python">@property
+def sublabel(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportsublabel_1">SRIOVEthPPort().sublabel</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L528">Show source in iocard.py:528</a></p>
+<h4 id="signature_76">Signature</h4>
+<pre><code class="language-python">@sublabel.setter
+def sublabel(self, value):
+    ...
+</code></pre>
+<h3 id="sriovethpportsupp_max_lps">SRIOVEthPPort().supp_max_lps</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L557">Show source in iocard.py:557</a></p>
+<h4 id="signature_77">Signature</h4>
+<pre><code class="language-python">@property
+def supp_max_lps(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportswitch_mode">SRIOVEthPPort().switch_mode</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L584">Show source in iocard.py:584</a></p>
+<p>Result should be a network.VSwitchMode value.</p>
+<h4 id="signature_78">Signature</h4>
+<pre><code class="language-python">@property
+def switch_mode(self):
+    ...
+</code></pre>
+<h3 id="sriovethpportswitch_mode_1">SRIOVEthPPort().switch_mode</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L589">Show source in iocard.py:589</a></p>
+<p>Input val should be a network.VSwitchMode value.</p>
+<h4 id="signature_79">Signature</h4>
+<pre><code class="language-python">@switch_mode.setter
+def switch_mode(self, val):
+    ...
+</code></pre>
+<h2 id="sriovppmtu">SRIOVPPMTU</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L277">Show source in iocard.py:277</a></p>
+<p>SR-IOV Phys Port Max Transmission Unit (SRIOVPhysicalPortMTU.Enum).</p>
+<h4 id="signature_80">Signature</h4>
+<pre><code class="language-python">class SRIOVPPMTU(object):
+    ...
+</code></pre>
+<h2 id="sriovrocepport">SRIOVRoCEPPort</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L614">Show source in iocard.py:614</a></p>
+<p>The SR-IOV RoCE Physical Ethernet port.</p>
+<h4 id="signature_81">Signature</h4>
+<pre><code class="language-python">class SRIOVRoCEPPort(SRIOVEthPPort):
+    ...
+</code></pre>
+<h4 id="see-also_3">See also</h4>
+<ul>
+<li><a href="#sriovethpport">SRIOVEthPPort</a></li>
+</ul>
+<h2 id="sriovspeed">SRIOVSpeed</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L265">Show source in iocard.py:265</a></p>
+<p>Enumeration for SR-IOV speed (from SRIOVConnectionSpeed.Enum).</p>
+<h4 id="signature_82">Signature</h4>
+<pre><code class="language-python">class SRIOVSpeed(object):
+    ...
+</code></pre>
+<h2 id="vnic">VNIC</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L810">Show source in iocard.py:810</a></p>
+<p>A dedicated, possibly-redundant Virtual NIC.</p>
+<h4 id="signature_83">Signature</h4>
+<pre><code class="language-python">class VNIC(ewrap.EntryWrapper):
+    ...
+</code></pre>
+<h3 id="vnicallowed_macs">VNIC().allowed_macs</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L923">Show source in iocard.py:923</a></p>
+<h4 id="signature_84">Signature</h4>
+<pre><code class="language-python">@property
+def allowed_macs(self):
+    ...
+</code></pre>
+<h3 id="vnicallowed_macs_1">VNIC().allowed_macs</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L927">Show source in iocard.py:927</a></p>
+<h4 id="signature_85">Signature</h4>
+<pre><code class="language-python">@allowed_macs.setter
+def allowed_macs(self, maclist):
+    ...
+</code></pre>
+<h3 id="vnicallowed_vlans">VNIC().allowed_vlans</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L907">Show source in iocard.py:907</a></p>
+<h4 id="signature_86">Signature</h4>
+<pre><code class="language-python">@property
+def allowed_vlans(self):
+    ...
+</code></pre>
+<h3 id="vnicallowed_vlans_1">VNIC().allowed_vlans</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L911">Show source in iocard.py:911</a></p>
+<h4 id="signature_87">Signature</h4>
+<pre><code class="language-python">@allowed_vlans.setter
+def allowed_vlans(self, vlans):
+    ...
+</code></pre>
+<h3 id="vnicauto_pri_failover">VNIC().auto_pri_failover</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L954">Show source in iocard.py:954</a></p>
+<h4 id="signature_88">Signature</h4>
+<pre><code class="language-python">@property
+def auto_pri_failover(self):
+    ...
+</code></pre>
+<h3 id="vnicauto_pri_failover_1">VNIC().auto_pri_failover</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L958">Show source in iocard.py:958</a></p>
+<h4 id="signature_89">Signature</h4>
+<pre><code class="language-python">@auto_pri_failover.setter
+def auto_pri_failover(self, val):
+    ...
+</code></pre>
+<h3 id="vnicback_devs">VNIC().back_devs</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L944">Show source in iocard.py:944</a></p>
+<h4 id="signature_90">Signature</h4>
+<pre><code class="language-python">@property
+def back_devs(self):
+    ...
+</code></pre>
+<h3 id="vnicback_devs_1">VNIC().back_devs</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L950">Show source in iocard.py:950</a></p>
+<h4 id="signature_91">Signature</h4>
+<pre><code class="language-python">@back_devs.setter
+def back_devs(self, new_devs):
+    ...
+</code></pre>
+<h3 id="vnicbld">VNIC.bld</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L813">Show source in iocard.py:813</a></p>
+<p>Build a new VNIC wrapper suitable for .create()</p>
+<p>A VNIC is a CHILD object on a LogicalPartition.  Usage models:
+    vnic = VNIC.bld(...)
+    vnic.back_devs.append(back_dev1)
+    ...
+or
+    vnic = VNIC.bld(..., back_devs=[back_dev1, back_dev2, ...])
+then
+    vnic.create(parent=lpar_wrap)</p>
+<h4 id="arguments_2">Arguments</h4>
+<ul>
+<li><code>adapter</code> - pypowervm.adapter.Adapter for REST API communication.</li>
+<li><a href="#vnicpvid">VNIC().pvid</a> - Port VLAN ID for this vNIC.  If not specified, the vNIC's
+             traffic is untagged.</li>
+<li><code>slot_num</code> - Desired virtual slot number on the owning LPAR.</li>
+<li><a href="#vnicallowed_vlans">VNIC().allowed_vlans</a> - An integer list of VLANS allowed on this vNIC.
+                      Specify pypowervm.util.VLANList.ALL to allow all
+                      VLANs or .NONE to allow no VLANs on this vNIC.
+                      Default: ALL.</li>
+<li><code>mac_addr</code> - MAC address for the vNIC.</li>
+<li><a href="#vnicallowed_macs">VNIC().allowed_macs</a> - List of string MAC addresses allowed on this vNIC.
+                     Specify pypowervm.util.MACList.ALL to allow all
+                     MAC addresses, or .NONE to allow no MAC addresses
+                     on this vNIC.  Default: ALL.</li>
+<li><a href="#vnicback_devs">VNIC().back_devs</a> - List of VNICBackDev wrappers each indicating a
+                  combination of VIOS, SR-IOV adapter and physical port
+                  on which to create the VF for the backing device.
+                  See VNICBackDev.bld.  If not specified to bld, at
+                  least one must be added before the VNIC can be
+                  created.</li>
+</ul>
+<h4 id="returns_4">Returns</h4>
+<p>A new VNIC wrapper.</p>
+<h4 id="signature_92">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(
+    cls,
+    adapter,
+    pvid=None,
+    slot_num=None,
+    allowed_vlans=u.VLANList.ALL,
+    mac_addr=None,
+    allowed_macs=u.MACList.ALL,
+    back_devs=None,
+):
+    ...
+</code></pre>
+<h3 id="vniccapacity">VNIC().capacity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L931">Show source in iocard.py:931</a></p>
+<p>The capacity (float, 0.0-1.0) of the active backing logical port.</p>
+<h4 id="signature_93">Signature</h4>
+<pre><code class="language-python">@property
+def capacity(self):
+    ...
+</code></pre>
+<h3 id="vnicdrc_name">VNIC().drc_name</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L863">Show source in iocard.py:863</a></p>
+<h4 id="signature_94">Signature</h4>
+<pre><code class="language-python">@property
+def drc_name(self):
+    ...
+</code></pre>
+<h3 id="vnicgateway">VNIC().gateway</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L972">Show source in iocard.py:972</a></p>
+<p>Returns the gateway of the network interface.</p>
+<h4 id="signature_95">Signature</h4>
+<pre><code class="language-python">@ewrap.Wrapper.xag_property(pc.XAG.ADV)
+def gateway(self):
+    ...
+</code></pre>
+<h3 id="vnicip_address">VNIC().ip_address</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L962">Show source in iocard.py:962</a></p>
+<p>Returns the IP Address of the network interface.</p>
+<h4 id="signature_96">Signature</h4>
+<pre><code class="language-python">@ewrap.Wrapper.xag_property(pc.XAG.ADV)
+def ip_address(self):
+    ...
+</code></pre>
+<h3 id="vniclpar_id">VNIC().lpar_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L867">Show source in iocard.py:867</a></p>
+<p>The integer ID, not UUID, of the LPAR owning this VNIC.</p>
+<h4 id="signature_97">Signature</h4>
+<pre><code class="language-python">@property
+def lpar_id(self):
+    ...
+</code></pre>
+<h3 id="vnicmac">VNIC().mac</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L915">Show source in iocard.py:915</a></p>
+<p>MAC address of the format XXXXXXXXXXXX (12 uppercase hex digits).</p>
+<h4 id="signature_98">Signature</h4>
+<pre><code class="language-python">@property
+def mac(self):
+    ...
+</code></pre>
+<h3 id="vnicpvid">VNIC().pvid</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L898">Show source in iocard.py:898</a></p>
+<p>The integer port VLAN ID, or None if the vNIC has no PVID.</p>
+<h4 id="signature_99">Signature</h4>
+<pre><code class="language-python">@property
+def pvid(self):
+    ...
+</code></pre>
+<h3 id="vnicpvid_1">VNIC().pvid</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L903">Show source in iocard.py:903</a></p>
+<h4 id="signature_100">Signature</h4>
+<pre><code class="language-python">@pvid.setter
+def pvid(self, val):
+    ...
+</code></pre>
+<h3 id="vnicslot">VNIC().slot</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L872">Show source in iocard.py:872</a></p>
+<h4 id="signature_101">Signature</h4>
+<pre><code class="language-python">@property
+def slot(self):
+    ...
+</code></pre>
+<h3 id="vnicsubnet_mask">VNIC().subnet_mask</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L967">Show source in iocard.py:967</a></p>
+<p>Returns the subnet mask of the network interface.</p>
+<h4 id="signature_102">Signature</h4>
+<pre><code class="language-python">@ewrap.Wrapper.xag_property(pc.XAG.ADV)
+def subnet_mask(self):
+    ...
+</code></pre>
+<h2 id="vnicbackdev">VNICBackDev</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1094">Show source in iocard.py:1094</a></p>
+<p>SR-IOV backing device for a vNIC.</p>
+<h4 id="signature_103">Signature</h4>
+<pre><code class="language-python">class VNICBackDev(ewrap.ElementWrapper):
+    ...
+</code></pre>
+<h3 id="vnicbackdevbld">VNICBackDev.bld</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1097">Show source in iocard.py:1097</a></p>
+<p>Create a new VNICBackDev, suitable for inclusion in a VNIC wrapper.</p>
+<h4 id="arguments_3">Arguments</h4>
+<ul>
+<li><code>adapter</code> - pypowervm.adapter.Adapter for REST API communication.</li>
+<li><code>vios_uuid</code> - String UUID of the Virtual I/O Server to host the
+                  vNIC server for this backing device.</li>
+<li><a href="#vnicbackdevsriov_adap_id">VNICBackDev().sriov_adap_id</a> - Integer SR-IOV Adapter ID of the SR-IOV adapter
+                      owning the physical port on which the backing VF
+                      is to be created: SRIOVAdapter.sriov_adap_id.</li>
+<li><a href="#vnicbackdevpport_id">VNICBackDev().pport_id</a> - Integer physical port ID of SR-IOV physical port on
+                 which the VF is to be created: SRIOVEthPPort.port_id</li>
+<li><a href="#vnicbackdevcapacity">VNICBackDev().capacity</a> - Float value between 0.0 and 1.0 indicating the minimum
+                 fraction of the physical port's bandwidth allocated to
+                 traffic over this backing device.  Must be a multiple
+                 of SRIOVEthPPort.min_granularity for the physical port
+                 indicated by pport_id.  If not specified,
+                 SRIOVEthPPort.min_granularity is used by the platform.</li>
+<li><a href="#vnicbackdevfailover_pri">VNICBackDev().failover_pri</a> - Positive integer value representing the failover
+                     priority of this backing device.</li>
+<li><a href="#vnicbackdevmax_capacity">VNICBackDev().max_capacity</a> - Float value between 0.0 and 1.0 indicating the
+                     maximum fraction of the physical port's bandwidth
+                     allocated to traffic over this backing device.</li>
+</ul>
+<h4 id="returns_5">Returns</h4>
+<p>A new VNICBackDev, suitable for inclusion in a VNIC wrapper.</p>
+<h4 id="signature_104">Signature</h4>
+<pre><code class="language-python">@classmethod
+def bld(
+    cls,
+    adapter,
+    vios_uuid,
+    sriov_adap_id,
+    pport_id,
+    capacity=None,
+    failover_pri=None,
+    max_capacity=None,
+):
+    ...
+</code></pre>
+<h3 id="vnicbackdevcapacity">VNICBackDev().capacity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1161">Show source in iocard.py:1161</a></p>
+<p>Gets the allocated capacity in a float-percentage format.</p>
+<h4 id="returns_6">Returns</h4>
+<p>If the property is say "2.45%", a value of .0245 will be
+         returned.</p>
+<h4 id="signature_105">Signature</h4>
+<pre><code class="language-python">@property
+def capacity(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevdesired_max_capacity">VNICBackDev().desired_max_capacity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1187">Show source in iocard.py:1187</a></p>
+<p>Gets the desired max capacity in a float-percentage format.</p>
+<h4 id="returns_7">Returns</h4>
+<p>If the property is say "2.45%", a value of .0245 will be
+         returned.</p>
+<h4 id="signature_106">Signature</h4>
+<pre><code class="language-python">@property
+def desired_max_capacity(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevfailover_pri">VNICBackDev().failover_pri</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1196">Show source in iocard.py:1196</a></p>
+<p>The failover priority value for this backing device.</p>
+<h4 id="returns_8">Returns</h4>
+<p>A value between 1 and 100, inclusive, with a lower number
+         indicating the higher priority (i.e. the backingdevice with
+         priority 1 will take precedence over that with priority 2).</p>
+<h4 id="signature_107">Signature</h4>
+<pre><code class="language-python">@property
+def failover_pri(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevfailover_pri_1">VNICBackDev().failover_pri</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1206">Show source in iocard.py:1206</a></p>
+<h4 id="signature_108">Signature</h4>
+<pre><code class="language-python">@failover_pri.setter
+def failover_pri(self, val):
+    ...
+</code></pre>
+<h3 id="vnicbackdevis_active">VNICBackDev().is_active</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1210">Show source in iocard.py:1210</a></p>
+<h4 id="signature_109">Signature</h4>
+<pre><code class="language-python">@property
+def is_active(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevlport_href">VNICBackDev().lport_href</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1157">Show source in iocard.py:1157</a></p>
+<h4 id="signature_110">Signature</h4>
+<pre><code class="language-python">@property
+def lport_href(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevmax_capacity">VNICBackDev().max_capacity</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1174">Show source in iocard.py:1174</a></p>
+<p>Gets the max capacity in a float-percentage format.</p>
+<h4 id="returns_9">Returns</h4>
+<p>If the property is say "2.45%", a value of .0245 will be
+         returned.</p>
+<h4 id="signature_111">Signature</h4>
+<pre><code class="language-python">@property
+def max_capacity(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevpport_id">VNICBackDev().pport_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1150">Show source in iocard.py:1150</a></p>
+<h4 id="signature_112">Signature</h4>
+<pre><code class="language-python">@property
+def pport_id(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevsriov_adap_id">VNICBackDev().sriov_adap_id</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1143">Show source in iocard.py:1143</a></p>
+<h4 id="signature_113">Signature</h4>
+<pre><code class="language-python">@property
+def sriov_adap_id(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevstatus">VNICBackDev().status</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1214">Show source in iocard.py:1214</a></p>
+<h4 id="signature_114">Signature</h4>
+<pre><code class="language-python">@property
+def status(self):
+    ...
+</code></pre>
+<h3 id="vnicbackdevvios_href">VNICBackDev().vios_href</h3>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L1136">Show source in iocard.py:1136</a></p>
+<h4 id="signature_115">Signature</h4>
+<pre><code class="language-python">@property
+def vios_href(self):
+    ...
+</code></pre>
+<h2 id="vnicbackdevstatus_1">VNICBackDevStatus</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L284">Show source in iocard.py:284</a></p>
+<p>Enumeration of possible VNIC backing device statuses.</p>
+<h4 id="signature_116">Signature</h4>
+<pre><code class="language-python">class VNICBackDevStatus(object):
+    ...
+</code></pre>
+<h2 id="vnicportusage">VNICPortUsage</h2>
+<p><a href="../../../pypowervm/wrappers/iocard.py#L295">Show source in iocard.py:295</a></p>
+<p>Enumeration of possible VNIC port usages.</p>
+<h4 id="signature_117">Signature</h4>
+<pre><code class="language-python">class VNICPortUsage(object):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

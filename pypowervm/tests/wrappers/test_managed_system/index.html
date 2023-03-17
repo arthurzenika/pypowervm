@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Test Managed System - pypowervm documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../test_logical_partition/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../test_mgmt_console/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#test-managed-system" class="nav-link">Test Managed System</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#testmsentrywrapper" class="nav-link">TestMSEntryWrapper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testmtms" class="nav-link">TestMTMS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="test-managed-system">Test Managed System</h1>
+<p><a href="../../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../../#pypowervm">Pypowervm</a> /
+<a href="../../#tests">Tests</a> /
+<a href="../#wrappers">Wrappers</a> /
+Test Managed System</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../../pypowervm/tests/wrappers/test_managed_system.py">pypowervm.tests.wrappers.test_managed_system</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#test-managed-system">Test Managed System</a></li>
+<li><a href="#testmsentrywrapper">TestMSEntryWrapper</a><ul>
+<li><a href="#testmsentrywrapper()call_simple_getter">TestMSEntryWrapper().call_simple_getter</a></li>
+<li><a href="#testmsentrywrapper()setup">TestMSEntryWrapper().setUp</a></li>
+<li><a href="#testmsentrywrapper()test_asio_wwpn_prefix">TestMSEntryWrapper().test_asio_wwpn_prefix</a></li>
+<li><a href="#testmsentrywrapper()test_asio_wwpns">TestMSEntryWrapper().test_asio_wwpns</a></li>
+<li><a href="#testmsentrywrapper()test_default_ppt_ratio">TestMSEntryWrapper().test_default_ppt_ratio</a></li>
+<li><a href="#testmsentrywrapper()test_get_capabilities">TestMSEntryWrapper().test_get_capabilities</a></li>
+<li><a href="#testmsentrywrapper()test_get_firmware_memory">TestMSEntryWrapper().test_get_firmware_memory</a></li>
+<li><a href="#testmsentrywrapper()test_get_host_ip_address">TestMSEntryWrapper().test_get_host_ip_address</a></li>
+<li><a href="#testmsentrywrapper()test_get_memory_free">TestMSEntryWrapper().test_get_memory_free</a></li>
+<li><a href="#testmsentrywrapper()test_get_memory_total">TestMSEntryWrapper().test_get_memory_total</a></li>
+<li><a href="#testmsentrywrapper()test_get_metered_pool_id">TestMSEntryWrapper().test_get_metered_pool_id</a></li>
+<li><a href="#testmsentrywrapper()test_get_min_proc_units">TestMSEntryWrapper().test_get_min_proc_units</a></li>
+<li><a href="#testmsentrywrapper()test_get_model">TestMSEntryWrapper().test_get_model</a></li>
+<li><a href="#testmsentrywrapper()test_get_mtms_str">TestMSEntryWrapper().test_get_mtms_str</a></li>
+<li><a href="#testmsentrywrapper()test_get_proc_units">TestMSEntryWrapper().test_get_proc_units</a></li>
+<li><a href="#testmsentrywrapper()test_get_proc_units_avail">TestMSEntryWrapper().test_get_proc_units_avail</a></li>
+<li><a href="#testmsentrywrapper()test_get_proc_units_configurable">TestMSEntryWrapper().test_get_proc_units_configurable</a></li>
+<li><a href="#testmsentrywrapper()test_get_serial">TestMSEntryWrapper().test_get_serial</a></li>
+<li><a href="#testmsentrywrapper()test_get_system_name">TestMSEntryWrapper().test_get_system_name</a></li>
+<li><a href="#testmsentrywrapper()test_get_type">TestMSEntryWrapper().test_get_type</a></li>
+<li><a href="#testmsentrywrapper()test_get_val_str">TestMSEntryWrapper().test_get_val_str</a></li>
+<li><a href="#testmsentrywrapper()test_highest_compat_mode">TestMSEntryWrapper().test_highest_compat_mode</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_assignment">TestMSEntryWrapper().test_ioslot_assignment</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_bus_grp_required">TestMSEntryWrapper().test_ioslot_bus_grp_required</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_description">TestMSEntryWrapper().test_ioslot_description</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_drc_index">TestMSEntryWrapper().test_ioslot_drc_index</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_drc_name">TestMSEntryWrapper().test_ioslot_drc_name</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_feat_codes">TestMSEntryWrapper().test_ioslot_feat_codes</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_pci_class">TestMSEntryWrapper().test_ioslot_pci_class</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_pci_dev_id">TestMSEntryWrapper().test_ioslot_pci_dev_id</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_pci_rev_id">TestMSEntryWrapper().test_ioslot_pci_rev_id</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_pci_subsys_dev_id">TestMSEntryWrapper().test_ioslot_pci_subsys_dev_id</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_pci_subsys_vendor_id">TestMSEntryWrapper().test_ioslot_pci_subsys_vendor_id</a></li>
+<li><a href="#testmsentrywrapper()test_ioslot_pci_vendor_id">TestMSEntryWrapper().test_ioslot_pci_vendor_id</a></li>
+<li><a href="#testmsentrywrapper()test_max_procs_per_aix_linux_lpar">TestMSEntryWrapper().test_max_procs_per_aix_linux_lpar</a></li>
+<li><a href="#testmsentrywrapper()test_max_vcpus_per_aix_linux_lpar">TestMSEntryWrapper().test_max_vcpus_per_aix_linux_lpar</a></li>
+<li><a href="#testmsentrywrapper()test_migration_data">TestMSEntryWrapper().test_migration_data</a></li>
+<li><a href="#testmsentrywrapper()test_page_table_ratio">TestMSEntryWrapper().test_page_table_ratio</a></li>
+<li><a href="#testmsentrywrapper()test_proc_compat_modes">TestMSEntryWrapper().test_proc_compat_modes</a></li>
+<li><a href="#testmsentrywrapper()test_processor_is_throttled">TestMSEntryWrapper().test_processor_is_throttled</a></li>
+<li><a href="#testmsentrywrapper()test_session_is_master">TestMSEntryWrapper().test_session_is_master</a></li>
+<li><a href="#testmsentrywrapper()test_supported_ibmi_console_codepage">TestMSEntryWrapper().test_supported_ibmi_console_codepage</a></li>
+<li><a href="#testmsentrywrapper()test_vios_links">TestMSEntryWrapper().test_vios_links</a></li>
+<li><a href="#testmsentrywrapper()verify_equal">TestMSEntryWrapper().verify_equal</a></li>
+</ul>
+</li>
+<li><a href="#testmtms">TestMTMS</a><ul>
+<li><a href="#testmtms()test_mtms">TestMTMS().test_mtms</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="testmsentrywrapper">TestMSEntryWrapper</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L29">Show source in test_managed_system.py:29</a></p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class TestMSEntryWrapper(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappercall_simple_getter">TestMSEntryWrapper().call_simple_getter</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L71">Show source in test_managed_system.py:71</a></p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">def call_simple_getter(self, method_name, expected_value, expected_bad_value):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappersetup">TestMSEntryWrapper().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L31">Show source in test_managed_system.py:31</a></p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_asio_wwpn_prefix">TestMSEntryWrapper().test_asio_wwpn_prefix</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L196">Show source in test_managed_system.py:196</a></p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">def test_asio_wwpn_prefix(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_asio_wwpns">TestMSEntryWrapper().test_asio_wwpns</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L193">Show source in test_managed_system.py:193</a></p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">def test_asio_wwpns(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_default_ppt_ratio">TestMSEntryWrapper().test_default_ppt_ratio</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L146">Show source in test_managed_system.py:146</a></p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">def test_default_ppt_ratio(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_capabilities">TestMSEntryWrapper().test_get_capabilities</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L260">Show source in test_managed_system.py:260</a></p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">def test_get_capabilities(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_firmware_memory">TestMSEntryWrapper().test_get_firmware_memory</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L140">Show source in test_managed_system.py:140</a></p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">def test_get_firmware_memory(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_host_ip_address">TestMSEntryWrapper().test_get_host_ip_address</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L137">Show source in test_managed_system.py:137</a></p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">def test_get_host_ip_address(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_memory_free">TestMSEntryWrapper().test_get_memory_free</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L134">Show source in test_managed_system.py:134</a></p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">def test_get_memory_free(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_memory_total">TestMSEntryWrapper().test_get_memory_total</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L131">Show source in test_managed_system.py:131</a></p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">def test_get_memory_total(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_metered_pool_id">TestMSEntryWrapper().test_get_metered_pool_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L348">Show source in test_managed_system.py:348</a></p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">def test_get_metered_pool_id(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_min_proc_units">TestMSEntryWrapper().test_get_min_proc_units</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L122">Show source in test_managed_system.py:122</a></p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">def test_get_min_proc_units(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_model">TestMSEntryWrapper().test_get_model</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L99">Show source in test_managed_system.py:99</a></p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">def test_get_model(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_mtms_str">TestMSEntryWrapper().test_get_mtms_str</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L108">Show source in test_managed_system.py:108</a></p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">def test_get_mtms_str(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_proc_units">TestMSEntryWrapper().test_get_proc_units</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L119">Show source in test_managed_system.py:119</a></p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">def test_get_proc_units(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_proc_units_avail">TestMSEntryWrapper().test_get_proc_units_avail</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L128">Show source in test_managed_system.py:128</a></p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">def test_get_proc_units_avail(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_proc_units_configurable">TestMSEntryWrapper().test_get_proc_units_configurable</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L125">Show source in test_managed_system.py:125</a></p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">def test_get_proc_units_configurable(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_serial">TestMSEntryWrapper().test_get_serial</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L105">Show source in test_managed_system.py:105</a></p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">def test_get_serial(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_system_name">TestMSEntryWrapper().test_get_system_name</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L158">Show source in test_managed_system.py:158</a></p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">def test_get_system_name(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_type">TestMSEntryWrapper().test_get_type</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L102">Show source in test_managed_system.py:102</a></p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">def test_get_type(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_get_val_str">TestMSEntryWrapper().test_get_val_str</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L87">Show source in test_managed_system.py:87</a></p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">def test_get_val_str(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_highest_compat_mode">TestMSEntryWrapper().test_highest_compat_mode</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L111">Show source in test_managed_system.py:111</a></p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">def test_highest_compat_mode(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_assignment">TestMSEntryWrapper().test_ioslot_assignment</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L214">Show source in test_managed_system.py:214</a></p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">def test_ioslot_assignment(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_bus_grp_required">TestMSEntryWrapper().test_ioslot_bus_grp_required</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L200">Show source in test_managed_system.py:200</a></p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">def test_ioslot_bus_grp_required(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_description">TestMSEntryWrapper().test_ioslot_description</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L204">Show source in test_managed_system.py:204</a></p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">def test_ioslot_description(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_drc_index">TestMSEntryWrapper().test_ioslot_drc_index</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L250">Show source in test_managed_system.py:250</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">def test_ioslot_drc_index(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_drc_name">TestMSEntryWrapper().test_ioslot_drc_name</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L254">Show source in test_managed_system.py:254</a></p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">def test_ioslot_drc_name(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_feat_codes">TestMSEntryWrapper().test_ioslot_feat_codes</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L210">Show source in test_managed_system.py:210</a></p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">def test_ioslot_feat_codes(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_pci_class">TestMSEntryWrapper().test_ioslot_pci_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L225">Show source in test_managed_system.py:225</a></p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">def test_ioslot_pci_class(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_pci_dev_id">TestMSEntryWrapper().test_ioslot_pci_dev_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L229">Show source in test_managed_system.py:229</a></p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">def test_ioslot_pci_dev_id(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_pci_rev_id">TestMSEntryWrapper().test_ioslot_pci_rev_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L237">Show source in test_managed_system.py:237</a></p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">def test_ioslot_pci_rev_id(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_pci_subsys_dev_id">TestMSEntryWrapper().test_ioslot_pci_subsys_dev_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L233">Show source in test_managed_system.py:233</a></p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">def test_ioslot_pci_subsys_dev_id(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_pci_subsys_vendor_id">TestMSEntryWrapper().test_ioslot_pci_subsys_vendor_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L245">Show source in test_managed_system.py:245</a></p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">def test_ioslot_pci_subsys_vendor_id(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_ioslot_pci_vendor_id">TestMSEntryWrapper().test_ioslot_pci_vendor_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L241">Show source in test_managed_system.py:241</a></p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">def test_ioslot_pci_vendor_id(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_max_procs_per_aix_linux_lpar">TestMSEntryWrapper().test_max_procs_per_aix_linux_lpar</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L166">Show source in test_managed_system.py:166</a></p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">def test_max_procs_per_aix_linux_lpar(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_max_vcpus_per_aix_linux_lpar">TestMSEntryWrapper().test_max_vcpus_per_aix_linux_lpar</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L176">Show source in test_managed_system.py:176</a></p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">def test_max_vcpus_per_aix_linux_lpar(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_migration_data">TestMSEntryWrapper().test_migration_data</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L311">Show source in test_managed_system.py:311</a></p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">def test_migration_data(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_page_table_ratio">TestMSEntryWrapper().test_page_table_ratio</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L143">Show source in test_managed_system.py:143</a></p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">def test_page_table_ratio(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_proc_compat_modes">TestMSEntryWrapper().test_proc_compat_modes</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L114">Show source in test_managed_system.py:114</a></p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">def test_proc_compat_modes(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_processor_is_throttled">TestMSEntryWrapper().test_processor_is_throttled</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L351">Show source in test_managed_system.py:351</a></p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">def test_processor_is_throttled(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_session_is_master">TestMSEntryWrapper().test_session_is_master</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L308">Show source in test_managed_system.py:308</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">def test_session_is_master(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_supported_ibmi_console_codepage">TestMSEntryWrapper().test_supported_ibmi_console_codepage</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L149">Show source in test_managed_system.py:149</a></p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">def test_supported_ibmi_console_codepage(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrappertest_vios_links">TestMSEntryWrapper().test_vios_links</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L186">Show source in test_managed_system.py:186</a></p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">def test_vios_links(self):
+    ...
+</code></pre>
+<h3 id="testmsentrywrapperverify_equal">TestMSEntryWrapper().verify_equal</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L66">Show source in test_managed_system.py:66</a></p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">def verify_equal(self, method_name, returned_value, expected_value):
+    ...
+</code></pre>
+<h2 id="testmtms">TestMTMS</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L355">Show source in test_managed_system.py:355</a></p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">class TestMTMS(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testmtmstest_mtms">TestMTMS().test_mtms</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_managed_system.py#L356">Show source in test_managed_system.py:356</a></p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">def test_mtms(self):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

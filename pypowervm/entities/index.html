@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Entities - pypowervm documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../const/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../exceptions/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#entities" class="nav-link">Entities</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#atom" class="nav-link">Atom</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#element" class="nav-link">Element</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#elementlist" class="nav-link">ElementList</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#entry" class="nav-link">Entry</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#feed" class="nav-link">Feed</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="entities">Entities</h1>
+<p><a href="../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../#pypowervm">Pypowervm</a> /
+Entities</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../pypowervm/entities.py">pypowervm.entities</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#entities">Entities</a></li>
+<li><a href="#atom">Atom</a><ul>
+<li><a href="#atom()links">Atom().links</a></li>
+<li><a href="#atom()self_link">Atom().self_link</a></li>
+<li><a href="#atom()uuid">Atom().uuid</a></li>
+</ul>
+</li>
+<li><a href="#element">Element</a><ul>
+<li><a href="#element()__deepcopy__">Element().<strong>deepcopy</strong></a></li>
+<li><a href="#element()__iter__">Element().<strong>iter</strong></a></li>
+<li><a href="#element()append">Element().append</a></li>
+<li><a href="#element()attrib">Element().attrib</a></li>
+<li><a href="#element()attrib-1">Element().attrib</a></li>
+<li><a href="#element()find">Element().find</a></li>
+<li><a href="#element()findall">Element().findall</a></li>
+<li><a href="#element()findtext">Element().findtext</a></li>
+<li><a href="#element()get">Element().get</a></li>
+<li><a href="#element()inject">Element().inject</a></li>
+<li><a href="#element()insert">Element().insert</a></li>
+<li><a href="#element()items">Element().items</a></li>
+<li><a href="#element()iter">Element().iter</a></li>
+<li><a href="#element()keys">Element().keys</a></li>
+<li><a href="#element()namespace">Element().namespace</a></li>
+<li><a href="#element()namespace-1">Element().namespace</a></li>
+<li><a href="#element()remove">Element().remove</a></li>
+<li><a href="#element()replace">Element().replace</a></li>
+<li><a href="#element()set">Element().set</a></li>
+<li><a href="#element()tag">Element().tag</a></li>
+<li><a href="#element()tag-1">Element().tag</a></li>
+<li><a href="#element()text">Element().text</a></li>
+<li><a href="#element()text-1">Element().text</a></li>
+<li><a href="#element()toxmlstring">Element().toxmlstring</a></li>
+<li><a href="#elementwrapelement">Element.wrapelement</a></li>
+</ul>
+</li>
+<li><a href="#elementlist">ElementList</a><ul>
+<li><a href="#elementlist()__create_elem">ElementList().__create_elem</a></li>
+<li><a href="#elementlist()__find_elems">ElementList().__find_elems</a></li>
+<li><a href="#elementlist()__get_values">ElementList().__get_values</a></li>
+<li><a href="#elementlist()append">ElementList().append</a></li>
+<li><a href="#elementlist()clear">ElementList().clear</a></li>
+<li><a href="#elementlist()extend">ElementList().extend</a></li>
+<li><a href="#elementlist()index">ElementList().index</a></li>
+<li><a href="#elementlist()remove">ElementList().remove</a></li>
+</ul>
+</li>
+<li><a href="#entry">Entry</a><ul>
+<li><a href="#entry()__deepcopy__">Entry().<strong>deepcopy</strong></a></li>
+<li><a href="#entry()adapter">Entry().adapter</a></li>
+<li><a href="#entry()etag">Entry().etag</a></li>
+<li><a href="#entryunmarshal_atom_entry">Entry.unmarshal_atom_entry</a></li>
+</ul>
+</li>
+<li><a href="#feed">Feed</a><ul>
+<li><a href="#feed()findentries">Feed().findentries</a></li>
+<li><a href="#feedunmarshal_atom_feed">Feed.unmarshal_atom_feed</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="atom">Atom</h2>
+<p><a href="../../pypowervm/entities.py#L29">Show source in entities.py:29</a></p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class Atom(object):
+    def __init__(self, properties):
+        ...
+</code></pre>
+<h3 id="atomlinks">Atom().links</h3>
+<p><a href="../../pypowervm/entities.py#L40">Show source in entities.py:40</a></p>
+<p>Get the rel-keyed dict of <link/>s for this Atom, or {} if none.</p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">@property
+def links(self):
+    ...
+</code></pre>
+<h3 id="atomself_link">Atom().self_link</h3>
+<p><a href="../../pypowervm/entities.py#L45">Show source in entities.py:45</a></p>
+<p>Get the <em>first</em> SELF link, or None if none exists.</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">@property
+def self_link(self):
+    ...
+</code></pre>
+<h3 id="atomuuid">Atom().uuid</h3>
+<p><a href="../../pypowervm/entities.py#L33">Show source in entities.py:33</a></p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">@property
+def uuid(self):
+    ...
+</code></pre>
+<h2 id="element">Element</h2>
+<p><a href="../../pypowervm/entities.py#L161">Show source in entities.py:161</a></p>
+<p>Represents an XML element - a utility wrapper around etree.Element.</p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">class Element(object):
+    def __init__(
+        self,
+        tag,
+        adapter,
+        ns=const.UOM_NS,
+        attrib=None,
+        text=&quot;&quot;,
+        children=(),
+        cdata=False,
+    ):
+        ...
+</code></pre>
+<h3 id="elementdeepcopy">Element().<strong>deepcopy</strong></h3>
+<p><a href="../../pypowervm/entities.py#L202">Show source in entities.py:202</a></p>
+<p>Produce a deep (except for adapter) copy of this Element.</p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">def __deepcopy__(self, memo=None):
+    ...
+</code></pre>
+<h3 id="elementiter">Element().<strong>iter</strong></h3>
+<p><a href="../../pypowervm/entities.py#L244">Show source in entities.py:244</a></p>
+<p>Returns the children as a list of Elements.</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">def __iter__(self):
+    ...
+</code></pre>
+<h3 id="elementappend">Element().append</h3>
+<p><a href="../../pypowervm/entities.py#L331">Show source in entities.py:331</a></p>
+<p>Adds subelement to the end of this element's list of subelements.</p>
+<p>Note: if subelement is a reference to an element within another XML
+hierarchy, it will be <em>removed</em> from that hierarchy.  If you intend to
+reuse the parent object, you should pass a copy.deepcopy of the
+subelement to this method.</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">def append(self, subelement):
+    ...
+</code></pre>
+<h3 id="elementattrib">Element().attrib</h3>
+<p><a href="../../pypowervm/entities.py#L298">Show source in entities.py:298</a></p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">@property
+def attrib(self):
+    ...
+</code></pre>
+<h3 id="elementattrib_1">Element().attrib</h3>
+<p><a href="../../pypowervm/entities.py#L302">Show source in entities.py:302</a></p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">@attrib.setter
+def attrib(self, attrib):
+    ...
+</code></pre>
+<h3 id="elementfind">Element().find</h3>
+<p><a href="../../pypowervm/entities.py#L404">Show source in entities.py:404</a></p>
+<p>Finds the first subelement matching match.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>match</code> - May be a tag name or path.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>an element instance or None.</p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">def find(self, match):
+    ...
+</code></pre>
+<h3 id="elementfindall">Element().findall</h3>
+<p><a href="../../pypowervm/entities.py#L418">Show source in entities.py:418</a></p>
+<p>Finds all matching subelements.</p>
+<h4 id="arguments_1">Arguments</h4>
+<ul>
+<li><code>match</code> - May be a tag name or path.</li>
+</ul>
+<h4 id="returns_1">Returns</h4>
+<p>a list containing all matching elements in document order.</p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">def findall(self, match):
+    ...
+</code></pre>
+<h3 id="elementfindtext">Element().findtext</h3>
+<p><a href="../../pypowervm/entities.py#L431">Show source in entities.py:431</a></p>
+<p>Finds text for the first subelement matching match.</p>
+<h4 id="arguments_2">Arguments</h4>
+<ul>
+<li><code>match</code> - May be a tag name or path.</li>
+</ul>
+<h4 id="returns_2">Returns</h4>
+<p>the text content of the first matching element, or default
+         if no element was found. Note that if the matching element
+         has no text content an empty string is returned.</p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">def findtext(self, match, default=None):
+    ...
+</code></pre>
+<h3 id="elementget">Element().get</h3>
+<p><a href="../../pypowervm/entities.py#L306">Show source in entities.py:306</a></p>
+<p>Gets the element attribute named key.</p>
+<p>Returns the attribute value, or default if the attribute was not found.</p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">def get(self, key, default=None):
+    ...
+</code></pre>
+<h3 id="elementinject">Element().inject</h3>
+<p><a href="../../pypowervm/entities.py#L345">Show source in entities.py:345</a></p>
+<p>Inserts subelement at the correct position in self's children.</p>
+<p>Uses ordering_list to determine the proper spot at which to insert the
+specified subelement.</p>
+<h4 id="arguments_3">Arguments</h4>
+<ul>
+<li><code>subelement</code> - The element to inject as a child of this element.</li>
+<li><code>ordering_list</code> - Iterable of string tag names representing the
+                      desired ordering of children for this element.
+                      If subelement's tag is not included in this list,
+                      the behavior is self.append(subelement).</li>
+<li><a href="#elementreplace">Element().replace</a> - If True, and an existing child with subelement's tag is
+                found, it is replaced.  If False, subelement is added
+                after the existing child(ren).  Note: You probably want
+                to use True only/always when subelement is maxOccurs=1.
+                Conversely, you probably want to use False only/always
+                when subelement is unbounded.  If you use True and more
+                than one matching child is found, the last one is
+                replaced.</li>
+</ul>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">def inject(self, subelement, ordering_list=(), replace=True):
+    ...
+</code></pre>
+<h3 id="elementinsert">Element().insert</h3>
+<p><a href="../../pypowervm/entities.py#L443">Show source in entities.py:443</a></p>
+<p>Inserts subelement at the given position in this element.</p>
+<h4 id="raises">Raises</h4>
+<ul>
+<li><code>TypeError</code> -  if subelement is not an etree.Element.</li>
+</ul>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">def insert(self, index, subelement):
+    ...
+</code></pre>
+<h3 id="elementitems">Element().items</h3>
+<p><a href="../../pypowervm/entities.py#L313">Show source in entities.py:313</a></p>
+<p>Returns the element attributes as a sequence of (name, value) pairs.</p>
+<p>The attributes are returned in an arbitrary order.</p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">def items(self):
+    ...
+</code></pre>
+<h3 id="elementiter_1">Element().iter</h3>
+<p><a href="../../pypowervm/entities.py#L450">Show source in entities.py:450</a></p>
+<p>Creates a tree iterator with the current element as the root.</p>
+<p>The iterator iterates over this element and all elements below it, in
+document (depth first) order. If tag is not None or '*', only elements
+whose tag equals tag are returned from the iterator. If the tree
+structure is modified during iteration, the result is undefined.</p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">def iter(self, tag=None):
+    ...
+</code></pre>
+<h3 id="elementkeys">Element().keys</h3>
+<p><a href="../../pypowervm/entities.py#L320">Show source in entities.py:320</a></p>
+<p>Returns the element attribute names as a list.</p>
+<p>The names are returned in an arbitrary order.</p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">def keys(self):
+    ...
+</code></pre>
+<h3 id="elementnamespace">Element().namespace</h3>
+<p><a href="../../pypowervm/entities.py#L281">Show source in entities.py:281</a></p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">@property
+def namespace(self):
+    ...
+</code></pre>
+<h3 id="elementnamespace_1">Element().namespace</h3>
+<p><a href="../../pypowervm/entities.py#L286">Show source in entities.py:286</a></p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">@namespace.setter
+def namespace(self, ns):
+    ...
+</code></pre>
+<h3 id="elementremove">Element().remove</h3>
+<p><a href="../../pypowervm/entities.py#L482">Show source in entities.py:482</a></p>
+<p>Removes subelement from the element.</p>
+<p>Unlike the find* methods this method compares elements based on the
+instance identity, not on tag value or contents.</p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">def remove(self, subelement):
+    ...
+</code></pre>
+<h3 id="elementreplace">Element().replace</h3>
+<p><a href="../../pypowervm/entities.py#L477">Show source in entities.py:477</a></p>
+<p>Replaces the existing child Element with the new one.</p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">def replace(self, existing, new_element):
+    ...
+</code></pre>
+<h3 id="elementset">Element().set</h3>
+<p><a href="../../pypowervm/entities.py#L327">Show source in entities.py:327</a></p>
+<p>Set the attribute key on the element to value.</p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">def set(self, key, value):
+    ...
+</code></pre>
+<h3 id="elementtag">Element().tag</h3>
+<p><a href="../../pypowervm/entities.py#L269">Show source in entities.py:269</a></p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">@property
+def tag(self):
+    ...
+</code></pre>
+<h3 id="elementtag_1">Element().tag</h3>
+<p><a href="../../pypowervm/entities.py#L273">Show source in entities.py:273</a></p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">@tag.setter
+def tag(self, tag):
+    ...
+</code></pre>
+<h3 id="elementtext">Element().text</h3>
+<p><a href="../../pypowervm/entities.py#L290">Show source in entities.py:290</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">@property
+def text(self):
+    ...
+</code></pre>
+<h3 id="elementtext_1">Element().text</h3>
+<p><a href="../../pypowervm/entities.py#L294">Show source in entities.py:294</a></p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">@text.setter
+def text(self, text):
+    ...
+</code></pre>
+<h3 id="elementtoxmlstring">Element().toxmlstring</h3>
+<p><a href="../../pypowervm/entities.py#L259">Show source in entities.py:259</a></p>
+<p>Produce an XML dump of this Element.</p>
+<h4 id="arguments_4">Arguments</h4>
+<ul>
+<li><code>pretty</code> - If True, format the XML in a visually-pleasing manner.</li>
+</ul>
+<h4 id="returns_3">Returns</h4>
+<p>An XML string representing this Element.</p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">def toxmlstring(self, pretty=False):
+    ...
+</code></pre>
+<h3 id="elementwrapelement">Element.wrapelement</h3>
+<p><a href="../../pypowervm/entities.py#L249">Show source in entities.py:249</a></p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">@classmethod
+def wrapelement(cls, element, adapter):
+    ...
+</code></pre>
+<h2 id="elementlist">ElementList</h2>
+<p><a href="../../pypowervm/entities.py#L501">Show source in entities.py:501</a></p>
+<p>Useful list ops on a list of Element.</p>
+<p>In a schema where a simpleType element has a multiplicity allowing more
+than one instance within the containing element, this class provides a way
+to treat those instances as a list, to a limited extent.</p>
+<p>For example, given XML like:
+    <parent>
+        ...(stuff that isn't <foo/>)...
+        <foo>one</foo>
+        <foo>two</foo>
+        <foo>three</foo>
+        ...(stuff that isn't <foo/>)...
+    </parent></p>
+<p>fooList = ElementList(parent_element, 'foo')
+len(fooList)
+    3
+repr(fooList)
+    "['one', 'two', 'three']"
+'two' in fooList
+    True
+'four' in fooList
+    False
+fooList.append('four')
+repr(fooList)
+    "['one', 'two', 'three', 'four']"
+print root.toxmlstring()
+    <parent>
+        ...(stuff that isn't <foo/>)...
+        <foo>one</foo>
+        <foo>two</foo>
+        <foo>three</foo>
+        <foo>four</foo>
+        ...(stuff that isn't <foo/>)...
+    </parent></p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">class ElementList(object):
+    def __init__(self, root_elem, tag, ordering_list=()):
+        ...
+</code></pre>
+<h3 id="elementlist__create_elem">ElementList().__create_elem</h3>
+<p><a href="../../pypowervm/entities.py#L568">Show source in entities.py:568</a></p>
+<p>Create a new entities.Element suitable for this list.</p>
+<h4 id="arguments_5">Arguments</h4>
+<ul>
+<li><code>val</code> - The raw string value for the text content of the new
+            element. E.g. self.__create_elem('foo') will yield an
+            entities.Element representing <tag ...>foo</tag> (where tag
+            is whatever this ElementList was initialized with).</li>
+</ul>
+<h4 id="returns_4">Returns</h4>
+<p>A new entities.Element containing the specified string val.</p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">def __create_elem(self, val):
+    ...
+</code></pre>
+<h3 id="elementlist__find_elems">ElementList().__find_elems</h3>
+<p><a href="../../pypowervm/entities.py#L560">Show source in entities.py:560</a></p>
+<p>List of entities.Element under self.root_elem with tag self.tag.</p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">def __find_elems(self):
+    ...
+</code></pre>
+<h3 id="elementlist__get_values">ElementList().__get_values</h3>
+<p><a href="../../pypowervm/entities.py#L564">Show source in entities.py:564</a></p>
+<p>List of the string values within the entities.Element instances.</p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">def __get_values(self):
+    ...
+</code></pre>
+<h3 id="elementlistappend">ElementList().append</h3>
+<p><a href="../../pypowervm/entities.py#L598">Show source in entities.py:598</a></p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">def append(self, val):
+    ...
+</code></pre>
+<h3 id="elementlistclear">ElementList().clear</h3>
+<p><a href="../../pypowervm/entities.py#L617">Show source in entities.py:617</a></p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">def clear(self):
+    ...
+</code></pre>
+<h3 id="elementlistextend">ElementList().extend</h3>
+<p><a href="../../pypowervm/entities.py#L585">Show source in entities.py:585</a></p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">def extend(self, val_list):
+    ...
+</code></pre>
+<h3 id="elementlistindex">ElementList().index</h3>
+<p><a href="../../pypowervm/entities.py#L579">Show source in entities.py:579</a></p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">def index(self, val):
+    ...
+</code></pre>
+<h3 id="elementlistremove">ElementList().remove</h3>
+<p><a href="../../pypowervm/entities.py#L611">Show source in entities.py:611</a></p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">def remove(self, val):
+    ...
+</code></pre>
+<h2 id="entry">Entry</h2>
+<p><a href="../../pypowervm/entities.py#L113">Show source in entities.py:113</a></p>
+<p>Represents an Atom Entry returned by the PowerVM API.</p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">class Entry(Atom):
+    def __init__(self, properties, element, adapter):
+        ...
+</code></pre>
+<h4 id="see-also">See also</h4>
+<ul>
+<li><a href="#atom">Atom</a></li>
+</ul>
+<h3 id="entrydeepcopy">Entry().<strong>deepcopy</strong></h3>
+<p><a href="../../pypowervm/entities.py#L128">Show source in entities.py:128</a></p>
+<p>Produce a deep (except for adapter) copy of this Entry.</p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">def __deepcopy__(self, memo=None):
+    ...
+</code></pre>
+<h3 id="entryadapter">Entry().adapter</h3>
+<p><a href="../../pypowervm/entities.py#L138">Show source in entities.py:138</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">@property
+def adapter(self):
+    ...
+</code></pre>
+<h3 id="entryetag">Entry().etag</h3>
+<p><a href="../../pypowervm/entities.py#L134">Show source in entities.py:134</a></p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">@property
+def etag(self):
+    ...
+</code></pre>
+<h3 id="entryunmarshal_atom_entry">Entry.unmarshal_atom_entry</h3>
+<p><a href="../../pypowervm/entities.py#L142">Show source in entities.py:142</a></p>
+<p>Factory method producing an Entry object from a parsed ElementTree</p>
+<h4 id="arguments_6">Arguments</h4>
+<ul>
+<li><code>entryelem</code> - Parsed ElementTree object representing an atom entry.</li>
+<li><code>resp</code> - The Response containing (the feed containing) the entry.</li>
+</ul>
+<h4 id="returns_5">Returns</h4>
+<p>a new Entry object representing the entryelem parameter.</p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">@classmethod
+def unmarshal_atom_entry(cls, entryelem, resp):
+    ...
+</code></pre>
+<h2 id="feed">Feed</h2>
+<p><a href="../../pypowervm/entities.py#L78">Show source in entities.py:78</a></p>
+<p>Represents an Atom Feed returned from PowerVM.</p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">class Feed(Atom):
+    def __init__(self, properties, entries):
+        ...
+</code></pre>
+<h4 id="see-also_1">See also</h4>
+<ul>
+<li><a href="#atom">Atom</a></li>
+</ul>
+<h3 id="feedfindentries">Feed().findentries</h3>
+<p><a href="../../pypowervm/entities.py#L84">Show source in entities.py:84</a></p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">def findentries(self, subelem, text):
+    ...
+</code></pre>
+<h3 id="feedunmarshal_atom_feed">Feed.unmarshal_atom_feed</h3>
+<p><a href="../../pypowervm/entities.py#L94">Show source in entities.py:94</a></p>
+<p>Factory method producing a Feed object from a parsed ElementTree</p>
+<h4 id="arguments_7">Arguments</h4>
+<ul>
+<li><code>feedelem</code> - Parsed ElementTree object representing an atom feed.</li>
+<li><code>resp</code> - The Response from which this Feed was parsed.</li>
+</ul>
+<h4 id="returns_6">Returns</h4>
+<p>a new Feed object representing the feedelem parameter.</p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">@classmethod
+def unmarshal_atom_feed(cls, feedelem, resp):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

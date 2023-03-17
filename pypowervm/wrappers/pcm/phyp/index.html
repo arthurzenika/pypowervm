@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Phyp - pypowervm documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Phyp</a>
+</li>
+            
+<li>
+    <a href="../vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../lpar/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../vios/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#phyp" class="nav-link">Phyp</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#phypinfo" class="nav-link">PhypInfo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phyplparmemory" class="nav-link">PhypLparMemory</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phyplparproc" class="nav-link">PhypLparProc</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phyplparsample" class="nav-link">PhypLparSample</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypnetwork" class="nav-link">PhypNetwork</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypsample" class="nav-link">PhypSample</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypsharedprocpool" class="nav-link">PhypSharedProcPool</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypsriovlparport" class="nav-link">PhypSriovLparPort</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypstorage" class="nav-link">PhypStorage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypstoragevadpt" class="nav-link">PhypStorageVAdpt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypsystemfirmware" class="nav-link">PhypSystemFirmware</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypsystemmemory" class="nav-link">PhypSystemMemory</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypsystemprocessor" class="nav-link">PhypSystemProcessor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypvea" class="nav-link">PhypVEA</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypvmsample" class="nav-link">PhypVMSample</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypviossample" class="nav-link">PhypViosSample</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#phypvirtualfcadpt" class="nav-link">PhypVirtualFCAdpt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="phyp">Phyp</h1>
+<p><a href="../../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../../#pypowervm">Pypowervm</a> /
+<a href="../../#wrappers">Wrappers</a> /
+<a href="../#pcm">Pcm</a> /
+Phyp</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../../pypowervm/wrappers/pcm/phyp.py">pypowervm.wrappers.pcm.phyp</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#phyp">Phyp</a></li>
+<li><a href="#phypinfo">PhypInfo</a></li>
+<li><a href="#phyplparmemory">PhypLparMemory</a></li>
+<li><a href="#phyplparproc">PhypLparProc</a></li>
+<li><a href="#phyplparsample">PhypLparSample</a></li>
+<li><a href="#phypnetwork">PhypNetwork</a></li>
+<li><a href="#phypsample">PhypSample</a></li>
+<li><a href="#phypsharedprocpool">PhypSharedProcPool</a></li>
+<li><a href="#phypsriovlparport">PhypSriovLparPort</a></li>
+<li><a href="#phypstorage">PhypStorage</a></li>
+<li><a href="#phypstoragevadpt">PhypStorageVAdpt</a></li>
+<li><a href="#phypsystemfirmware">PhypSystemFirmware</a></li>
+<li><a href="#phypsystemmemory">PhypSystemMemory</a></li>
+<li><a href="#phypsystemprocessor">PhypSystemProcessor</a></li>
+<li><a href="#phypvea">PhypVEA</a></li>
+<li><a href="#phypvmsample">PhypVMSample</a></li>
+<li><a href="#phypviossample">PhypViosSample</a></li>
+<li><a href="#phypvirtualfcadpt">PhypVirtualFCAdpt</a></li>
+</ul>
+<h2 id="phypinfo">PhypInfo</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L27">Show source in phyp.py:27</a></p>
+<p>Represents a monitor sample from the PHYP monitor.</p>
+<p>The PHYP PCM monitor JSON data can be parsed by this.  The base structure
+is:
+- PhypInfo
+  - Info
+  - PhypSample
+    - PhypSystemFirmware
+    - PhypSystemProcessor
+    - PhypSystemMemory
+    - PhypSharedProcPool
+    - PhypVMSample (list - client virtual machines)
+      - PhypLparProc
+      - PhypLparMemory
+      - PhypNetwork
+       - PhypVEA
+       - PhypSriovLparPort
+      - PhypStorage
+       - PhypStorageVAdpt
+       - PhypVirtualFCAdpt
+    - PhypViosSample (list - Virtual I/O Servers)
+      - PhypLparProc</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class PhypInfo(object):
+    def __init__(self, raw_json):
+        ...
+</code></pre>
+<h2 id="phyplparmemory">PhypLparMemory</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L170">Show source in phyp.py:170</a></p>
+<p>A sample of a Client Virtual Machines's memory presented by PHYP.</p>
+<p>Part of the PhypLparSample.</p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">class PhypLparMemory(object):
+    def __init__(self, mem):
+        ...
+</code></pre>
+<h2 id="phyplparproc">PhypLparProc</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L181">Show source in phyp.py:181</a></p>
+<p>A sample of the LPARs processor presented by PHYP.</p>
+<p>Part of the PhypLparSample</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">class PhypLparProc(object):
+    def __init__(self, proc):
+        ...
+</code></pre>
+<h2 id="phyplparsample">PhypLparSample</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L130">Show source in phyp.py:130</a></p>
+<p>A LPAR sample presented by PHYP.  Generic for VIOS &amp; VM.</p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">class PhypLparSample(object):
+    def __init__(self, lpar):
+        ...
+</code></pre>
+<h2 id="phypnetwork">PhypNetwork</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L203">Show source in phyp.py:203</a></p>
+<p>A sample of the LPARs network information.</p>
+<p>Part of the PhypLparSample</p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">class PhypNetwork(object):
+    def __init__(self, network):
+        ...
+</code></pre>
+<h2 id="phypsample">PhypSample</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L59">Show source in phyp.py:59</a></p>
+<p>A Power Hypervisor Sample.</p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">class PhypSample(object):
+    def __init__(self, util_sample):
+        ...
+</code></pre>
+<h2 id="phypsharedprocpool">PhypSharedProcPool</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L98">Show source in phyp.py:98</a></p>
+<p>Information of the Shared Processor Pool.</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">class PhypSharedProcPool(object):
+    def __init__(self, spp):
+        ...
+</code></pre>
+<h2 id="phypsriovlparport">PhypSriovLparPort</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L238">Show source in phyp.py:238</a></p>
+<p>A metric for the SR-IOV Logical Ports.</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">class PhypSriovLparPort(object):
+    def __init__(self, sriov_p):
+        ...
+</code></pre>
+<h2 id="phypstorage">PhypStorage</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L256">Show source in phyp.py:256</a></p>
+<p>A sample of the LPARs storage information.</p>
+<p>Part of the PhypLparSample</p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">class PhypStorage(object):
+    def __init__(self, stor):
+        ...
+</code></pre>
+<h2 id="phypstoragevadpt">PhypStorageVAdpt</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L272">Show source in phyp.py:272</a></p>
+<p>An indicator to the Client VM Storage to the VIOS storage elem.</p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">class PhypStorageVAdpt(object):
+    def __init__(self, stor):
+        ...
+</code></pre>
+<h2 id="phypsystemfirmware">PhypSystemFirmware</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L90">Show source in phyp.py:90</a></p>
+<p>Firmware information from PHYP.</p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">class PhypSystemFirmware(object):
+    def __init__(self, system_firmware):
+        ...
+</code></pre>
+<h2 id="phypsystemmemory">PhypSystemMemory</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L120">Show source in phyp.py:120</a></p>
+<p>System wide Memory information from PHYP.</p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">class PhypSystemMemory(object):
+    def __init__(self, mem):
+        ...
+</code></pre>
+<h2 id="phypsystemprocessor">PhypSystemProcessor</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L110">Show source in phyp.py:110</a></p>
+<p>Processor information about the entire system from PHYP.</p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">class PhypSystemProcessor(object):
+    def __init__(self, processor):
+        ...
+</code></pre>
+<h2 id="phypvea">PhypVEA</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L218">Show source in phyp.py:218</a></p>
+<p>The Virtual Ethernet Adapters (aka. CNA's) data.</p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">class PhypVEA(object):
+    def __init__(self, vea):
+        ...
+</code></pre>
+<h2 id="phypvmsample">PhypVMSample</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L152">Show source in phyp.py:152</a></p>
+<p>A Virtual Machine (non VIOS) presented by the PHYP metrics.</p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">class PhypVMSample(PhypLparSample):
+    def __init__(self, lpar):
+        ...
+</code></pre>
+<h4 id="see-also">See also</h4>
+<ul>
+<li><a href="#phyplparsample">PhypLparSample</a></li>
+</ul>
+<h2 id="phypviossample">PhypViosSample</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L145">Show source in phyp.py:145</a></p>
+<p>A VIOS sample presented by the PHYP metrics.</p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">class PhypViosSample(PhypLparSample):
+    def __init__(self, lpar):
+        ...
+</code></pre>
+<h4 id="see-also_1">See also</h4>
+<ul>
+<li><a href="#phyplparsample">PhypLparSample</a></li>
+</ul>
+<h2 id="phypvirtualfcadpt">PhypVirtualFCAdpt</h2>
+<p><a href="../../../../pypowervm/wrappers/pcm/phyp.py#L281">Show source in phyp.py:281</a></p>
+<p>An indicator to identify the Client VFC Adpt with the VIOS storage.</p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">class PhypVirtualFCAdpt(object):
+    def __init__(self, vfc):
+        ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

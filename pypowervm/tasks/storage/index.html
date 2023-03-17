@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Storage - pypowervm documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Storage</a>
+</li>
+            
+<li>
+    <a href="../vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../tests/lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../tests/helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tests/tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../tests/test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../tests/utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_network/" class="dropdown-item">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tests/wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../../tests/wrappers/pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../sriov/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../vfc_mapper/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#storage" class="nav-link">Storage</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#comprehensivescrub" class="nav-link">ComprehensiveScrub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#scruborphanstorageforlpar" class="nav-link">ScrubOrphanStorageForLpar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#scrubportlessvfcmaps" class="nav-link">ScrubPortlessVFCMaps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#uploadtype" class="nav-link">UploadType</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#add_lpar_storage_scrub_tasks" class="nav-link">add_lpar_storage_scrub_tasks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#add_orphan_storage_scrub_tasks" class="nav-link">add_orphan_storage_scrub_tasks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#crt_copy_vdisk" class="nav-link">crt_copy_vdisk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#crt_lu" class="nav-link">crt_lu</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#crt_lu_linked_clone" class="nav-link">crt_lu_linked_clone</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#crt_vdisk" class="nav-link">crt_vdisk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#default_tier_for_ssp" class="nav-link">default_tier_for_ssp</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#find_stale_lpars" class="nav-link">find_stale_lpars</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#find_vg" class="nav-link">find_vg</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rescan_vstor" class="nav-link">rescan_vstor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rm_ssp_storage" class="nav-link">rm_ssp_storage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rm_tier_storage" class="nav-link">rm_tier_storage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rm_vg_storage" class="nav-link">rm_vg_storage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#upload_lu" class="nav-link">upload_lu</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#upload_new_lu" class="nav-link">upload_new_lu</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#defaultlegacy-behavior" class="nav-link">Default/legacy behavior</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#with-return_ssptrue" class="nav-link">With return_ssp=True</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#upload_new_vdisk" class="nav-link">upload_new_vdisk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#upload_vopt" class="nav-link">upload_vopt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="storage">Storage</h1>
+<p><a href="../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../#pypowervm">Pypowervm</a> /
+<a href="../#tasks">Tasks</a> /
+Storage</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../pypowervm/tasks/storage.py">pypowervm.tasks.storage</a> module.</p>
+</blockquote>
+<h4 id="attributes">Attributes</h4>
+<ul>
+<li>
+<p><code>LOG</code> - Setup logging: <code>logging.getLogger(__name__)</code></p>
+</li>
+<li>
+<p><a href="#storage">Storage</a></p>
+</li>
+<li><a href="#comprehensivescrub">ComprehensiveScrub</a></li>
+<li><a href="#scruborphanstorageforlpar">ScrubOrphanStorageForLpar</a></li>
+<li><a href="#scrubportlessvfcmaps">ScrubPortlessVFCMaps</a></li>
+<li><a href="#uploadtype">UploadType</a></li>
+<li><a href="#add_lpar_storage_scrub_tasks">add_lpar_storage_scrub_tasks</a></li>
+<li><a href="#add_orphan_storage_scrub_tasks">add_orphan_storage_scrub_tasks</a></li>
+<li><a href="#crt_copy_vdisk">crt_copy_vdisk</a></li>
+<li><a href="#crt_lu">crt_lu</a></li>
+<li><a href="#crt_lu_linked_clone">crt_lu_linked_clone</a></li>
+<li><a href="#crt_vdisk">crt_vdisk</a></li>
+<li><a href="#default_tier_for_ssp">default_tier_for_ssp</a></li>
+<li><a href="#find_stale_lpars">find_stale_lpars</a></li>
+<li><a href="#find_vg">find_vg</a></li>
+<li><a href="#rescan_vstor">rescan_vstor</a></li>
+<li><a href="#rm_ssp_storage">rm_ssp_storage</a></li>
+<li><a href="#rm_tier_storage">rm_tier_storage</a></li>
+<li><a href="#rm_vg_storage">rm_vg_storage</a></li>
+<li><a href="#upload_lu">upload_lu</a></li>
+<li><a href="#upload_new_lu">upload_new_lu</a></li>
+<li><a href="#default/legacy-behavior">Default/legacy behavior</a></li>
+<li><a href="#with-return_ssp=true">With return_ssp=True</a></li>
+<li><a href="#upload_new_vdisk">upload_new_vdisk</a></li>
+<li><a href="#upload_vopt">upload_vopt</a></li>
+</ul>
+<h2 id="comprehensivescrub">ComprehensiveScrub</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L1278">Show source in storage.py:1278</a></p>
+<p>Scrub all the stale/orphan mappings/storage we can find.</p>
+<p>A FeedTask which does the following:</p>
+<p>For all VIOSes (on the host):
+    For each stale LPAR
+        Scrub mappings &amp; storage
+    Scrub all orphan mappings (those without client adapters)</p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class ComprehensiveScrub(tx.FeedTask):
+    def __init__(self, adapter, host_uuid=None):
+        ...
+</code></pre>
+<h2 id="scruborphanstorageforlpar">ScrubOrphanStorageForLpar</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L1320">Show source in storage.py:1320</a></p>
+<p>Scrub orphan mappings and their storage for one specific LPAR.</p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">class ScrubOrphanStorageForLpar(tx.FeedTask):
+    def __init__(self, adapter, lpar_id, host_uuid=None):
+        ...
+</code></pre>
+<h2 id="scrubportlessvfcmaps">ScrubPortlessVFCMaps</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L1348">Show source in storage.py:1348</a></p>
+<p>Scrub virtual fibre channel mappings which have no backing port.</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">class ScrubPortlessVFCMaps(tx.FeedTask):
+    def __init__(self, adapter, lpar_id=None, host_uuid=None):
+        ...
+</code></pre>
+<h2 id="uploadtype">UploadType</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L62">Show source in storage.py:62</a></p>
+<h4 id="attributes_1">Attributes</h4>
+<ul>
+<li>
+<p><code>IO_STREAM</code> - The data stream (either a file handle or stream) to upload.  Must have
+  the 'read' method that returns a chunk of bytes.: <code>'stream'</code></p>
+</li>
+<li>
+<p><code>IO_STREAM_BUILDER</code> - A parameter-less function that builds an IO_STREAM.: <code>'stream_builder'</code></p>
+</li>
+<li>
+<p><code>FUNC</code> - DEPRECATED: Known issues combining threads and greenlets may cause hangs.</p>
+</li>
+</ul>
+<p>A method function that will be invoked to stream the data into the
+  virtual disk. Only one parameter is passed in, and that is the path to
+  the file to stream the data into.: <code>'delegate_function'</code></p>
+<p>Used in conjunction with the upload_xx methods.</p>
+<p>Indicates how the invoker will pass in the handle to the data.</p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">class UploadType(object):
+    ...
+</code></pre>
+<h2 id="add_lpar_storage_scrub_tasks">add_lpar_storage_scrub_tasks</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L1165">Show source in storage.py:1165</a></p>
+<p>Delete storage mappings and elements associated with an LPAR ID.</p>
+<p>This should typically be used to clean leftovers from an LPAR that has been
+deleted, since stale storage artifacts can cause conflicts with a new LPAR
+recycling that ID.</p>
+<p>This operates by inspecting mappings first, since we have no other way to
+associate a mapping-less storage element with an LPAR ID.</p>
+<p>Storage elements are deleted if their only mappings are to the LPAR ID
+being scrubbed (and remove_storage=True).</p>
+<p>This method only adds subtasks/post-execs to the passed-in FeedTask.  The
+caller is responsible for executing that FeedTask in an appropriate Flow or
+other context.</p>
+<h4 id="arguments">Arguments</h4>
+<ul>
+<li><code>lpar_ids</code> - List of integer short IDs (not UUIDs) of the LPAR whose
+                 storage artifacts are to be scrubbed.</li>
+<li><code>ftsk</code> - FeedTask to which the scrubbing actions should be added, for
+             execution by the caller.  The FeedTask must be built for all
+             the VIOSes from which mappings and storage should be scrubbed.
+             The feed/getter must use the VIO_SMAP and VIO_FMAP xags.</li>
+<li><code>lpars_exist</code> - (Optional) If set to False (the default), storage
+                    artifacts associated with an extant LPAR will be
+                    ignored (NOT scrubbed).  Otherwise, we will scrub
+                    whether the LPAR exists or not. Thus, set to True only
+                    if intentionally removing mappings associated with
+                    extant LPARs.</li>
+<li><code>remove_storage</code> - If True (the default), storage elements associated
+                       with stale mappings are removed, assuming it can be
+                       verified that they were only in use by this LPAR.
+                       If False, no storage removal is attempted.</li>
+</ul>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">def add_lpar_storage_scrub_tasks(lpar_ids, ftsk, lpars_exist=False, remove_storage=True):
+    ...
+</code></pre>
+<h2 id="add_orphan_storage_scrub_tasks">add_orphan_storage_scrub_tasks</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L1235">Show source in storage.py:1235</a></p>
+<p>Delete orphan mappings (no client adapter) and their storage elements.</p>
+<h4 id="arguments_1">Arguments</h4>
+<ul>
+<li><code>ftsk</code> - FeedTask to which the scrubbing actions should be added, for
+             execution by the caller.  The FeedTask must be built for all
+             the VIOSes from which mappings and storage should be scrubbed.
+             The feed/getter must use the VIO_SMAP and VIO_FMAP xags.</li>
+<li><code>lpar_id</code> - (Optional) Only orphan mappings associated with the
+                specified LPAR ID will be removed.  If None (the default),
+                all LPARs' mappings will be considered.</li>
+</ul>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">def add_orphan_storage_scrub_tasks(ftsk, lpar_id=None):
+    ...
+</code></pre>
+<h2 id="crt_copy_vdisk">crt_copy_vdisk</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L106">Show source in storage.py:106</a></p>
+<p>Create a new virtual disk that contains all the data of the src given.</p>
+<h4 id="arguments_2">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The adapter to talk over the API.</li>
+<li><code>v_uuid</code> - The UUID of the Virtual I/O Server that will host the new
+               VDisk.</li>
+<li><code>vol_grp_uuid</code> - The UUID of the volume group that will host the new
+                     VDisk.</li>
+<li><code>src</code> - UDID of virtual disk to copy data from</li>
+<li><code>f_size</code> - The size (in bytes) of the src disk.</li>
+<li><code>d_name</code> - The name that should be given to the disk on the Virtual
+               I/O Server that will contain the file.</li>
+<li><code>d_size</code> - (Optional) The desired size of the new VDisk in bytes.  If
+               omitted or smaller than f_size, it will be set to match
+               f_size.</li>
+<li><code>file_format</code> - (Optional) File format of src VDisk.  See
+                    stor.FileFormatType enumeration for valid formats.</li>
+</ul>
+<h4 id="returns">Returns</h4>
+<p>The virtual disk that the file is uploaded into.</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">def crt_copy_vdisk(
+    adapter, v_uuid, vol_grp_uuid, src, f_size, d_name, d_size=None, file_format=None
+):
+    ...
+</code></pre>
+<h2 id="crt_lu">crt_lu</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L821">Show source in storage.py:821</a></p>
+<p>Create a Logical Unit on the specified Tier.</p>
+<h4 id="arguments_3">Arguments</h4>
+<ul>
+<li><code>tier_or_ssp</code> - Tier or SSP EntryWrapper denoting the Tier or Shared
+                    Storage Pool on which to create the LU.  If an SSP is
+                    supplied, the LU is created on the default Tier.</li>
+<li><code>name</code> - Name for the new Logical Unit.</li>
+<li><code>size</code> - LU size in GB with decimal precision.</li>
+<li><code>thin</code> - Provision the new LU as Thin (True) or Thick (False).  If
+             unspecified, use the server default.</li>
+<li><code>typ</code> - The type of LU to create, one of the LUType values.  If
+            unspecified, use the server default.</li>
+<li><code>clone</code> - If the new LU is to be a linked clone, this param is a
+              LU(Ent) wrapper representing the backing image LU.</li>
+</ul>
+<h4 id="returns_1">Returns</h4>
+<p>If the tier_or_ssp argument is an SSP, the updated SSP wrapper
+         (containing the new LU and with a new etag) is returned.
+         Otherwise, the first return value is the Tier.
+LU ElementWrapper representing the Logical Unit just created.</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">def crt_lu(tier_or_ssp, name, size, thin=None, typ=None, clone=None):
+    ...
+</code></pre>
+<h2 id="crt_lu_linked_clone">crt_lu_linked_clone</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L512">Show source in storage.py:512</a></p>
+<p>Create a new LU as a linked clone to a backing image LU.</p>
+<p>:deprecated: Use crt_lu instead.</p>
+<h4 id="arguments_4">Arguments</h4>
+<ul>
+<li><code>ssp</code> - The SSP EntryWrapper representing the SharedStoragePool on
+            which to create the new LU.</li>
+<li><code>cluster</code> - The Cluster EntryWrapper representing the Cluster against
+                which to invoke the LULinkedClone Job.</li>
+<li><code>src_lu</code> - The LU ElementWrapper or LUEnt EntryWrapper representing the
+               link source.</li>
+<li><code>new_lu_name</code> - The name to be given to the new LU.</li>
+<li><code>lu_size_gb</code> - The size of the new LU in GB with decimal precision.  If
+                   this is not specified or is smaller than the size of the
+                   image_lu, the size of the image_lu is used.</li>
+</ul>
+<h4 id="returns_2">Returns</h4>
+<p>The updated SSP EntryWrapper containing the newly-created LU.
+The newly created and linked LU.</p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">def crt_lu_linked_clone(ssp, cluster, src_lu, new_lu_name, lu_size_gb=0):
+    ...
+</code></pre>
+<h2 id="crt_vdisk">crt_vdisk</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L623">Show source in storage.py:623</a></p>
+<p>Creates a new Virtual Disk in the specified volume group.</p>
+<h4 id="arguments_5">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The pypowervm.adapter.Adapter through which to request the
+                change.</li>
+<li><code>v_uuid</code> - The UUID of the Virtual I/O Server that will host the disk.</li>
+<li><code>vol_grp_uuid</code> - The volume group that will host the new Virtual Disk.</li>
+<li><code>d_name</code> - The name that should be given to the disk on the Virtual
+               I/O Server that will contain the file.</li>
+<li><code>d_size_gb</code> - The size of the disk in GB.</li>
+<li><code>base_image</code> - (Optional) The UDID of a VDisk to copy data from.</li>
+<li><code>file_format</code> - (Optional) File format of the new VirtualDisk.  See
+                    stor.FileFormatType enumeration for valid formats.</li>
+</ul>
+<h4 id="returns_3">Returns</h4>
+<p>VDisk ElementWrapper representing the new VirtualDisk from the
+         server response (i.e. UDID will be populated).
+:raise exc.Error: If the server response from attempting to add the VDisk
+                  does not contain the new VDisk.</p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">@lock.synchronized(_LOCK_VOL_GRP)
+def crt_vdisk(
+    adapter, v_uuid, vol_grp_uuid, d_name, d_size_gb, base_image=None, file_format=None
+):
+    ...
+</code></pre>
+<h2 id="default_tier_for_ssp">default_tier_for_ssp</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L497">Show source in storage.py:497</a></p>
+<p>Find the default Tier for the given Shared Storage Pool.</p>
+<h4 id="arguments_6">Arguments</h4>
+<ul>
+<li><code>ssp</code> - The SSP EntryWrapper whose default Tier is to be retrieved.</li>
+</ul>
+<h4 id="returns_4">Returns</h4>
+<p>Tier EntryWrapper representing ssp's default Tier.</p>
+<h4 id="raises">Raises</h4>
+<ul>
+<li><code>NoDefaultTierFoundOnSSP</code> -  If no default Tier is found on the
+                                specified Shared Storage Pool.</li>
+</ul>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">def default_tier_for_ssp(ssp):
+    ...
+</code></pre>
+<h2 id="find_stale_lpars">find_stale_lpars</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L1252">Show source in storage.py:1252</a></p>
+<p>Find orphan LPAR IDs in a Virtual I/O Server's VSCSI/VFC mappings.</p>
+<p>This method collates all client LPAR IDs from the VSCSI/VFC mappings of the
+specified VIOS wrapper and compares to the list of LPAR IDs on that VIOS's
+host, returning the list of any IDs which exist in the former but not the
+latter.</p>
+<h4 id="arguments_7">Arguments</h4>
+<ul>
+<li><code>vios_w</code> - VIOS EntryWrapper.  To be effective, this must have been
+               retrieved with the VIO_SMAP and VIO_FMAP extended
+               attribute groups.</li>
+</ul>
+<h4 id="returns_5">Returns</h4>
+<p>List of LPAR IDs (integer short IDs, not UUIDs) which don't exist
+         on the system.  The list is guaranteed to contain no duplicates.</p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">def find_stale_lpars(vios_w):
+    ...
+</code></pre>
+<h2 id="find_vg">find_vg</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L589">Show source in storage.py:589</a></p>
+<p>Returns the VIOS and VG wrappers for the volume group.</p>
+<h4 id="arguments_8">Arguments</h4>
+<ul>
+<li><code>adapter</code> - pypowervm.adapter.Adapter for REST communication.</li>
+<li><code>vg_name</code> - Name of the volume group to find.</li>
+<li><code>vios_name</code> - The name of the VIOS on which to search for the volume
+                  group.  If not specified, all VIOSes are searched.</li>
+</ul>
+<h4 id="returns_6">Returns</h4>
+<p>Type: <em>vios_wrap</em>
+The VIOS wrapper representing the Virtual I/O Server on
+                   which the volume group was found.
+Type: <em>vg_wrap</em>
+The VG wrapper representing the volume group.</p>
+<h4 id="raises_1">Raises</h4>
+<ul>
+<li><code>VIOSNotFound</code> -  If vios_name was specified and no such VIOS exists.</li>
+<li><code>VGNotFound</code> -  If no volume group of the specified vg_name could be
+                   found.</li>
+</ul>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">def find_vg(adapter, vg_name, vios_name=None):
+    ...
+</code></pre>
+<h2 id="rescan_vstor">rescan_vstor</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L668">Show source in storage.py:668</a></p>
+<p>Update the internal metadata for a virtual storage object.</p>
+<h4 id="arguments_9">Arguments</h4>
+<ul>
+<li><code>vio</code> - A VIOS wrapper or UUID string of the VIOS on which to perform
+            the rescan.</li>
+<li><code>vstor</code> - The VDisk wrapper or udid of the storage object to rescan.</li>
+<li><code>adapter</code> - A pypowervm.adapter.Adapter for REST API communication.
+                Required if neither vio nor vstor is a wrapper, optional
+                otherwise.</li>
+</ul>
+<h4 id="raises_2">Raises</h4>
+<ul>
+<li><code>AdapterNotFound</code> -  If no adapter attribute can be found.</li>
+<li><code>JobRequestFailed</code> -  If the rescan failed.</li>
+<li><code>JobRequestTimedOut</code> -  If the rescan Job timed out.</li>
+</ul>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">def rescan_vstor(vio, vstor, adapter=None):
+    ...
+</code></pre>
+<h2 id="rm_ssp_storage">rm_ssp_storage</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L941">Show source in storage.py:941</a></p>
+<p>Remove some number of LogicalUnits from a SharedStoragePool.</p>
+<p>The changes are flushed back to the REST server.</p>
+<h4 id="arguments_10">Arguments</h4>
+<ul>
+<li><code>ssp_wrap</code> - SSP EntryWrapper representing the SharedStoragePool to
+modify.</li>
+<li><code>lus</code> - Iterable of LU ElementWrappers or LUEnt EntryWrappers
+            representing the LogicalUnits to delete.</li>
+<li><code>del_unused_images</code> - If True, and a removed Disk LU was the last one
+                          linked to its backing Image LU, the backing Image
+                          LU is also removed.</li>
+</ul>
+<h4 id="returns_7">Returns</h4>
+<p>The (possibly) modified SSP wrapper.</p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">@tx.entry_transaction
+def rm_ssp_storage(ssp_wrap, lus, del_unused_images=True):
+    ...
+</code></pre>
+<h2 id="rm_tier_storage">rm_tier_storage</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L898">Show source in storage.py:898</a></p>
+<p>Remove Logical Units from a Shared Storage Pool Tier.</p>
+<h4 id="arguments_11">Arguments</h4>
+<ul>
+<li><code>lus_to_rm</code> - Iterable of LU ElementWrappers or LUEnt EntryWrappers
+                  representing the LogicalUnits to delete.</li>
+<li><code>tier</code> - Tier EntryWrapper representing the SSP Tier on which the
+             lus_to_rm (and their backing images) reside. Either tier or
+             lufeed is required.  If both are specified, tier is ignored.</li>
+<li><code>lufeed</code> - Pre-fetched list of LUEnt (i.e. result of a GET of
+               Tier/{uuid}/LogicalUnit) where we expect to find the
+               lus_to_rm (and their backing images).  Either tier or lufeed
+               is required.  If both are specified, tier is ignored.</li>
+<li><code>del_unused_images</code> - If True, and a removed Disk LU was the last one
+                          linked to its backing Image LU, the backing Image
+                          LU is also removed.</li>
+</ul>
+<h4 id="raises_3">Raises</h4>
+<ul>
+<li><code>ValueError</code> -  - If neither tier nor lufeed was supplied.
+                   - If lufeed was supplied but doesn't contain LUEnt
+                     EntryWrappers (e.g. the caller provided
+                     SSP.logical_units).</li>
+</ul>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">def rm_tier_storage(lus_to_rm, tier=None, lufeed=None, del_unused_images=True):
+    ...
+</code></pre>
+<h2 id="rm_vg_storage">rm_vg_storage</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L706">Show source in storage.py:706</a></p>
+<p>Remove storage elements from a volume group.</p>
+<p>Changes are flushed back to the REST server.</p>
+<h4 id="arguments_12">Arguments</h4>
+<ul>
+<li><code>vg_wrap</code> - VG wrapper representing the Volume Group to update.</li>
+<li><code>vdisks</code> - Iterable of VDisk wrappers representing the Virtual Disks to
+               delete.  Ignored if None or empty.</li>
+<li><code>vopts</code> - Iterable of VOptMedia wrappers representing Virtual Optical
+              devices to delete.  Ignored if None or empty.</li>
+</ul>
+<h4 id="returns_8">Returns</h4>
+<p>The (possibly) updated vg_wrap.</p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">@lock.synchronized(_LOCK_VOL_GRP)
+@retry.retry(
+    argmod_func=retry.refresh_wrapper, tries=60, delay_func=retry.STEPPED_RANDOM_DELAY
+)
+def rm_vg_storage(vg_wrap, vdisks=None, vopts=None):
+    ...
+</code></pre>
+<h2 id="upload_lu">upload_lu</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L307">Show source in storage.py:307</a></p>
+<p>Uploads a data stream to an existing SSP Logical Unit.</p>
+<h4 id="arguments_13">Arguments</h4>
+<ul>
+<li><code>v_uuid</code> - The UUID of the Virtual I/O Server through which to perform
+               the upload.</li>
+<li><code>lu</code> - LU Wrapper representing the Logical Unit to which to upload the
+           data.  The LU must already exist in the SSP.</li>
+<li><code>io_handle</code> - The I/O handle (as defined by the upload_type)</li>
+<li><code>f_size</code> - The size (in bytes) of the stream to be uploaded.</li>
+<li><code>sha_chksum</code> - (Optional) The SHA256 checksum for the file.  Useful for
+                   integrity checks.</li>
+<li><code>upload_type</code> - (Optional, Default: IO_STREAM) Defines the way in
+                    which the LU should be uploaded.  Refer to the
+                    UploadType enumeration for valid upload mechanisms.</li>
+</ul>
+<h4 id="returns_9">Returns</h4>
+<p>Normally the return value will be None, indicating that the image
+         was uploaded without issue.  If for some reason the File metadata
+         for the VIOS was not cleaned up, the return value is the LU
+         EntryWrapper.  This is simply a marker to be later used to retry
+         the cleanup.</p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">def upload_lu(
+    v_uuid, lu, io_handle, f_size, sha_chksum=None, upload_type=UploadType.IO_STREAM
+):
+    ...
+</code></pre>
+<h2 id="upload_new_lu">upload_new_lu</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L249">Show source in storage.py:249</a></p>
+<p>Creates a new SSP Logical Unit and uploads an image to it.</p>
+<p>Note: return spec varies based on the return_ssp parameter:</p>
+<h1 id="defaultlegacy-behavior">Default/legacy behavior</h1>
+<p>new_lu, maybe_file = upload_new_lu(..., return_ssp=False)</p>
+<h1 id="with-return_ssptrue">With return_ssp=True</h1>
+<p>ssp, new_lu, maybe_file = upload_new_lu(..., return_ssp=True)</p>
+<h4 id="arguments_14">Arguments</h4>
+<ul>
+<li><code>v_uuid</code> - The UUID of the Virtual I/O Server through which to perform
+               the upload.  (Note that the new LU will be visible from any
+               VIOS in the Shared Storage Pool's Cluster.)</li>
+<li><code>ssp</code> - SSP EntryWrapper representing the Shared Storage Pool on which
+            to create the new Logical Unit.</li>
+<li><code>io_handle</code> - The I/O handle (as defined by the upload_type)</li>
+<li><code>lu_name</code> - The name that should be given to the new LU.</li>
+<li><code>f_size</code> - The size (in bytes) of the stream to be uploaded.</li>
+<li><code>d_size</code> - (OPTIONAL) The size of the LU (in bytes).  Not required if
+               it should match the file.  Must be at least as large as the
+               file.</li>
+<li><code>sha_chksum</code> - (Optional) The SHA256 checksum for the file.  Useful for
+                   integrity checks.</li>
+<li><code>return_ssp</code> - (Optional) If True, the return value of the method is a
+                   three-member tuple whose third value is the updated SSP
+                   EntryWrapper.  If False (the default), the method
+                   returns a two-member tuple.</li>
+<li><code>upload_type</code> - (Optional, Default: IO_STREAM) Defines the way in
+                    which the LU should be uploaded.  Refer to the
+                    UploadType enumeration for valid upload mechanisms.</li>
+</ul>
+<h4 id="returns_10">Returns</h4>
+<p>If the return_ssp parameter is True, the first return value is the
+         updated SSP EntryWrapper, containing the newly-created and
+         -uploaded LU.  If return_ssp is False, this return value is absent
+         - only the below two values are returned.
+An LU EntryWrapper corresponding to the Logical Unit into which
+         the file was uploaded.
+Normally None, indicating that the LU was created and the image
+         was uploaded without issue.  If for some reason the File metadata
+         for the VIOS was not cleaned up, the return value is the File
+         EntryWrapper.  This is simply a marker to be later used to retry
+         the cleanup.</p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">def upload_new_lu(
+    v_uuid,
+    ssp,
+    io_handle,
+    lu_name,
+    f_size,
+    d_size=None,
+    sha_chksum=None,
+    return_ssp=False,
+    upload_type=UploadType.IO_STREAM,
+):
+    ...
+</code></pre>
+<h2 id="upload_new_vdisk">upload_new_vdisk</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L151">Show source in storage.py:151</a></p>
+<p>Uploads a new virtual disk.</p>
+<h4 id="arguments_15">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The adapter to talk over the API.</li>
+<li><code>v_uuid</code> - The Virtual I/O Server UUID that will host the disk.</li>
+<li><code>vol_grp_uuid</code> - The volume group that will host the Virtual Disk's
+                     UUID.</li>
+<li><code>io_handle</code> - The I/O handle (as defined by the upload_type)</li>
+<li><code>d_name</code> - The name that should be given to the disk on the Virtual
+               I/O Server that will contain the file.</li>
+<li><code>f_size</code> - The size (in bytes) of the stream to be uploaded.</li>
+<li><code>d_size</code> - (Optional) The desired size of the new VDisk in bytes.  If
+               omitted or smaller than f_size, it will be set to match
+               f_size.</li>
+<li><code>sha_chksum</code> - (Optional) The SHA256 checksum for the file.  Useful for
+                   integrity checks.</li>
+<li><code>upload_type</code> - (Optional, Default: IO_STREAM) Defines the way in
+                    which the vdisk should be uploaded.  Refer to the
+                    UploadType enumeration for valid upload mechanisms.</li>
+<li><code>file_format</code> - (Optional) Format of file coming from io_handle.  See
+                    stor.FileFormatType enumeration for valid formats.</li>
+</ul>
+<h4 id="returns_11">Returns</h4>
+<p>The first return value is the virtual disk that the file is
+         uploaded into.
+Normally the second return value will be None, indicating that the
+         disk and image were uploaded without issue.  If for some reason
+         the File metadata for the VIOS was not cleaned up, the return
+         value is the File EntryWrapper.  This is simply a metadata marker
+         to be later used to retry the cleanup.</p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">def upload_new_vdisk(
+    adapter,
+    v_uuid,
+    vol_grp_uuid,
+    io_handle,
+    d_name,
+    f_size,
+    d_size=None,
+    sha_chksum=None,
+    upload_type=UploadType.IO_STREAM,
+    file_format=None,
+):
+    ...
+</code></pre>
+<h2 id="upload_vopt">upload_vopt</h2>
+<p><a href="../../../pypowervm/tasks/storage.py#L213">Show source in storage.py:213</a></p>
+<p>Upload a file/stream into a virtual media repository on the VIOS.</p>
+<h4 id="arguments_16">Arguments</h4>
+<ul>
+<li><code>adapter</code> - The adapter to talk over the API.</li>
+<li><code>v_uuid</code> - The Virtual I/O Server UUID that will host the file.</li>
+<li><code>d_stream</code> - A file path or data stream (must have 'read' method) to
+                 upload.</li>
+<li><code>f_name</code> - The name that should be given to the file.</li>
+<li><code>f_size</code> - (OPTIONAL) The size in bytes of the file to upload.  Useful
+               for integrity checks.</li>
+<li><code>sha_chksum</code> - (OPTIONAL) The SHA256 checksum for the file.  Useful for
+                   integrity checks.</li>
+</ul>
+<h4 id="returns_12">Returns</h4>
+<p>The vOpt loaded into the media repository.  This is a reference,
+         for use in scsi mappings.
+Normally this method will return None, indicating that the disk
+         and image were uploaded without issue.  If for some reason the
+         File metadata for the VIOS was not cleaned up, the return value
+         is the File EntryWrapper.  This is simply a marker to be later
+         used to retry the cleanup.</p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">def upload_vopt(adapter, v_uuid, d_stream, f_name, f_size=None, sha_chksum=None):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>TestNetwork - pypowervm documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">pypowervm documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pypowervm <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Pypowervm</a>
+</li>
+                                    
+<li>
+    <a href="../../../adapter/" class="dropdown-item">Adapter</a>
+</li>
+                                    
+<li>
+    <a href="../../../const/" class="dropdown-item">Const</a>
+</li>
+                                    
+<li>
+    <a href="../../../entities/" class="dropdown-item">Entities</a>
+</li>
+                                    
+<li>
+    <a href="../../../exceptions/" class="dropdown-item">Exceptions</a>
+</li>
+                                    
+<li>
+    <a href="../../../i18n/" class="dropdown-item">I18n</a>
+</li>
+                                    
+<li>
+    <a href="../../../log/" class="dropdown-item">Log</a>
+</li>
+                                    
+<li>
+    <a href="../../../traits/" class="dropdown-item">Traits</a>
+</li>
+                                    
+<li>
+    <a href="../../../util/" class="dropdown-item">Util</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hacking</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../hacking/" class="dropdown-item">Hacking</a>
+</li>
+            
+<li>
+    <a href="../../../hacking/checks/" class="dropdown-item">Checks</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/log_helper/" class="dropdown-item">Log Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/sample_helper/" class="dropdown-item">Sample Helper</a>
+</li>
+            
+<li>
+    <a href="../../../helpers/vios_busy/" class="dropdown-item">Vios Busy</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/client_storage/" class="dropdown-item">Client Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cluster_ssp/" class="dropdown-item">Cluster Ssp</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/cna/" class="dropdown-item">Cna</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/ibmi/" class="dropdown-item">Ibmi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/management_console/" class="dropdown-item">Management Console</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/master_mode/" class="dropdown-item">MasterMode</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/memory/" class="dropdown-item">Memory</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/migration/" class="dropdown-item">Migration</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/network_bridger/" class="dropdown-item">NetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/partition/" class="dropdown-item">Partition</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power/" class="dropdown-item">Power</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/power_opts/" class="dropdown-item">Power Opts</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/scsi_mapper/" class="dropdown-item">Scsi Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/slot_map/" class="dropdown-item">Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/sriov/" class="dropdown-item">Sriov</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vfc_mapper/" class="dropdown-item">Vfc Mapper</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vopt/" class="dropdown-item">Vopt</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/vterm/" class="dropdown-item">Vterm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_fc/" class="dropdown-item">Fc</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_iscsi/" class="dropdown-item">Iscsi</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/hdisk/_rbd/" class="dropdown-item">Rbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/host_cpu/" class="dropdown-item">Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../tasks/monitor/util/" class="dropdown-item">Util</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tests</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Tests</a>
+</li>
+            
+<li>
+    <a href="../../lib/" class="dropdown-item">Lib</a>
+</li>
+            
+<li>
+    <a href="../../test_adapter/" class="dropdown-item">TestAdapter</a>
+</li>
+            
+<li>
+    <a href="../../test_exceptions/" class="dropdown-item">TestExceptions</a>
+</li>
+            
+<li>
+    <a href="../../test_fixtures/" class="dropdown-item">Test Fixtures</a>
+</li>
+            
+<li>
+    <a href="../../test_helpers/" class="dropdown-item">TestHelpers</a>
+</li>
+            
+<li>
+    <a href="../../test_i18n/" class="dropdown-item">Test I18n</a>
+</li>
+            
+<li>
+    <a href="../../test_session/" class="dropdown-item">TestSession</a>
+</li>
+            
+<li>
+    <a href="../../test_traits/" class="dropdown-item">TestTraits</a>
+</li>
+            
+<li>
+    <a href="../../test_util/" class="dropdown-item">TestUtil</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Helpers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../helpers/" class="dropdown-item">Helpers</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_loghelper/" class="dropdown-item">TestLogHelper</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_sample/" class="dropdown-item">Test Sample</a>
+</li>
+            
+<li>
+    <a href="../../helpers/test_vios_busy/" class="dropdown-item">Test Vios Busy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Tasks</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/" class="dropdown-item">Tasks</a>
+</li>
+            
+<li>
+    <a href="../../tasks/create_cluster/" class="dropdown-item">Create Cluster</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_client_storage/" class="dropdown-item">TestClientStorage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_cluster_ssp/" class="dropdown-item">TestClusterSSP</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_cna/" class="dropdown-item">TestCNA</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_ibmi/" class="dropdown-item">TestIBMi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_master_mode/" class="dropdown-item">TestMasterMode</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_memory/" class="dropdown-item">TestMemory</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_mgmtconsole/" class="dropdown-item">Test Mgmtconsole</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_migration/" class="dropdown-item">TestMigration</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_network_bridger/" class="dropdown-item">TestNetworkBridger</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_partition/" class="dropdown-item">TestPartition</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_power/" class="dropdown-item">TestPower</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_power_opts/" class="dropdown-item">TestPowerOpts</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_scsi_mapper/" class="dropdown-item">TestSCSIMapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_slot_map/" class="dropdown-item">Test Slot Map</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_sriov/" class="dropdown-item">TestSriov</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vfc_mapper/" class="dropdown-item">TestVFCMapper</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vopt/" class="dropdown-item">TestVOpt</a>
+</li>
+            
+<li>
+    <a href="../../tasks/test_vterm/" class="dropdown-item">TestVterm</a>
+</li>
+            
+<li>
+    <a href="../../tasks/util/" class="dropdown-item">Util</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Hdisk</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/hdisk/" class="dropdown-item">Hdisk</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_fc/" class="dropdown-item">TestFC</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_iscsi/" class="dropdown-item">TestIscsi</a>
+</li>
+            
+<li>
+    <a href="../../tasks/hdisk/test_rbd/" class="dropdown-item">TestRbd</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Monitor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../tasks/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/test_host_cpu/" class="dropdown-item">Test Host Cpu</a>
+</li>
+            
+<li>
+    <a href="../../tasks/monitor/test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Test utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../test_utils/" class="dropdown-item">Test Utils</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/create_httpresp/" class="dropdown-item">Create Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/pvmhttp/" class="dropdown-item">Pvmhttp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/refresh_httpresp/" class="dropdown-item">Refresh Httpresp</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/test_wrapper_abc/" class="dropdown-item">Test Wrapper Abc</a>
+</li>
+            
+<li>
+    <a href="../../test_utils/xml_sections/" class="dropdown-item">Xml Sections</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_lpar_bldr/" class="dropdown-item">Test Lpar Bldr</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_retry/" class="dropdown-item">TestRetry</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_transaction/" class="dropdown-item">Test Transaction</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_uuid/" class="dropdown-item">TestUUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/test_validation/" class="dropdown-item">Test Validation</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../test_cdata/" class="dropdown-item">TestCDATA</a>
+</li>
+            
+<li>
+    <a href="../test_cluster/" class="dropdown-item">TestCluster</a>
+</li>
+            
+<li>
+    <a href="../test_enterprise_pool/" class="dropdown-item">Test Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../test_entry/" class="dropdown-item">Test Entry</a>
+</li>
+            
+<li>
+    <a href="../test_event/" class="dropdown-item">TestEvent</a>
+</li>
+            
+<li>
+    <a href="../test_http_error/" class="dropdown-item">TestHttpError</a>
+</li>
+            
+<li>
+    <a href="../test_iocard/" class="dropdown-item">Test Iocard</a>
+</li>
+            
+<li>
+    <a href="../test_job/" class="dropdown-item">Test Job</a>
+</li>
+            
+<li>
+    <a href="../test_logical_partition/" class="dropdown-item">TestLogicalPartition</a>
+</li>
+            
+<li>
+    <a href="../test_managed_system/" class="dropdown-item">Test Managed System</a>
+</li>
+            
+<li>
+    <a href="../test_mgmt_console/" class="dropdown-item">Test Mgmt Console</a>
+</li>
+            
+<li>
+    <a href="../test_monitor/" class="dropdown-item">Test Monitor</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">TestNetwork</a>
+</li>
+            
+<li>
+    <a href="../test_search/" class="dropdown-item">TestSearch</a>
+</li>
+            
+<li>
+    <a href="../test_shared_proc_pool/" class="dropdown-item">Test Shared Proc Pool</a>
+</li>
+            
+<li>
+    <a href="../test_storage/" class="dropdown-item">Test Storage</a>
+</li>
+            
+<li>
+    <a href="../test_vios_file/" class="dropdown-item">TestVIOSFile</a>
+</li>
+            
+<li>
+    <a href="../test_virtual_io_server/" class="dropdown-item">Test Virtual Io Server</a>
+</li>
+            
+<li>
+    <a href="../test_wrapper_properties/" class="dropdown-item">Test Wrapper Properties</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_lpar/" class="dropdown-item">Test Lpar</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_phyp/" class="dropdown-item">Test Phyp</a>
+</li>
+            
+<li>
+    <a href="../pcm/test_vios/" class="dropdown-item">Test Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../utils/" class="dropdown-item">Utils</a>
+</li>
+            
+<li>
+    <a href="../../../utils/lpar_builder/" class="dropdown-item">LPARBuilder</a>
+</li>
+            
+<li>
+    <a href="../../../utils/retry/" class="dropdown-item">Retry</a>
+</li>
+            
+<li>
+    <a href="../../../utils/transaction/" class="dropdown-item">Transaction</a>
+</li>
+            
+<li>
+    <a href="../../../utils/uuid/" class="dropdown-item">Uuid</a>
+</li>
+            
+<li>
+    <a href="../../../utils/validation/" class="dropdown-item">Validation</a>
+</li>
+            
+<li>
+    <a href="../../../utils/wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Wrappers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/" class="dropdown-item">Wrappers</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/base_partition/" class="dropdown-item">BasePartition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/cluster/" class="dropdown-item">Cluster</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/enterprise_pool/" class="dropdown-item">Enterprise Pool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/entry_wrapper/" class="dropdown-item">EntryWrapper</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/event/" class="dropdown-item">Event</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/http_error/" class="dropdown-item">HttpError</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/iocard/" class="dropdown-item">Iocard</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/job/" class="dropdown-item">Job</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/logical_partition/" class="dropdown-item">Logical Partition</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/managed_system/" class="dropdown-item">Managed System</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/management_console/" class="dropdown-item">ManagementConsole</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/monitor/" class="dropdown-item">Monitor</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/mtms/" class="dropdown-item">MTMS</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/network/" class="dropdown-item">Network</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pmem/" class="dropdown-item">Pmem</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/shared_proc_pool/" class="dropdown-item">SharedProcPool</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/storage/" class="dropdown-item">Storage</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/vios_file/" class="dropdown-item">Vios File</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/virtual_io_server/" class="dropdown-item">Virtual Io Server</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Pcm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../wrappers/pcm/" class="dropdown-item">Pcm</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/lpar/" class="dropdown-item">Lpar</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/phyp/" class="dropdown-item">Phyp</a>
+</li>
+            
+<li>
+    <a href="../../../wrappers/pcm/vios/" class="dropdown-item">Vios</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../test_monitor/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../test_search/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#testnetwork" class="nav-link">TestNetwork</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#testcnawrapper" class="nav-link">TestCNAWrapper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testloadgroup" class="nav-link">TestLoadGroup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testnetbridge" class="nav-link">TestNetBridge</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testnetwork_1" class="nav-link">TestNetwork</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testsea" class="nav-link">TestSEA</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testtrunkadapter" class="nav-link">TestTrunkAdapter</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testvnetwork" class="nav-link">TestVNetwork</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#testvswitch" class="nav-link">TestVSwitch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="testnetwork">TestNetwork</h1>
+<p><a href="../../../README.md#pypowervm-index">Pypowervm Index</a> /
+<a href="../../../#pypowervm">Pypowervm</a> /
+<a href="../../#tests">Tests</a> /
+<a href="../#wrappers">Wrappers</a> /
+TestNetwork</p>
+<blockquote>
+<p>Auto-generated documentation for <a href="../../../../pypowervm/tests/wrappers/test_network.py">pypowervm.tests.wrappers.test_network</a> module.</p>
+</blockquote>
+<ul>
+<li><a href="#testnetwork">TestNetwork</a></li>
+<li><a href="#testcnawrapper">TestCNAWrapper</a><ul>
+<li><a href="#testcnawrapper()setup">TestCNAWrapper().setUp</a></li>
+<li><a href="#testcnawrapper()test_attrs">TestCNAWrapper().test_attrs</a></li>
+<li><a href="#testcnawrapper()test_cna_create">TestCNAWrapper().test_cna_create</a></li>
+<li><a href="#testcnawrapper()test_enabled">TestCNAWrapper().test_enabled</a></li>
+<li><a href="#testcnawrapper()test_get_mac">TestCNAWrapper().test_get_mac</a></li>
+<li><a href="#testcnawrapper()test_get_slot">TestCNAWrapper().test_get_slot</a></li>
+<li><a href="#testcnawrapper()test_get_trunk_pri">TestCNAWrapper().test_get_trunk_pri</a></li>
+<li><a href="#testcnawrapper()test_is_trunk">TestCNAWrapper().test_is_trunk</a></li>
+<li><a href="#testcnawrapper()test_lpar_id">TestCNAWrapper().test_lpar_id</a></li>
+<li><a href="#testcnawrapper()test_mac_set">TestCNAWrapper().test_mac_set</a></li>
+<li><a href="#testcnawrapper()test_mtu">TestCNAWrapper().test_mtu</a></li>
+<li><a href="#testcnawrapper()test_ovs_attrs">TestCNAWrapper().test_ovs_attrs</a></li>
+<li><a href="#testcnawrapper()test_pvid">TestCNAWrapper().test_pvid</a></li>
+<li><a href="#testcnawrapper()test_set_dev_name">TestCNAWrapper().test_set_dev_name</a></li>
+<li><a href="#testcnawrapper()test_set_trunk_pri">TestCNAWrapper().test_set_trunk_pri</a></li>
+<li><a href="#testcnawrapper()test_standard_crt">TestCNAWrapper().test_standard_crt</a></li>
+<li><a href="#testcnawrapper()test_tagged_vlan_modification">TestCNAWrapper().test_tagged_vlan_modification</a></li>
+<li><a href="#testcnawrapper()test_trunk_crt">TestCNAWrapper().test_trunk_crt</a></li>
+<li><a href="#testcnawrapper()test_unasi_field">TestCNAWrapper().test_unasi_field</a></li>
+<li><a href="#testcnawrapper()test_unique_crt">TestCNAWrapper().test_unique_crt</a></li>
+<li><a href="#testcnawrapper()test_vswitch_uri">TestCNAWrapper().test_vswitch_uri</a></li>
+<li><a href="#testcnawrapper()test_wrapper_class">TestCNAWrapper().test_wrapper_class</a></li>
+</ul>
+</li>
+<li><a href="#testloadgroup">TestLoadGroup</a><ul>
+<li><a href="#testloadgroup()test_wrapper_class">TestLoadGroup().test_wrapper_class</a></li>
+</ul>
+</li>
+<li><a href="#testnetbridge">TestNetBridge</a><ul>
+<li><a href="#testnetbridge()test_wrapper_class">TestNetBridge().test_wrapper_class</a></li>
+</ul>
+</li>
+<li><a href="#testnetwork-1">TestNetwork</a><ul>
+<li><a href="#testnetwork()set_vnet">TestNetwork().set_vnet</a></li>
+<li><a href="#testnetwork()test_arbitrary_pvids">TestNetwork().test_arbitrary_pvids</a></li>
+<li><a href="#testnetwork()test_configuration_state">TestNetwork().test_configuration_state</a></li>
+<li><a href="#testnetwork()test_contrl_channel">TestNetwork().test_contrl_channel</a></li>
+<li><a href="#testnetwork()test_contrl_channel_id">TestNetwork().test_contrl_channel_id</a></li>
+<li><a href="#testnetwork()test_crt_load_group">TestNetwork().test_crt_load_group</a></li>
+<li><a href="#testnetwork()test_crt_net_bridge">TestNetwork().test_crt_net_bridge</a></li>
+<li><a href="#testnetwork()test_crt_sea">TestNetwork().test_crt_sea</a></li>
+<li><a href="#testnetwork()test_crt_trunk_adapter">TestNetwork().test_crt_trunk_adapter</a></li>
+<li><a href="#testnetwork()test_list_vlan_no_vnet">TestNetwork().test_list_vlan_no_vnet</a></li>
+<li><a href="#testnetwork()test_list_vlans">TestNetwork().test_list_vlans</a></li>
+<li><a href="#testnetwork()test_load_balance">TestNetwork().test_load_balance</a></li>
+<li><a href="#testnetwork()test_load_group_modification">TestNetwork().test_load_group_modification</a></li>
+<li><a href="#testnetwork()test_load_groups">TestNetwork().test_load_groups</a></li>
+<li><a href="#testnetwork()test_no_primary_adpt">TestNetwork().test_no_primary_adpt</a></li>
+<li><a href="#testnetwork()test_pvid">TestNetwork().test_pvid</a></li>
+<li><a href="#testnetwork()test_sea_modification">TestNetwork().test_sea_modification</a></li>
+<li><a href="#testnetwork()test_sea_trunks">TestNetwork().test_sea_trunks</a></li>
+<li><a href="#testnetwork()test_seas">TestNetwork().test_seas</a></li>
+<li><a href="#testnetwork()test_supports_vlan">TestNetwork().test_supports_vlan</a></li>
+<li><a href="#testnetwork()test_supports_vlan_no_vnet">TestNetwork().test_supports_vlan_no_vnet</a></li>
+<li><a href="#testnetwork()test_uuid">TestNetwork().test_uuid</a></li>
+<li><a href="#testnetwork()test_varied_on">TestNetwork().test_varied_on</a></li>
+<li><a href="#testnetwork()test_vnet_uri_list">TestNetwork().test_vnet_uri_list</a></li>
+<li><a href="#testnetwork()test_vswitch_id">TestNetwork().test_vswitch_id</a></li>
+</ul>
+</li>
+<li><a href="#testsea">TestSEA</a><ul>
+<li><a href="#testsea()test_wrapper_class">TestSEA().test_wrapper_class</a></li>
+</ul>
+</li>
+<li><a href="#testtrunkadapter">TestTrunkAdapter</a><ul>
+<li><a href="#testtrunkadapter()test_wrapper_class">TestTrunkAdapter().test_wrapper_class</a></li>
+</ul>
+</li>
+<li><a href="#testvnetwork">TestVNetwork</a><ul>
+<li><a href="#testvnetwork()test_name">TestVNetwork().test_name</a></li>
+<li><a href="#testvnetwork()test_vnet">TestVNetwork().test_vnet</a></li>
+<li><a href="#testvnetwork()test_vnet_new">TestVNetwork().test_vnet_new</a></li>
+<li><a href="#testvnetwork()test_wrapper_class">TestVNetwork().test_wrapper_class</a></li>
+</ul>
+</li>
+<li><a href="#testvswitch">TestVSwitch</a><ul>
+<li><a href="#testvswitch()test_bld">TestVSwitch().test_bld</a></li>
+<li><a href="#testvswitch()test_data">TestVSwitch().test_data</a></li>
+<li><a href="#testvswitch()test_feed">TestVSwitch().test_feed</a></li>
+<li><a href="#testvswitch()test_set_mode">TestVSwitch().test_set_mode</a></li>
+<li><a href="#testvswitch()test_wrapper_class">TestVSwitch().test_wrapper_class</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="testcnawrapper">TestCNAWrapper</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L529">Show source in test_network.py:529</a></p>
+<h4 id="signature">Signature</h4>
+<pre><code class="language-python">class TestCNAWrapper(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testcnawrappersetup">TestCNAWrapper().setUp</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L535">Show source in test_network.py:535</a></p>
+<h4 id="signature_1">Signature</h4>
+<pre><code class="language-python">def setUp(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_attrs">TestCNAWrapper().test_attrs</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L736">Show source in test_network.py:736</a></p>
+<p>Test getting the attributes.</p>
+<h4 id="signature_2">Signature</h4>
+<pre><code class="language-python">def test_attrs(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_cna_create">TestCNAWrapper().test_cna_create</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L635">Show source in test_network.py:635</a></p>
+<p>CNA.create hack that mucks with UseNextAvailable(High)SlotID.</p>
+<h4 id="signature_3">Signature</h4>
+<pre><code class="language-python">@mock.patch(&quot;pypowervm.wrappers.entry_wrapper.EntryWrapper.create&quot;)
+@mock.patch(&quot;pypowervm.wrappers.logical_partition.LPAR.get&quot;)
+@mock.patch(&quot;pypowervm.wrappers.virtual_io_server.VIOS.get&quot;)
+def test_cna_create(self, mock_vget, mock_lget, mock_ewrap_create):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_enabled">TestCNAWrapper().test_enabled</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L843">Show source in test_network.py:843</a></p>
+<p>Test that we disable/enable.</p>
+<h4 id="signature_4">Signature</h4>
+<pre><code class="language-python">def test_enabled(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_get_mac">TestCNAWrapper().test_get_mac</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L794">Show source in test_network.py:794</a></p>
+<p>Test that we can get the mac address.</p>
+<h4 id="signature_5">Signature</h4>
+<pre><code class="language-python">def test_get_mac(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_get_slot">TestCNAWrapper().test_get_slot</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L790">Show source in test_network.py:790</a></p>
+<p>Test getting the VirtualSlotID.</p>
+<h4 id="signature_6">Signature</h4>
+<pre><code class="language-python">def test_get_slot(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_get_trunk_pri">TestCNAWrapper().test_get_trunk_pri</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L817">Show source in test_network.py:817</a></p>
+<p>Test that we can get the trunk priority.</p>
+<h4 id="signature_7">Signature</h4>
+<pre><code class="language-python">def test_get_trunk_pri(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_is_trunk">TestCNAWrapper().test_is_trunk</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L827">Show source in test_network.py:827</a></p>
+<p>Test that we can get if this adapter is a trunk.</p>
+<h4 id="signature_8">Signature</h4>
+<pre><code class="language-python">def test_is_trunk(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_lpar_id">TestCNAWrapper().test_lpar_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L833">Show source in test_network.py:833</a></p>
+<p>Test that we can get the local partition id.</p>
+<h4 id="signature_9">Signature</h4>
+<pre><code class="language-python">def test_lpar_id(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_mac_set">TestCNAWrapper().test_mac_set</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L783">Show source in test_network.py:783</a></p>
+<h4 id="signature_10">Signature</h4>
+<pre><code class="language-python">def test_mac_set(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_mtu">TestCNAWrapper().test_mtu</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L864">Show source in test_network.py:864</a></p>
+<h4 id="signature_11">Signature</h4>
+<pre><code class="language-python">def test_mtu(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_ovs_attrs">TestCNAWrapper().test_ovs_attrs</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L851">Show source in test_network.py:851</a></p>
+<h4 id="signature_12">Signature</h4>
+<pre><code class="language-python">def test_ovs_attrs(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_pvid">TestCNAWrapper().test_pvid</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L798">Show source in test_network.py:798</a></p>
+<p>Test that the PVID returns properly.</p>
+<h4 id="signature_13">Signature</h4>
+<pre><code class="language-python">def test_pvid(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_set_dev_name">TestCNAWrapper().test_set_dev_name</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L837">Show source in test_network.py:837</a></p>
+<p>Test that we can set the device name.</p>
+<h4 id="signature_14">Signature</h4>
+<pre><code class="language-python">def test_set_dev_name(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_set_trunk_pri">TestCNAWrapper().test_set_trunk_pri</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L821">Show source in test_network.py:821</a></p>
+<p>Test that we can set the trunk priority.</p>
+<h4 id="signature_15">Signature</h4>
+<pre><code class="language-python">def test_set_trunk_pri(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_standard_crt">TestCNAWrapper().test_standard_crt</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L539">Show source in test_network.py:539</a></p>
+<p>Tests a standard create of the CNA.</p>
+<h4 id="signature_16">Signature</h4>
+<pre><code class="language-python">def test_standard_crt(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_tagged_vlan_modification">TestCNAWrapper().test_tagged_vlan_modification</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L762">Show source in test_network.py:762</a></p>
+<p>Tests that the tagged vlans can be modified.</p>
+<h4 id="signature_17">Signature</h4>
+<pre><code class="language-python">def test_tagged_vlan_modification(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_trunk_crt">TestCNAWrapper().test_trunk_crt</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L558">Show source in test_network.py:558</a></p>
+<p>Tests a standard create of the CNA.</p>
+<h4 id="signature_18">Signature</h4>
+<pre><code class="language-python">def test_trunk_crt(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_unasi_field">TestCNAWrapper().test_unasi_field</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L597">Show source in test_network.py:597</a></p>
+<p>UseNextAvailable(High)SlotID field is (not) used, as appropriate.</p>
+<h4 id="signature_19">Signature</h4>
+<pre><code class="language-python">def test_unasi_field(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_unique_crt">TestCNAWrapper().test_unique_crt</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L576">Show source in test_network.py:576</a></p>
+<p>Tests the create path with a non-standard flow for the CNA.</p>
+<h4 id="signature_20">Signature</h4>
+<pre><code class="language-python">def test_unique_crt(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_vswitch_uri">TestCNAWrapper().test_vswitch_uri</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L805">Show source in test_network.py:805</a></p>
+<h4 id="signature_21">Signature</h4>
+<pre><code class="language-python">def test_vswitch_uri(self):
+    ...
+</code></pre>
+<h3 id="testcnawrappertest_wrapper_class">TestCNAWrapper().test_wrapper_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L811">Show source in test_network.py:811</a></p>
+<h4 id="signature_22">Signature</h4>
+<pre><code class="language-python">def test_wrapper_class(self):
+    ...
+</code></pre>
+<h2 id="testloadgroup">TestLoadGroup</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L121">Show source in test_network.py:121</a></p>
+<h4 id="signature_23">Signature</h4>
+<pre><code class="language-python">class TestLoadGroup(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testloadgrouptest_wrapper_class">TestLoadGroup().test_wrapper_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L122">Show source in test_network.py:122</a></p>
+<h4 id="signature_24">Signature</h4>
+<pre><code class="language-python">def test_wrapper_class(self):
+    ...
+</code></pre>
+<h2 id="testnetbridge">TestNetBridge</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L146">Show source in test_network.py:146</a></p>
+<h4 id="signature_25">Signature</h4>
+<pre><code class="language-python">class TestNetBridge(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testnetbridgetest_wrapper_class">TestNetBridge().test_wrapper_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L147">Show source in test_network.py:147</a></p>
+<h4 id="signature_26">Signature</h4>
+<pre><code class="language-python">def test_wrapper_class(self):
+    ...
+</code></pre>
+<h2 id="testnetwork_1">TestNetwork</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L154">Show source in test_network.py:154</a></p>
+<h4 id="signature_27">Signature</h4>
+<pre><code class="language-python">class TestNetwork(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testnetworkset_vnet">TestNetwork().set_vnet</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L160">Show source in test_network.py:160</a></p>
+<h4 id="signature_28">Signature</h4>
+<pre><code class="language-python">def set_vnet(self, aware):
+    ...
+</code></pre>
+<h3 id="testnetworktest_arbitrary_pvids">TestNetwork().test_arbitrary_pvids</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L413">Show source in test_network.py:413</a></p>
+<h4 id="signature_29">Signature</h4>
+<pre><code class="language-python">def test_arbitrary_pvids(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_configuration_state">TestNetwork().test_configuration_state</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L169">Show source in test_network.py:169</a></p>
+<h4 id="signature_30">Signature</h4>
+<pre><code class="language-python">def test_configuration_state(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_contrl_channel">TestNetwork().test_contrl_channel</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L185">Show source in test_network.py:185</a></p>
+<h4 id="signature_31">Signature</h4>
+<pre><code class="language-python">def test_contrl_channel(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_contrl_channel_id">TestNetwork().test_contrl_channel_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L193">Show source in test_network.py:193</a></p>
+<h4 id="signature_32">Signature</h4>
+<pre><code class="language-python">def test_contrl_channel_id(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_crt_load_group">TestNetwork().test_crt_load_group</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L296">Show source in test_network.py:296</a></p>
+<h4 id="signature_33">Signature</h4>
+<pre><code class="language-python">def test_crt_load_group(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_crt_net_bridge">TestNetwork().test_crt_net_bridge</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L196">Show source in test_network.py:196</a></p>
+<h4 id="signature_34">Signature</h4>
+<pre><code class="language-python">def test_crt_net_bridge(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_crt_sea">TestNetwork().test_crt_sea</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L249">Show source in test_network.py:249</a></p>
+<h4 id="signature_35">Signature</h4>
+<pre><code class="language-python">def test_crt_sea(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_crt_trunk_adapter">TestNetwork().test_crt_trunk_adapter</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L273">Show source in test_network.py:273</a></p>
+<h4 id="signature_36">Signature</h4>
+<pre><code class="language-python">def test_crt_trunk_adapter(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_list_vlan_no_vnet">TestNetwork().test_list_vlan_no_vnet</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L442">Show source in test_network.py:442</a></p>
+<p>Tests that a VLAN change affects trunks, not vnets.</p>
+<h4 id="signature_37">Signature</h4>
+<pre><code class="language-python">def test_list_vlan_no_vnet(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_list_vlans">TestNetwork().test_list_vlans</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L419">Show source in test_network.py:419</a></p>
+<h4 id="signature_38">Signature</h4>
+<pre><code class="language-python">def test_list_vlans(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_load_balance">TestNetwork().test_load_balance</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L173">Show source in test_network.py:173</a></p>
+<h4 id="signature_39">Signature</h4>
+<pre><code class="language-python">def test_load_balance(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_load_group_modification">TestNetwork().test_load_group_modification</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L335">Show source in test_network.py:335</a></p>
+<p>Verifies that the callbacks to the Network Bridge work.</p>
+<p>When modifying the Virtual Network list in the Load Group, those
+updates should be reflected back into the Network Bridge.</p>
+<h4 id="signature_40">Signature</h4>
+<pre><code class="language-python">def test_load_group_modification(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_load_groups">TestNetwork().test_load_groups</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L310">Show source in test_network.py:310</a></p>
+<h4 id="signature_41">Signature</h4>
+<pre><code class="language-python">def test_load_groups(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_no_primary_adpt">TestNetwork().test_no_primary_adpt</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L400">Show source in test_network.py:400</a></p>
+<p>Tests rare case that SEA has no primary adapter.</p>
+<h4 id="signature_42">Signature</h4>
+<pre><code class="language-python">def test_no_primary_adpt(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_pvid">TestNetwork().test_pvid</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L166">Show source in test_network.py:166</a></p>
+<h4 id="signature_43">Signature</h4>
+<pre><code class="language-python">def test_pvid(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_sea_modification">TestNetwork().test_sea_modification</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L350">Show source in test_network.py:350</a></p>
+<p>Verifies that the SEA can have a Trunk Adapter added to it.</p>
+<h4 id="signature_44">Signature</h4>
+<pre><code class="language-python">def test_sea_modification(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_sea_trunks">TestNetwork().test_sea_trunks</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L478">Show source in test_network.py:478</a></p>
+<p>Tests the trunk adapters on the SEA.</p>
+<h4 id="signature_45">Signature</h4>
+<pre><code class="language-python">def test_sea_trunks(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_seas">TestNetwork().test_seas</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L450">Show source in test_network.py:450</a></p>
+<h4 id="signature_46">Signature</h4>
+<pre><code class="language-python">def test_seas(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_supports_vlan">TestNetwork().test_supports_vlan</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L367">Show source in test_network.py:367</a></p>
+<p>Tests the supports_vlan method.</p>
+<h4 id="signature_47">Signature</h4>
+<pre><code class="language-python">def test_supports_vlan(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_supports_vlan_no_vnet">TestNetwork().test_supports_vlan_no_vnet</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L392">Show source in test_network.py:392</a></p>
+<p>Tests that a VLAN change affects trunks, not vnets.</p>
+<h4 id="signature_48">Signature</h4>
+<pre><code class="language-python">def test_supports_vlan_no_vnet(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_uuid">TestNetwork().test_uuid</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L176">Show source in test_network.py:176</a></p>
+<h4 id="signature_49">Signature</h4>
+<pre><code class="language-python">def test_uuid(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_varied_on">TestNetwork().test_varied_on</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L519">Show source in test_network.py:519</a></p>
+<h4 id="signature_50">Signature</h4>
+<pre><code class="language-python">def test_varied_on(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_vnet_uri_list">TestNetwork().test_vnet_uri_list</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L180">Show source in test_network.py:180</a></p>
+<h4 id="signature_51">Signature</h4>
+<pre><code class="language-python">def test_vnet_uri_list(self):
+    ...
+</code></pre>
+<h3 id="testnetworktest_vswitch_id">TestNetwork().test_vswitch_id</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L409">Show source in test_network.py:409</a></p>
+<p>Tests that the pass thru of the vswitch id works.</p>
+<h4 id="signature_52">Signature</h4>
+<pre><code class="language-python">def test_vswitch_id(self):
+    ...
+</code></pre>
+<h2 id="testsea">TestSEA</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L138">Show source in test_network.py:138</a></p>
+<h4 id="signature_53">Signature</h4>
+<pre><code class="language-python">class TestSEA(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testseatest_wrapper_class">TestSEA().test_wrapper_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L139">Show source in test_network.py:139</a></p>
+<h4 id="signature_54">Signature</h4>
+<pre><code class="language-python">def test_wrapper_class(self):
+    ...
+</code></pre>
+<h2 id="testtrunkadapter">TestTrunkAdapter</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L129">Show source in test_network.py:129</a></p>
+<h4 id="signature_55">Signature</h4>
+<pre><code class="language-python">class TestTrunkAdapter(unittest.TestCase):
+    ...
+</code></pre>
+<h3 id="testtrunkadaptertest_wrapper_class">TestTrunkAdapter().test_wrapper_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L130">Show source in test_network.py:130</a></p>
+<h4 id="signature_56">Signature</h4>
+<pre><code class="language-python">def test_wrapper_class(self):
+    ...
+</code></pre>
+<h2 id="testvnetwork">TestVNetwork</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L35">Show source in test_network.py:35</a></p>
+<h4 id="signature_57">Signature</h4>
+<pre><code class="language-python">class TestVNetwork(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testvnetworktest_name">TestVNetwork().test_name</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L50">Show source in test_network.py:50</a></p>
+<h4 id="signature_58">Signature</h4>
+<pre><code class="language-python">def test_name(self):
+    ...
+</code></pre>
+<h3 id="testvnetworktest_vnet">TestVNetwork().test_vnet</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L40">Show source in test_network.py:40</a></p>
+<h4 id="signature_59">Signature</h4>
+<pre><code class="language-python">def test_vnet(self):
+    ...
+</code></pre>
+<h3 id="testvnetworktest_vnet_new">TestVNetwork().test_vnet_new</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L54">Show source in test_network.py:54</a></p>
+<p>Tests the method that returns a VNet ElementWrapper.</p>
+<h4 id="signature_60">Signature</h4>
+<pre><code class="language-python">def test_vnet_new(self):
+    ...
+</code></pre>
+<h3 id="testvnetworktest_wrapper_class">TestVNetwork().test_wrapper_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L61">Show source in test_network.py:61</a></p>
+<h4 id="signature_61">Signature</h4>
+<pre><code class="language-python">def test_wrapper_class(self):
+    ...
+</code></pre>
+<h2 id="testvswitch">TestVSwitch</h2>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L68">Show source in test_network.py:68</a></p>
+<h4 id="signature_62">Signature</h4>
+<pre><code class="language-python">class TestVSwitch(twrap.TestWrapper):
+    ...
+</code></pre>
+<h3 id="testvswitchtest_bld">TestVSwitch().test_bld</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L73">Show source in test_network.py:73</a></p>
+<p>Tests that the vSwitch element can be built.</p>
+<h4 id="signature_63">Signature</h4>
+<pre><code class="language-python">def test_bld(self):
+    ...
+</code></pre>
+<h3 id="testvswitchtest_data">TestVSwitch().test_data</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L92">Show source in test_network.py:92</a></p>
+<h4 id="signature_64">Signature</h4>
+<pre><code class="language-python">def test_data(self):
+    ...
+</code></pre>
+<h3 id="testvswitchtest_feed">TestVSwitch().test_feed</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L85">Show source in test_network.py:85</a></p>
+<p>Tests the feed of virtual switches.</p>
+<h4 id="signature_65">Signature</h4>
+<pre><code class="language-python">def test_feed(self):
+    ...
+</code></pre>
+<h3 id="testvswitchtest_set_mode">TestVSwitch().test_set_mode</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L111">Show source in test_network.py:111</a></p>
+<p>Tests that the vSwitch element can have the mode set.</p>
+<h4 id="signature_66">Signature</h4>
+<pre><code class="language-python">def test_set_mode(self):
+    ...
+</code></pre>
+<h3 id="testvswitchtest_wrapper_class">TestVSwitch().test_wrapper_class</h3>
+<p><a href="../../../../pypowervm/tests/wrappers/test_network.py#L105">Show source in test_network.py:105</a></p>
+<h4 id="signature_67">Signature</h4>
+<pre><code class="language-python">def test_wrapper_class(self):
+    ...
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
